@@ -1,0 +1,25 @@
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100 
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            Ethane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1         197.0
+
+

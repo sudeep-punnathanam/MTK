@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Atom 1        Atom 2            Rule/Potential         Parameters
+-------------------------------------------------------------------------------
+Oxygen        Oxygen            Lennard-Jones      3.166  78.0   2.5
+Hydrogen      Hydrogen          off
+Oxygen        Hydrogen          off
+
+

@@ -1,0 +1,210 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :             54.2077
+                   van der Waals       :             54.2077
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+Ethane-Ethane      Total               :             54.2077
+                   van der Waals       :             54.2077
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           5106.7224
+                   van der Waals       :           5106.7224
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+Ethane-Ethane      Total               :           5106.7224
+                   van der Waals       :           5106.7224
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9619 (984 out of 1023)
+Rotation Move                 Success Ratio : 0.9939 (972 out of 978)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7368 (14 out of 19)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        101.593        101.593        101.593
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   1.04855E+006
+Density (kg/m^3)              :        4.75095
+Total Energy (J/mol)          :       -11100.8  (        -11100.8   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9491 (47688 out of 50248)
+Rotation Move                 Success Ratio : 0.9808 (48800 out of 49757)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7296 (726 out of 995)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        85.7068        85.7068        85.7068
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        629572.
+Density (kg/m^3)              :        7.91271
+Total Energy (J/mol)          :       -26475.9  (        -26475.9   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9462 (94817 out of 100205)
+Rotation Move                 Success Ratio : 0.9796 (97790 out of 99823)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7328 (1445 out of 1972)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        95.0849        95.0849        95.0849
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        859675.
+Density (kg/m^3)              :        5.79477
+Total Energy (J/mol)          :       -13830.5  (        -13830.5   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9473 (142321 out of 150236)
+Rotation Move                 Success Ratio : 0.9807 (146920 out of 149814)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7305 (2155 out of 2950)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        98.3179        98.3179        98.3179
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        950382.
+Density (kg/m^3)              :        5.24170
+Total Energy (J/mol)          :       -18276.5  (        -18276.5   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9436 (189032 out of 200331)
+Rotation Move                 Success Ratio : 0.9796 (195619 out of 199689)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7198 (2865 out of 3980)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        94.5825        94.5825        94.5825
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        846120.
+Density (kg/m^3)              :        5.88760
+Total Energy (J/mol)          :       -26817.8  (        -26817.8   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9419 (236049 out of 250612)
+Rotation Move                 Success Ratio : 0.9787 (244094 out of 249401)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7163 (3572 out of 4987)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        94.8716        94.8716        94.8716
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        853902.
+Density (kg/m^3)              :        5.83394
+Total Energy (J/mol)          :       -18799.6  (        -18799.6   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :          -1879.9581
+                   van der Waals       :          -1879.9581
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+Ethane-Ethane      Total               :          -1879.9581
+                   van der Waals       :          -1879.9581
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total               :            106.6391
+                   van der Waals       :            106.6391
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+Ethane-Ethane      Total               :            106.6391
+                   van der Waals       :            106.6391
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :          -1879.9581
+                   van der Waals       :          -1879.9581
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+Ethane-Ethane      Total               :          -1879.9581
+                   van der Waals       :          -1879.9581
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total               :            106.6391
+                   van der Waals       :            106.6391
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+Ethane-Ethane      Total               :            106.6391
+                   van der Waals       :            106.6391
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 

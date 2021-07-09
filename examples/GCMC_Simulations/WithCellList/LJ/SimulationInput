@@ -1,0 +1,48 @@
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               LJ
+Potential cutoff distance          2.5
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100 
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Cubic
+                  Density                0.2
+                  Boundary conditions    1  1  1
+
+Species   Name                            LJ
+          Initialization Method           Random
+          Initial number of molecules     256
+          Translation weight              1
+          Maximum displacement            0.1
+          Insertion weight                1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1           2.0
+   Fugacity            LJ              1              1           0.1594
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Pressure                  1                    2500
+ Calculate     Energy                    1                    2500
+ Calculate     Density                   1                    2500
+
+#======= Additional Information =========================================
+  Cell List   2.5
+

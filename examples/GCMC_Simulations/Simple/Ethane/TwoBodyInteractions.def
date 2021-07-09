@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+  Atom 1     Atom 2        Rule/Potential            Parameters
+-------------------------------------------------------------------------------
+Methane       Methane      Lennard-Jones   3.73  148.0   2.98
+Methyl        Methyl       Lennard-Jones   3.75   98.0   3.0
+Nitrogen      Nitrogen     Lennard-Jones   3.31   36.0   2.6
+NitrogenCOM   NitrogenCOM  off
+Methane       Methyl            Lorentz-Berthelot
+Methane       Nitrogen          Lorentz-Berthelot
+Methane       NitrogenCOM       off
+Methyl        Nitrogen          Lorentz-Berthelot
+Methyl        NitrogenCOM       off
+Nitrogen      NitrogenCOM       off
+

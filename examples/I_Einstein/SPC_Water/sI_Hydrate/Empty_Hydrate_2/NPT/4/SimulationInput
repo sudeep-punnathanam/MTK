@@ -1,0 +1,44 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 SPCE_water
+Potential cutoff distance            9.0
+Coulomb Evaluation ewald default
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     100000
+Number of Production Cycles        400000
+Display Frequency                  100
+Restart Frequency                  200
+Configs Frequency                  10 
+Random Number Seed                 123
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            24.0   24.0   24.0
+                  Box Angles             90.0   90.0   90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            Water
+          Initialization Method           File start_config
+          Translation weight              1
+          Maximum displacement            0.5
+          Rotation weight                 1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1          241.5
+   Pressure                            1              1          102.9e5
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Energy                    1                    100000
+ Calculate     Density                   1                    100000
+ Calculate     Volume                    1                    100000
+

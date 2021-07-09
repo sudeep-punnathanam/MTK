@@ -1,0 +1,1868 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+C-C                Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+C-C                Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2003 out of 2003)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5882 (10 out of 17)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6667         4.6667         4.6667
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.6311
+Number Density                :         0.9840
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2002 out of 2002)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7222 (13 out of 18)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7668         4.7668         4.7668
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       108.3151
+Number Density                :         0.9232
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1997 out of 1997)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.3913 (9 out of 23)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5394         4.5394         4.5394
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        93.5372
+Number Density                :         1.0691
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1999 out of 1999)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4762 (10 out of 21)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8385         4.8385         4.8385
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       113.2754
+Number Density                :         0.8828
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2003 out of 2003)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.3529 (6 out of 17)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6924         4.6924         4.6924
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.3212
+Number Density                :         0.9679
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 6000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1998 out of 1998)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4545 (10 out of 22)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5868         4.5868         4.5868
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        96.5008
+Number Density                :         1.0363
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 7000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1998 out of 1998)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5000 (11 out of 22)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5184         4.5184         4.5184
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        92.2501
+Number Density                :         1.0840
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 8000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2002 out of 2002)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.3333 (6 out of 18)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8819         4.8819         4.8819
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       116.3478
+Number Density                :         0.8595
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 9000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2002 out of 2002)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.2778 (5 out of 18)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6420         4.6420         4.6420
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       100.0268
+Number Density                :         0.9997
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2000 out of 2000)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7500 (15 out of 20)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4618         4.4618         4.4618
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        88.8232
+Number Density                :         1.1258
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (99999 out of 99999)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4875 (488 out of 1001)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6276         4.6276         4.6276
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.0954
+Number Density                :         1.0091
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (199964 out of 199964)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5069 (1032 out of 2036)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7614         4.7614         4.7614
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       107.9462
+Number Density                :         0.9264
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (299983 out of 299983)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5002 (1509 out of 3017)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6880         4.6880         4.6880
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.0320
+Number Density                :         0.9706
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (399977 out of 399977)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4929 (1983 out of 4023)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8482         4.8482         4.8482
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       113.9593
+Number Density                :         0.8775
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (500051 out of 500051)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4948 (2449 out of 4949)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6718         4.6718         4.6718
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.9637
+Number Density                :         0.9807
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 6000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (600126 out of 600126)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4961 (2914 out of 5874)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6135         4.6135         4.6135
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        98.1958
+Number Density                :         1.0184
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 7000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (700213 out of 700213)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4939 (3352 out of 6787)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7063         4.7063         4.7063
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.2383
+Number Density                :         0.9593
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 8000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (800197 out of 800197)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4905 (3827 out of 7803)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7463         4.7463         4.7463
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       106.9205
+Number Density                :         0.9353
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 9000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (900201 out of 900201)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4924 (4333 out of 8799)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5413         4.5413         4.5413
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        93.6554
+Number Density                :         1.0677
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1000200 out of 1000200)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4920 (4822 out of 9800)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6492         4.6492         4.6492
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       100.4937
+Number Density                :         0.9951
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 11000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1100144 out of 1100144)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4917 (5338 out of 10856)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4454         4.4454         4.4454
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        87.8491
+Number Density                :         1.1383
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 12000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1200200 out of 1200200)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4909 (5793 out of 11800)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7293         4.7293         4.7293
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       105.7757
+Number Density                :         0.9454
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 13000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1300198 out of 1300198)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4900 (6273 out of 12802)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6021         4.6021         4.6021
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        97.4690
+Number Density                :         1.0260
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 14000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1400176 out of 1400176)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4915 (6794 out of 13824)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5867         4.5867         4.5867
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        96.4958
+Number Density                :         1.0363
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 15000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1500161 out of 1500161)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4913 (7290 out of 14839)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4976         4.4976         4.4976
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        90.9820
+Number Density                :         1.0991
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 16000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1600165 out of 1600165)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4916 (7784 out of 15835)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8058         4.8058         4.8058
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       110.9916
+Number Density                :         0.9010
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 17000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1700211 out of 1700211)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4915 (8251 out of 16789)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6476         4.6476         4.6476
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       100.3900
+Number Density                :         0.9961
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 18000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1800199 out of 1800199)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4921 (8760 out of 17801)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7503         4.7503         4.7503
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       107.1948
+Number Density                :         0.9329
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 19000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (1900167 out of 1900167)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4913 (9252 out of 18833)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7144         4.7144         4.7144
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.7773
+Number Density                :         0.9544
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 20000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2000177 out of 2000177)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4923 (9759 out of 19823)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.9659         4.9659         4.9659
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       122.4632
+Number Density                :         0.8166
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 21000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2100161 out of 2100161)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4923 (10259 out of 20839)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6806         4.6806         4.6806
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       102.5434
+Number Density                :         0.9752
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 22000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2200170 out of 2200170)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4913 (10724 out of 21830)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4879         4.4879         4.4879
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        90.3910
+Number Density                :         1.1063
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 23000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2300103 out of 2300103)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4911 (11244 out of 22897)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4433         4.4433         4.4433
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        87.7219
+Number Density                :         1.1400
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 24000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2400059 out of 2400059)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4915 (11766 out of 23941)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5596         4.5596         4.5596
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        94.7927
+Number Density                :         1.0549
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 25000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2500111 out of 2500111)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4923 (12252 out of 24889)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4942         4.4942         4.4942
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        90.7701
+Number Density                :         1.1017
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 26000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2600135 out of 2600135)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4928 (12746 out of 25865)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5852         4.5852         4.5852
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        96.4013
+Number Density                :         1.0373
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 27000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2700215 out of 2700215)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4930 (13204 out of 26785)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5657         4.5657         4.5657
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        95.1767
+Number Density                :         1.0507
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 28000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2800248 out of 2800248)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4933 (13690 out of 27752)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6452         4.6452         4.6452
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       100.2312
+Number Density                :         0.9977
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 29000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (2900235 out of 2900235)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4944 (14222 out of 28765)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6572         4.6572         4.6572
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.0137
+Number Density                :         0.9900
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 30000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3000253 out of 3000253)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4957 (14745 out of 29747)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7890         4.7890         4.7890
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       109.8306
+Number Density                :         0.9105
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 31000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3100234 out of 3100234)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4958 (15253 out of 30766)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8147         4.8147         4.8147
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       111.6128
+Number Density                :         0.8960
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 32000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3200241 out of 3200241)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4955 (15738 out of 31759)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5463         4.5463         4.5463
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        93.9667
+Number Density                :         1.0642
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 33000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3300209 out of 3300209)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (16265 out of 32791)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4357         4.4357         4.4357
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        87.2752
+Number Density                :         1.1458
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 34000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3400164 out of 3400164)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (16781 out of 33836)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5145         4.5145         4.5145
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        92.0085
+Number Density                :         1.0869
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 35000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3500150 out of 3500150)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4967 (17309 out of 34850)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4555         4.4555         4.4555
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        88.4462
+Number Density                :         1.1306
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 36000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3600160 out of 3600160)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4963 (17786 out of 35840)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6317         4.6317         4.6317
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.3605
+Number Density                :         1.0064
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 37000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3700169 out of 3700169)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (18268 out of 36831)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7188         4.7188         4.7188
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       105.0718
+Number Density                :         0.9517
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 38000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3800179 out of 3800179)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4963 (18769 out of 37821)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4231         4.4231         4.4231
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        86.5342
+Number Density                :         1.1556
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 39000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (3900230 out of 3900230)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (19245 out of 38770)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5422         4.5422         4.5422
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        93.7122
+Number Density                :         1.0671
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 40000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4000236 out of 4000236)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4967 (19752 out of 39764)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6576         4.6576         4.6576
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.0366
+Number Density                :         0.9897
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 41000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4100282 out of 4100282)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4973 (20249 out of 40718)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8178         4.8178         4.8178
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       111.8267
+Number Density                :         0.8942
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 42000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4200306 out of 4200306)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4967 (20710 out of 41694)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8205         4.8205         4.8205
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       112.0145
+Number Density                :         0.8927
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 43000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4300372 out of 4300372)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4970 (21184 out of 42628)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6468         4.6468         4.6468
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       100.3393
+Number Density                :         0.9966
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 44000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4400320 out of 4400320)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4971 (21712 out of 43680)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.9211         4.9211         4.9211
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       119.1773
+Number Density                :         0.8391
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 45000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4500318 out of 4500318)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4968 (22198 out of 44682)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8153         4.8153         4.8153
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       111.6553
+Number Density                :         0.8956
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 46000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4600326 out of 4600326)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (22673 out of 45674)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4320         4.4320         4.4320
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        87.0567
+Number Density                :         1.1487
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 47000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4700339 out of 4700339)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4962 (23155 out of 46661)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.3953         4.3953         4.3953
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        84.9106
+Number Density                :         1.1777
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 48000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4800366 out of 4800366)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4962 (23634 out of 47634)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.2314         4.2314         4.2314
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        75.7597
+Number Density                :         1.3200
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 49000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (4900367 out of 4900367)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (24141 out of 48633)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7373         4.7373         4.7373
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       106.3163
+Number Density                :         0.9406
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 50000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5000355 out of 5000355)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4965 (24650 out of 49645)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8645         4.8645         4.8645
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       115.1129
+Number Density                :         0.8687
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 51000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5100293 out of 5100293)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4961 (25154 out of 50707)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7021         4.7021         4.7021
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.9634
+Number Density                :         0.9619
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 52000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5200241 out of 5200241)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (25691 out of 51759)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7325         4.7325         4.7325
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       105.9913
+Number Density                :         0.9435
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 53000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5300173 out of 5300173)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4961 (26210 out of 52827)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6330         4.6330         4.6330
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.4477
+Number Density                :         1.0056
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 54000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5400157 out of 5400157)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4963 (26721 out of 53843)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5848         4.5848         4.5848
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        96.3750
+Number Density                :         1.0376
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 55000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5500172 out of 5500172)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4962 (27207 out of 54828)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5870         4.5870         4.5870
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        96.5120
+Number Density                :         1.0361
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 56000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5600155 out of 5600155)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (27719 out of 55845)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6314         4.6314         4.6314
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.3448
+Number Density                :         1.0066
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 57000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5700213 out of 5700213)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4963 (28181 out of 56787)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6255         4.6255         4.6255
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        98.9639
+Number Density                :         1.0105
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 58000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5800147 out of 5800147)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4965 (28724 out of 57853)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6761         4.6761         4.6761
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       102.2486
+Number Density                :         0.9780
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 59000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (5900170 out of 5900170)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4966 (29215 out of 58830)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4862         4.4862         4.4862
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        90.2890
+Number Density                :         1.1076
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 60000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6000160 out of 6000160)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4962 (29693 out of 59840)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.3175         4.3175         4.3175
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        80.4820
+Number Density                :         1.2425
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 61000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6100174 out of 6100174)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4963 (30188 out of 60826)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6640         4.6640         4.6640
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.4526
+Number Density                :         0.9857
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 62000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6200159 out of 6200159)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4965 (30707 out of 61841)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6325         4.6325         4.6325
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.4109
+Number Density                :         1.0059
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 63000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6300211 out of 6300211)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4969 (31198 out of 62789)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5119         4.5119         4.5119
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        91.8486
+Number Density                :         1.0887
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 64000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6400214 out of 6400214)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4966 (31675 out of 63786)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6983         4.6983         4.6983
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7118
+Number Density                :         0.9642
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 65000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6500253 out of 6500253)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4973 (32197 out of 64747)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7043         4.7043         4.7043
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.1089
+Number Density                :         0.9605
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 66000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6600236 out of 6600236)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4974 (32711 out of 65764)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4508         4.4508         4.4508
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        88.1662
+Number Density                :         1.1342
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 67000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6700221 out of 6700221)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4969 (33181 out of 66779)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6041         4.6041         4.6041
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        97.5943
+Number Density                :         1.0247
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 68000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6800323 out of 6800323)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4971 (33643 out of 67677)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7878         4.7878         4.7878
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       109.7513
+Number Density                :         0.9112
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 69000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (6900330 out of 6900330)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4971 (34135 out of 68670)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.4731         4.4731         4.4731
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        89.5028
+Number Density                :         1.1173
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 70000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7000354 out of 7000354)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4969 (34610 out of 69646)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8263         4.8263         4.8263
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       112.4220
+Number Density                :         0.8895
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 71000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7100332 out of 7100332)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4967 (35102 out of 70668)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8132         4.8132         4.8132
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       111.5091
+Number Density                :         0.8968
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 72000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7200324 out of 7200324)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4967 (35599 out of 71676)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5186         4.5186         4.5186
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        92.2597
+Number Density                :         1.0839
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 73000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7300323 out of 7300323)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4971 (36128 out of 72677)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5388         4.5388         4.5388
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        93.5035
+Number Density                :         1.0695
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 74000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7400345 out of 7400345)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4970 (36609 out of 73655)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7084         4.7084         4.7084
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.3802
+Number Density                :         0.9580
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 75000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7500333 out of 7500333)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4970 (37110 out of 74667)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6267         4.6267         4.6267
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.0398
+Number Density                :         1.0097
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 76000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7600362 out of 7600362)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4965 (37557 out of 75638)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6181         4.6181         4.6181
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        98.4918
+Number Density                :         1.0153
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 77000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7700370 out of 7700370)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4966 (38058 out of 76630)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5195         4.5195         4.5195
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        92.3177
+Number Density                :         1.0832
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 78000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7800395 out of 7800395)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4968 (38552 out of 77605)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6310         4.6310         4.6310
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.3164
+Number Density                :         1.0069
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 79000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (7900344 out of 7900344)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (39045 out of 78656)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7245         4.7245         4.7245
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       105.4549
+Number Density                :         0.9483
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 80000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8000403 out of 8000403)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4964 (39514 out of 79597)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.9174         4.9174         4.9174
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       118.9046
+Number Density                :         0.8410
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 81000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8100338 out of 8100338)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4962 (40026 out of 80662)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.8561         4.8561         4.8561
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       114.5145
+Number Density                :         0.8733
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 82000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8200344 out of 8200344)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (40504 out of 81656)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7118         4.7118         4.7118
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.6065
+Number Density                :         0.9560
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 83000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8300259 out of 8300259)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4962 (41054 out of 82741)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6634         4.6634         4.6634
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.4171
+Number Density                :         0.9860
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 84000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8400241 out of 8400241)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (41545 out of 83759)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6833         4.6833         4.6833
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       102.7186
+Number Density                :         0.9735
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 85000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8500242 out of 8500242)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4958 (42026 out of 84758)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7151         4.7151         4.7151
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.8279
+Number Density                :         0.9539
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 86000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8600250 out of 8600250)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4956 (42501 out of 85750)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7391         4.7391         4.7391
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       106.4328
+Number Density                :         0.9396
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 87000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8700217 out of 8700217)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4957 (43021 out of 86783)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7837         4.7837         4.7837
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       109.4670
+Number Density                :         0.9135
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 88000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8800252 out of 8800252)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4959 (43513 out of 87748)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.3157         4.3157         4.3157
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        80.3817
+Number Density                :         1.2441
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 89000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (8900268 out of 8900268)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4958 (43993 out of 88732)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5169         4.5169         4.5169
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        92.1554
+Number Density                :         1.0851
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 90000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9000287 out of 9000287)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4958 (44482 out of 89713)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7726         4.7726         4.7726
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       108.7065
+Number Density                :         0.9199
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 91000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9100248 out of 9100248)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4959 (45005 out of 90752)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6066         4.6066         4.6066
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        97.7571
+Number Density                :         1.0229
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 92000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9200253 out of 9200253)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (45504 out of 91747)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6276         4.6276         4.6276
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        99.0998
+Number Density                :         1.0091
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 93000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9300238 out of 9300238)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4961 (46018 out of 92762)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6571         4.6571         4.6571
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.0065
+Number Density                :         0.9900
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 94000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9400226 out of 9400226)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4959 (46500 out of 93774)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6690         4.6690         4.6690
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       101.7820
+Number Density                :         0.9825
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 95000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9500263 out of 9500263)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4958 (46972 out of 94737)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.5674         4.5674         4.5674
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        95.2809
+Number Density                :         1.0495
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 96000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9600246 out of 9600246)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4954 (47439 out of 95754)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6517         4.6517         4.6517
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       100.6545
+Number Density                :         0.9935
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 97000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9700237 out of 9700237)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4954 (47937 out of 96763)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6025         4.6025         4.6025
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        97.4929
+Number Density                :         1.0257
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 98000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9800264 out of 9800264)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (48477 out of 97736)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.6068         4.6068         4.6068
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :        97.7662
+Number Density                :         1.0228
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 99000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (9900303 out of 9900303)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4960 (48953 out of 98697)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7232         4.7232         4.7232
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       105.3685
+Number Density                :         0.9491
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100000 out of 100000
+------------------------------------------------------------------------------
+Move Statitics for C
+Translation Move              Success Ratio : 1.0000 (10000302 out of 10000302)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4961 (49461 out of 99698)
+------------------------------------------------------------------------------
+Number of molecules of C      :  100
+Box Length                    :         4.7155         4.7155         4.7155
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       104.8530
+Number Density                :         0.9537
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+C-C                Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+C-C                Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+C-C                Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+C-C                Total                         :        0.000000E+00
+                   van der Waals                 :        0.000000E+00
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+

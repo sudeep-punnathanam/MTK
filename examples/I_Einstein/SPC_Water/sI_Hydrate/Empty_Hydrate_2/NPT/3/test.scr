@@ -1,0 +1,8 @@
+#PBS -N NPT_MONSON
+#PBS -o Test.o
+#PBS -e Test.e
+
+cd $PBS_O_WORKDIR
+
+~/mtk3.1/bin/simulate
+

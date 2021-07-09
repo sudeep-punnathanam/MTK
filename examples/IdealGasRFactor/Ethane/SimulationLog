@@ -1,0 +1,64 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            Ethane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         197.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  N          14.0       -0.482
+  N_com       0.0        0.964
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones   3.73  148.0   2.98
+CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0   3.0
+N             N            Lennard-Jones   3.31   36.0   2.6
+N_com         N_com        off
+CH4           CH3_sp3           Lorentz-Berthelot
+CH4           N                 Lorentz-Berthelot
+CH4           N_com             off
+CH3_sp3       N                 Lorentz-Berthelot
+CH3_sp3       N_com             off
+N             N_com             off
+        1000   1.0000000000000000     
+        2000   1.0000000000000000     
+        3000   1.0000000000000000     
+        4000   1.0000000000000000     
+        5000   1.0000000000000000     
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  N          14.0       -0.482
+  N_com       0.0        0.964
+
+/Users/sudeep/Projects/mtk_devel/Sudeep_Fresh/src/rosenbluth.f90:  262    Failed to allocate memory. STAT = 5014

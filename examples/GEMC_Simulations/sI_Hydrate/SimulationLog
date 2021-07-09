@@ -1,0 +1,1203 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ finished initializing starting config
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.211793E+08
+                   van der Waals(J/mol)          :        0.434628E+07
+                   Real Coulombic(J/mol)         :       -0.245079E+08
+                   Fourier Coulombic(J/mol)      :       -0.101764E+07
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.217577E+08
+                   van der Waals(J/mol)          :        0.376784E+07
+                   Real Coulombic(J/mol)         :       -0.245079E+08
+                   Fourier Coulombic(J/mol)      :       -0.101764E+07
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :       -0.220241E+05
+                   van der Waals(J/mol)          :       -0.220241E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Methane      Total(J/mol)                  :        0.600465E+06
+                   van der Waals(J/mol)          :        0.600465E+06
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.474071E+06
+                   van der Waals(J/mol)          :        0.334187E+08
+                   Real Coulombic(J/mol)         :       -0.329489E+08
+                   Fourier Coulombic(J/mol)      :        0.424294E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.773712E+07
+                   van der Waals(J/mol)          :        0.252075E+08
+                   Real Coulombic(J/mol)         :       -0.329489E+08
+                   Fourier Coulombic(J/mol)      :        0.424294E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :        0.169801E+06
+                   van der Waals(J/mol)          :        0.169801E+06
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Methane      Total(J/mol)                  :        0.804139E+07
+                   van der Waals(J/mol)          :        0.804139E+07
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.249940E+06
+                   van der Waals(J/mol)          :        0.249940E+06
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.000000E+00
+                   van der Waals(J/mol)          :        0.000000E+00
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :        0.249940E+06
+                   van der Waals(J/mol)          :        0.249940E+06
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Methane      Total(J/mol)                  :        0.000000E+00
+                   van der Waals(J/mol)          :        0.000000E+00
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.202332E+07
+                   van der Waals(J/mol)          :        0.202332E+07
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.000000E+00
+                   van der Waals(J/mol)          :        0.000000E+00
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :        0.202332E+07
+                   van der Waals(J/mol)          :        0.202332E+07
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Methane      Total(J/mol)                  :        0.000000E+00
+                   van der Waals(J/mol)          :        0.000000E+00
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4981 (672 out of 1349)
+Rotation Move                 Success Ratio : 0.4878 (641 out of 1314)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5421 (727 out of 1341)
+GibbsSwap Move                Success Ratio : 0.0008 (56 out of 67501)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5000 (10 out of 20)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   63
+Box Length (Ang)              :        23.7436        23.7436        23.7436
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13385.6
+Density (kg/m^3)              :        946.782
+Total Energy (J/mol)          :  -2.08935E+007  (    3.84111E+006  -2.37467E+007       -987920.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.6485 (1749 out of 2697)
+GibbsSwap Move                Success Ratio : 0.0009 (123 out of 135060)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.6364 (14 out of 22)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  109
+Box Length (Ang)              :        28.2318        28.2318        28.2318
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        22501.8
+Density (kg/m^3)              :        128.700
+Total Energy (J/mol)          :       -215523.  (        -215523.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5057 (670 out of 1325)
+Rotation Move                 Success Ratio : 0.4724 (641 out of 1357)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4961 (694 out of 1399)
+GibbsSwap Move                Success Ratio : 0.0006 (84 out of 135043)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5455 (12 out of 22)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   62
+Box Length (Ang)              :        23.6960        23.6960        23.6960
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13305.2
+Density (kg/m^3)              :        950.502
+Total Energy (J/mol)          :  -2.08675E+007  (    3.89729E+006  -2.37702E+007       -994570.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5037 (1377 out of 2734)
+GibbsSwap Move                Success Ratio : 0.0007 (184 out of 270017)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.6154 (8 out of 13)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  110
+Box Length (Ang)              :        29.1978        29.1978        29.1978
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        24891.5
+Density (kg/m^3)              :        117.412
+Total Energy (J/mol)          :       -211392.  (        -211392.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5110 (699 out of 1368)
+Rotation Move                 Success Ratio : 0.5007 (679 out of 1356)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5181 (716 out of 1382)
+GibbsSwap Move                Success Ratio : 0.0006 (125 out of 202343)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5000 (7 out of 14)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   60
+Box Length (Ang)              :        23.6786        23.6786        23.6786
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13276.0
+Density (kg/m^3)              :        948.596
+Total Energy (J/mol)          :  -2.09165E+007  (    4.01523E+006  -2.39324E+007       -999367.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4736 (1265 out of 2671)
+GibbsSwap Move                Success Ratio : 0.0007 (275 out of 405058)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5714 (16 out of 28)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  112
+Box Length (Ang)              :        30.9201        30.9201        30.9201
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        29561.2
+Density (kg/m^3)              :        100.662
+Total Energy (J/mol)          :       -192417.  (        -192417.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4911 (661 out of 1346)
+Rotation Move                 Success Ratio : 0.5088 (696 out of 1368)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5151 (666 out of 1293)
+GibbsSwap Move                Success Ratio : 0.0006 (161 out of 269989)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5556 (10 out of 18)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   60
+Box Length (Ang)              :        23.7582        23.7582        23.7582
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13410.3
+Density (kg/m^3)              :        939.095
+Total Energy (J/mol)          :  -2.08063E+007  (    3.85667E+006  -2.36667E+007       -996339.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5279 (1467 out of 2779)
+GibbsSwap Move                Success Ratio : 0.0007 (361 out of 539786)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4737 (9 out of 19)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  112
+Box Length (Ang)              :        30.5139        30.5139        30.5139
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        28411.4
+Density (kg/m^3)              :        104.735
+Total Energy (J/mol)          :       -215103.  (        -215103.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5335 (725 out of 1359)
+Rotation Move                 Success Ratio : 0.4959 (671 out of 1353)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4907 (657 out of 1339)
+GibbsSwap Move                Success Ratio : 0.0006 (194 out of 337359)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.2593 (7 out of 27)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   63
+Box Length (Ang)              :        23.7508        23.7508        23.7508
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13397.8
+Density (kg/m^3)              :        945.919
+Total Energy (J/mol)          :  -2.09290E+007  (    3.78210E+006  -2.37136E+007       -997526.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5354 (1452 out of 2712)
+GibbsSwap Move                Success Ratio : 0.0006 (425 out of 674808)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.6400 (16 out of 25)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  109
+Box Length (Ang)              :        29.9647        29.9647        29.9647
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        26904.9
+Density (kg/m^3)              :        107.638
+Total Energy (J/mol)          :       -192352.  (        -192352.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 6000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5104 (685 out of 1342)
+Rotation Move                 Success Ratio : 0.5044 (682 out of 1352)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5189 (700 out of 1349)
+GibbsSwap Move                Success Ratio : 0.0006 (232 out of 405025)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5417 (13 out of 24)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   63
+Box Length (Ang)              :        23.7457        23.7457        23.7457
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13389.2
+Density (kg/m^3)              :        946.526
+Total Energy (J/mol)          :  -2.08779E+007  (    3.72682E+006  -2.36243E+007       -980415.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 6000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4733 (1258 out of 2658)
+GibbsSwap Move                Success Ratio : 0.0006 (517 out of 809280)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5000 (8 out of 16)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  109
+Box Length (Ang)              :        28.9394        28.9394        28.9394
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        24236.4
+Density (kg/m^3)              :        119.489
+Total Energy (J/mol)          :       -227321.  (        -227321.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 7000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5252 (708 out of 1348)
+Rotation Move                 Success Ratio : 0.4763 (652 out of 1369)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5059 (683 out of 1350)
+GibbsSwap Move                Success Ratio : 0.0006 (264 out of 472461)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4211 (8 out of 19)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   62
+Box Length (Ang)              :        23.7516        23.7516        23.7516
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13399.2
+Density (kg/m^3)              :        943.840
+Total Energy (J/mol)          :  -2.07856E+007  (    3.69485E+006  -2.34908E+007       -989717.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 7000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5575 (1468 out of 2633)
+GibbsSwap Move                Success Ratio : 0.0006 (576 out of 944260)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5000 (10 out of 20)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  110
+Box Length (Ang)              :        29.5536        29.5536        29.5536
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        25812.5
+Density (kg/m^3)              :        113.222
+Total Energy (J/mol)          :       -190135.  (        -190135.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 8000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5221 (721 out of 1381)
+Rotation Move                 Success Ratio : 0.5000 (670 out of 1340)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5032 (697 out of 1385)
+GibbsSwap Move                Success Ratio : 0.0006 (305 out of 539946)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.2857 (6 out of 21)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   60
+Box Length (Ang)              :        23.6499        23.6499        23.6499
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13227.8
+Density (kg/m^3)              :        952.051
+Total Energy (J/mol)          :  -2.08156E+007  (    3.99238E+006  -2.38170E+007       -990970.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 8000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4876 (1338 out of 2744)
+GibbsSwap Move                Success Ratio : 0.0006 (667 out of 1079509)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4667 (7 out of 15)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  112
+Box Length (Ang)              :        29.5386        29.5386        29.5386
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        25773.2
+Density (kg/m^3)              :        115.457
+Total Energy (J/mol)          :       -183905.  (        -183905.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 9000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4928 (681 out of 1382)
+Rotation Move                 Success Ratio : 0.5037 (674 out of 1338)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5034 (671 out of 1333)
+GibbsSwap Move                Success Ratio : 0.0006 (345 out of 607243)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.3333 (5 out of 15)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   62
+Box Length (Ang)              :        23.7388        23.7388        23.7388
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13377.6
+Density (kg/m^3)              :        945.361
+Total Energy (J/mol)          :  -2.07494E+007  (    3.67221E+006  -2.34254E+007       -996197.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 9000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4505 (1219 out of 2706)
+GibbsSwap Move                Success Ratio : 0.0006 (733 out of 1214340)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4000 (6 out of 15)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  110
+Box Length (Ang)              :        26.5690        26.5690        26.5690
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        18755.3
+Density (kg/m^3)              :        155.825
+Total Energy (J/mol)          :       -286565.  (        -286565.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4634 (620 out of 1338)
+Rotation Move                 Success Ratio : 0.5071 (674 out of 1329)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5040 (699 out of 1387)
+GibbsSwap Move                Success Ratio : 0.0006 (405 out of 674936)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5000 (10 out of 20)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   59
+Box Length (Ang)              :        23.6911        23.6911        23.6911
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13297.0
+Density (kg/m^3)              :        945.095
+Total Energy (J/mol)          :  -2.07634E+007  (    3.84846E+006  -2.36138E+007       -998037.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4882 (1285 out of 2632)
+GibbsSwap Move                Success Ratio : 0.0006 (838 out of 1348844)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.2143 (3 out of 14)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  113
+Box Length (Ang)              :        28.1886        28.1886        28.1886
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        22398.6
+Density (kg/m^3)              :        134.038
+Total Energy (J/mol)          :       -239313.  (        -239313.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5032 (34022 out of 67612)
+Rotation Move                 Success Ratio : 0.4732 (31976 out of 67575)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4623 (31074 out of 67209)
+GibbsSwap Move                Success Ratio : 0.0006 (447 out of 742649)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4710 (479 out of 1017)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   59
+Box Length (Ang)              :        23.7731        23.7731        23.7731
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13435.6
+Density (kg/m^3)              :        935.349
+Total Energy (J/mol)          :  -2.07296E+007  (    3.78920E+006  -2.35268E+007       -991998.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5499 (74105 out of 134758)
+GibbsSwap Move                Success Ratio : 0.0006 (906 out of 1483960)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5080 (508 out of 1000)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  113
+Box Length (Ang)              :        28.9838        28.9838        28.9838
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        24348.3
+Density (kg/m^3)              :        123.305
+Total Energy (J/mol)          :       -223348.  (        -223348.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5046 (68215 out of 135176)
+Rotation Move                 Success Ratio : 0.4730 (64100 out of 135532)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4695 (63299 out of 134814)
+GibbsSwap Move                Success Ratio : 0.0006 (490 out of 810462)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4535 (917 out of 2022)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   61
+Box Length (Ang)              :        23.6558        23.6558        23.6558
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13237.8
+Density (kg/m^3)              :        953.340
+Total Energy (J/mol)          :  -2.09965E+007  (    4.11469E+006  -2.41148E+007       -996329.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5428 (146376 out of 269671)
+GibbsSwap Move                Success Ratio : 0.0006 (975 out of 1618084)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5072 (1024 out of 2019)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  111
+Box Length (Ang)              :        29.7052        29.7052        29.7052
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        26211.8
+Density (kg/m^3)              :        112.511
+Total Energy (J/mol)          :       -189773.  (        -189773.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5048 (102329 out of 202711)
+Rotation Move                 Success Ratio : 0.4705 (95586 out of 203137)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4683 (94784 out of 202416)
+GibbsSwap Move                Success Ratio : 0.0006 (526 out of 878100)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4437 (1376 out of 3101)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   64
+Box Length (Ang)              :        23.6655        23.6655        23.6655
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13254.0
+Density (kg/m^3)              :        958.187
+Total Energy (J/mol)          :  -2.09993E+007  (    4.01821E+006  -2.40171E+007  -1.00039E+006   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5451 (220574 out of 404629)
+GibbsSwap Move                Success Ratio : 0.0006 (1050 out of 1752689)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5102 (1529 out of 2997)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  108
+Box Length (Ang)              :        30.2222        30.2222        30.2222
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27604.5
+Density (kg/m^3)              :        103.947
+Total Energy (J/mol)          :       -173819.  (        -173819.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5051 (136765 out of 270757)
+Rotation Move                 Success Ratio : 0.4711 (127459 out of 270556)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4683 (126408 out of 269936)
+GibbsSwap Move                Success Ratio : 0.0006 (557 out of 945766)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4477 (1822 out of 4070)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   60
+Box Length (Ang)              :        23.6781        23.6781        23.6781
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13275.2
+Density (kg/m^3)              :        948.650
+Total Energy (J/mol)          :  -2.08813E+007  (    3.98660E+006  -2.38748E+007       -993115.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5394 (290963 out of 539395)
+GibbsSwap Move                Success Ratio : 0.0006 (1115 out of 1887323)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5041 (2005 out of 3977)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  112
+Box Length (Ang)              :        29.4544        29.4544        29.4544
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        25553.4
+Density (kg/m^3)              :        116.450
+Total Energy (J/mol)          :       -196892.  (        -196892.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5046 (170604 out of 338075)
+Rotation Move                 Success Ratio : 0.4708 (159065 out of 337850)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4680 (158201 out of 338031)
+GibbsSwap Move                Success Ratio : 0.0006 (602 out of 1013338)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4481 (2256 out of 5035)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   63
+Box Length (Ang)              :        23.6894        23.6894        23.6894
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13294.1
+Density (kg/m^3)              :        953.296
+Total Energy (J/mol)          :  -2.09595E+007  (    3.86891E+006  -2.38391E+007       -989401.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5371 (362042 out of 674020)
+GibbsSwap Move                Success Ratio : 0.0006 (1187 out of 2022478)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4999 (2476 out of 4953)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  109
+Box Length (Ang)              :        29.4120        29.4120        29.4120
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        25443.4
+Density (kg/m^3)              :        113.821
+Total Energy (J/mol)          :       -198929.  (        -198929.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 6000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5048 (204584 out of 405283)
+Rotation Move                 Success Ratio : 0.4715 (191238 out of 405600)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4677 (189616 out of 405407)
+GibbsSwap Move                Success Ratio : 0.0006 (634 out of 1080775)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4501 (2737 out of 6081)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   63
+Box Length (Ang)              :        23.6797        23.6797        23.6797
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13277.9
+Density (kg/m^3)              :        954.461
+Total Energy (J/mol)          :  -2.08801E+007  (    3.94970E+006  -2.38366E+007       -993215.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 6000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5390 (436240 out of 809282)
+GibbsSwap Move                Success Ratio : 0.0006 (1253 out of 2157422)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5029 (2982 out of 5930)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  109
+Box Length (Ang)              :        29.4151        29.4151        29.4151
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        25451.5
+Density (kg/m^3)              :        113.784
+Total Energy (J/mol)          :       -219430.  (        -219430.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 7000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5053 (239081 out of 473174)
+Rotation Move                 Success Ratio : 0.4717 (223049 out of 472908)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4676 (220775 out of 472137)
+GibbsSwap Move                Success Ratio : 0.0006 (677 out of 1148672)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4459 (3148 out of 7060)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   64
+Box Length (Ang)              :        23.7298        23.7298        23.7298
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13362.3
+Density (kg/m^3)              :        950.420
+Total Energy (J/mol)          :  -2.08746E+007  (    3.71725E+006  -2.35878E+007  -1.00405E+006   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 7000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5410 (510942 out of 944381)
+GibbsSwap Move                Success Ratio : 0.0006 (1341 out of 2292499)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5040 (3502 out of 6949)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  108
+Box Length (Ang)              :        29.2349        29.2349        29.2349
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        24986.4
+Density (kg/m^3)              :        114.839
+Total Energy (J/mol)          :       -213322.  (        -213322.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 8000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5052 (273258 out of 540898)
+Rotation Move                 Success Ratio : 0.4715 (254875 out of 540515)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4673 (252192 out of 539715)
+GibbsSwap Move                Success Ratio : 0.0006 (702 out of 1216031)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4456 (3595 out of 8067)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   61
+Box Length (Ang)              :        23.7066        23.7066        23.7066
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13323.1
+Density (kg/m^3)              :        947.233
+Total Energy (J/mol)          :  -2.07437E+007  (    3.94925E+006  -2.36963E+007       -996600.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 8000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5411 (584040 out of 1079370)
+GibbsSwap Move                Success Ratio : 0.0006 (1419 out of 2427191)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5056 (4041 out of 7993)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  111
+Box Length (Ang)              :        30.3776        30.3776        30.3776
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        28032.3
+Density (kg/m^3)              :        105.204
+Total Energy (J/mol)          :       -185765.  (        -185765.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 9000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5051 (307075 out of 607974)
+Rotation Move                 Success Ratio : 0.4713 (286607 out of 608123)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4674 (283867 out of 607331)
+GibbsSwap Move                Success Ratio : 0.0006 (737 out of 1283904)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4461 (4056 out of 9093)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   63
+Box Length (Ang)              :        23.6546        23.6546        23.6546
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13235.6
+Density (kg/m^3)              :        957.508
+Total Energy (J/mol)          :  -2.09511E+007  (    4.03390E+006  -2.39879E+007       -997103.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 9000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5440 (660439 out of 1214052)
+GibbsSwap Move                Success Ratio : 0.0006 (1486 out of 2562330)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5085 (4563 out of 8973)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  109
+Box Length (Ang)              :        28.4495        28.4495        28.4495
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        23026.2
+Density (kg/m^3)              :        125.769
+Total Energy (J/mol)          :       -213617.  (        -213617.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5050 (341113 out of 675438)
+Rotation Move                 Success Ratio : 0.4712 (318231 out of 675296)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4672 (315332 out of 674911)
+GibbsSwap Move                Success Ratio : 0.0006 (769 out of 1351392)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4464 (4523 out of 10133)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   57
+Box Length (Ang)              :        23.7464        23.7464        23.7464
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13390.4
+Density (kg/m^3)              :        934.537
+Total Energy (J/mol)          :  -2.08124E+007  (    3.78823E+006  -2.36000E+007  -1.00063E+006   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5434 (733170 out of 1349129)
+GibbsSwap Move                Success Ratio : 0.0006 (1544 out of 2697498)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5069 (5060 out of 9983)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  115
+Box Length (Ang)              :        31.4378        31.4378        31.4378
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        31071.2
+Density (kg/m^3)              :        98.3352
+Total Energy (J/mol)          :       -181045.  (        -181045.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 11000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5051 (375284 out of 743039)
+Rotation Move                 Success Ratio : 0.4715 (350234 out of 742742)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4673 (346765 out of 742136)
+GibbsSwap Move                Success Ratio : 0.0006 (820 out of 1418908)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4445 (4944 out of 11123)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   59
+Box Length (Ang)              :        23.7668        23.7668        23.7668
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13424.9
+Density (kg/m^3)              :        936.095
+Total Energy (J/mol)          :  -2.05903E+007  (    3.63297E+006  -2.32276E+007       -995672.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 11000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5420 (804433 out of 1484169)
+GibbsSwap Move                Success Ratio : 0.0006 (1617 out of 2832660)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5040 (5545 out of 11003)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  113
+Box Length (Ang)              :        28.5185        28.5185        28.5185
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        23194.1
+Density (kg/m^3)              :        129.440
+Total Energy (J/mol)          :       -260877.  (        -260877.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 12000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5050 (409535 out of 810933)
+Rotation Move                 Success Ratio : 0.4716 (382211 out of 810380)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4674 (378332 out of 809486)
+GibbsSwap Move                Success Ratio : 0.0006 (860 out of 1485918)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4431 (5372 out of 12124)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   62
+Box Length (Ang)              :        23.6527        23.6527        23.6527
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13232.4
+Density (kg/m^3)              :        955.732
+Total Energy (J/mol)          :  -2.09331E+007  (    3.99123E+006  -2.39197E+007  -1.00459E+006   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 12000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5413 (876360 out of 1619034)
+GibbsSwap Move                Success Ratio : 0.0006 (1686 out of 2967889)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5032 (6046 out of 12016)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  110
+Box Length (Ang)              :        28.0587        28.0587        28.0587
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        22090.5
+Density (kg/m^3)              :        132.299
+Total Energy (J/mol)          :       -245979.  (        -245979.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 13000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5052 (443572 out of 878024)
+Rotation Move                 Success Ratio : 0.4716 (414021 out of 877956)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4675 (410260 out of 877528)
+GibbsSwap Move                Success Ratio : 0.0006 (891 out of 1553600)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4432 (5810 out of 13110)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   61
+Box Length (Ang)              :        23.6913        23.6913        23.6913
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13297.3
+Density (kg/m^3)              :        949.068
+Total Energy (J/mol)          :  -2.08562E+007  (    4.03356E+006  -2.38962E+007       -993580.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 13000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5432 (952499 out of 1753536)
+GibbsSwap Move                Success Ratio : 0.0006 (1772 out of 3103019)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5057 (6577 out of 13007)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  111
+Box Length (Ang)              :        27.1345        27.1345        27.1345
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        19978.7
+Density (kg/m^3)              :        147.613
+Total Energy (J/mol)          :       -278165.  (        -278165.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 14000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5052 (477563 out of 945319)
+Rotation Move                 Success Ratio : 0.4715 (445691 out of 945302)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4675 (441875 out of 945240)
+GibbsSwap Move                Success Ratio : 0.0006 (926 out of 1621035)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4430 (6254 out of 14116)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   64
+Box Length (Ang)              :        23.7656        23.7656        23.7656
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13423.0
+Density (kg/m^3)              :        946.124
+Total Energy (J/mol)          :  -2.08272E+007  (    3.65685E+006  -2.34863E+007       -997734.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 14000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5429 (1025296 out of 1888670)
+GibbsSwap Move                Success Ratio : 0.0006 (1850 out of 3238111)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5067 (7087 out of 13987)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  108
+Box Length (Ang)              :        29.5280        29.5280        29.5280
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        25745.5
+Density (kg/m^3)              :        111.453
+Total Energy (J/mol)          :       -207998.  (        -207998.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 15000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5052 (511803 out of 1013107)
+Rotation Move                 Success Ratio : 0.4715 (477488 out of 1012759)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4674 (473477 out of 1013064)
+GibbsSwap Move                Success Ratio : 0.0006 (961 out of 1688403)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4455 (6732 out of 15112)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   64
+Box Length (Ang)              :        23.7566        23.7566        23.7566
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13407.6
+Density (kg/m^3)              :        947.206
+Total Energy (J/mol)          :  -2.07599E+007  (    3.70185E+006  -2.34693E+007       -992395.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 15000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5428 (1098525 out of 2023805)
+GibbsSwap Move                Success Ratio : 0.0006 (1931 out of 3372528)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5077 (7616 out of 15002)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  108
+Box Length (Ang)              :        26.8687        26.8687        26.8687
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        19397.2
+Density (kg/m^3)              :        147.929
+Total Energy (J/mol)          :       -254731.  (        -254731.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 16000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5050 (545736 out of 1080663)
+Rotation Move                 Success Ratio : 0.4716 (509366 out of 1080138)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4677 (505605 out of 1081009)
+GibbsSwap Move                Success Ratio : 0.0006 (994 out of 1755918)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4453 (7188 out of 16143)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   61
+Box Length (Ang)              :        23.6843        23.6843        23.6843
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13285.6
+Density (kg/m^3)              :        949.908
+Total Energy (J/mol)          :  -2.09848E+007  (    3.94296E+006  -2.39340E+007       -993795.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 16000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5428 (1171720 out of 2158632)
+GibbsSwap Move                Success Ratio : 0.0006 (1997 out of 3507268)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5077 (8127 out of 16009)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  111
+Box Length (Ang)              :        27.8015        27.8015        27.8015
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        21488.5
+Density (kg/m^3)              :        137.241
+Total Energy (J/mol)          :       -246535.  (        -246535.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 17000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5049 (579898 out of 1148463)
+Rotation Move                 Success Ratio : 0.4717 (541368 out of 1147714)
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.4677 (537041 out of 1148291)
+GibbsSwap Move                Success Ratio : 0.0006 (1014 out of 1823336)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.4453 (7641 out of 17159)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Number of molecules of Methane:   62
+Box Length (Ang)              :        23.6146        23.6146        23.6146
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13168.6
+Density (kg/m^3)              :        960.365
+Total Energy (J/mol)          :  -2.09863E+007  (    4.23778E+006  -2.42305E+007       -993624.   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 17000 out of 40000
+------------------------------------------------------------------------------
+Move Statitics for Water
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.5431 (1245376 out of 2293029)
+GibbsSwap Move                Success Ratio : 0.0006 (2050 out of 3642746)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.5087 (8669 out of 17042)
+------------------------------------------------------------------------------
+Number of molecules of Water  :    0
+Number of molecules of Methane:  110
+Box Length (Ang)              :        30.5352        30.5352        30.5352
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        28470.9
+Density (kg/m^3)              :        102.650
+Total Energy (J/mol)          :       -184607.  (        -184607.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 

@@ -1,0 +1,30 @@
+Simulation Name                    TestSimulation
+Forcefield Directory               TRaPPE
+
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        4000
+Display Frequency                  1000
+Restart Frequency                  10
+Storage Frequency                  10 
+Random Number Seed                 4250
+Potential cutoff distance          14.0
+
+Simulation Cell   Shape                  Cubic
+                  Density                5.6  
+                  Boundary conditions    1  1  1
+
+Temperature  1  197
+
+Cell List          14.0
+
+Species   Name                            Ethane
+          Initialization Method           Random
+          Initial number of molecules     256
+          Translation weight              1
+          Maximum displacement            1.0
+          Rotation weight                 1
+
+Calculate Pressure           1    1000
+Calculate Energy             1    1000
+

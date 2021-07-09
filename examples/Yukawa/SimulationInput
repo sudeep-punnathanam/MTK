@@ -1,0 +1,50 @@
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 Yukawa
+Potential cutoff distance            3.9999
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        6000
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10 
+Random Number Seed                 343
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            6.2472 6.2472  6.2472
+                  Box Angles             90.0  90.0  90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            A
+          Initialization Method           File FCC.config
+          Translation weight              1
+          Maximum displacement            0.1
+
+Species   Name                            B
+          Initialization Method           File FCC.config
+          Translation weight              1
+          Maximum displacement            0.1
+
+#====== Moves involving more than one species  =======
+Molecule Swap Weight   A     B    1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1          1.0
+#  FugacityRatio    A    B             1              1          10.0
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate    FugacityRatio A B          100                  20
+

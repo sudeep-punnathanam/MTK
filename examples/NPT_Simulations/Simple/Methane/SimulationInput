@@ -1,0 +1,42 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          9.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100 
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Cubic
+                  Density                1.6
+                  Boundary conditions    1  1  1
+
+Species   Name                            Methane
+          Initialization Method           Random
+          Initial number of molecules     100
+          Translation weight              1
+          Maximum displacement            0.1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1         111.0
+   Pressure                            1              1         89.0e3
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Density                   1                    2500
+ Calculate     Energy                    1                    2500
+ Calculate     Fugacity   Methane        1                    2500
+

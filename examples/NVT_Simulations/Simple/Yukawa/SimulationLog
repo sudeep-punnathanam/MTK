@@ -1,0 +1,1200 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :             11.3704
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             11.3704
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :              7.2402
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              7.2402
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+B-B                Total               :              7.2402
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              7.2402
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-B                Total               :             -3.1100
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             -3.1100
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :             20.6169
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.6169
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :             13.2825
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             13.2825
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+B-B                Total               :             13.2825
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             13.2825
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-B                Total               :             -5.9480
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             -5.9480
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.6672 (1748 out of 2620)
+Move Statitics for B
+Translation Move              Success Ratio : 0.6688 (1672 out of 2500)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        13.4861  (    0.00000E+000        13.4861   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 200 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5754 (1495 out of 2598)
+Move Statitics for B
+Translation Move              Success Ratio : 0.6015 (1517 out of 2522)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        11.2122  (    0.00000E+000        11.2122   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 300 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5076 (1333 out of 2626)
+Move Statitics for B
+Translation Move              Success Ratio : 0.5289 (1319 out of 2494)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        10.1891  (    0.00000E+000        10.1891   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 400 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4901 (1281 out of 2614)
+Move Statitics for B
+Translation Move              Success Ratio : 0.5415 (1357 out of 2506)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        8.00336  (    0.00000E+000        8.00336   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 500 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4805 (1220 out of 2539)
+Move Statitics for B
+Translation Move              Success Ratio : 0.5262 (1358 out of 2581)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        6.91909  (    0.00000E+000        6.91909   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 600 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4932 (1262 out of 2559)
+Move Statitics for B
+Translation Move              Success Ratio : 0.5369 (1375 out of 2561)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        6.06139  (    0.00000E+000        6.06139   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 700 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5109 (1310 out of 2564)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4844 (1238 out of 2556)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        3.71679  (    0.00000E+000        3.71679   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 800 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5704 (1450 out of 2542)
+Move Statitics for B
+Translation Move              Success Ratio : 0.5008 (1291 out of 2578)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        3.45551  (    0.00000E+000        3.45551   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 900 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4877 (1270 out of 2604)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4972 (1251 out of 2516)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        1.92301  (    0.00000E+000        1.92301   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5149 (1260 out of 2447)
+Move Statitics for B
+Translation Move              Success Ratio : 0.5088 (1360 out of 2673)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        1.49511  (    0.00000E+000        1.49511   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5125 (6542 out of 12766)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4941 (6341 out of 12834)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.321496  (    0.00000E+000       0.321496   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 200 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5112 (13076 out of 25577)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4726 (12109 out of 25623)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        1.13522  (    0.00000E+000        1.13522   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 300 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5072 (19413 out of 38275)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4776 (18399 out of 38525)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.145736  (    0.00000E+000       0.145736   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 400 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5057 (25774 out of 50962)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4831 (24848 out of 51438)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        1.20425  (    0.00000E+000        1.20425   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 500 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5068 (32349 out of 63832)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4847 (31100 out of 64168)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.264437  (    0.00000E+000       0.264437   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 600 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5085 (38967 out of 76638)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4830 (37171 out of 76962)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.875686  (    0.00000E+000      -0.875686   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 700 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5074 (45384 out of 89453)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4820 (43258 out of 89747)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.326089  (    0.00000E+000       0.326089   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 800 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5065 (51858 out of 102380)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4835 (49523 out of 102420)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :        1.22431  (    0.00000E+000        1.22431   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 900 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5090 (58618 out of 115158)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4826 (55620 out of 115242)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.106629  (    0.00000E+000      -0.106629   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5094 (65134 out of 127873)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4824 (61811 out of 128127)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.572148  (    0.00000E+000      -0.572148   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1100 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5092 (71678 out of 140758)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4810 (67750 out of 140842)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.469700  (    0.00000E+000       0.469700   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1200 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5074 (77917 out of 153562)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4802 (73778 out of 153638)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.610060  (    0.00000E+000      -0.610060   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1300 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5061 (84071 out of 166128)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4796 (79932 out of 166672)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :  -8.42322E-004  (    0.00000E+000  -8.42322E-004   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1400 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5075 (90777 out of 178883)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4795 (86081 out of 179517)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.814581  (    0.00000E+000      -0.814581   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1500 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5081 (97459 out of 191799)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4794 (92147 out of 192201)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.36397  (    0.00000E+000       -1.36397   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1600 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5080 (103930 out of 204570)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4795 (98315 out of 205030)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.736661  (    0.00000E+000      -0.736661   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1700 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5087 (110554 out of 217318)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4789 (104351 out of 217882)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.99783  (    0.00000E+000       -1.99783   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1800 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5082 (116917 out of 230064)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4783 (110370 out of 230736)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.583007  (    0.00000E+000      -0.583007   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1900 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5087 (123558 out of 242895)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4781 (116428 out of 243505)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.962576  (    0.00000E+000      -0.962576   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5083 (129912 out of 255582)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4785 (122692 out of 256418)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.51074  (    0.00000E+000       -1.51074   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2100 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5084 (136446 out of 268359)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4793 (129036 out of 269241)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.274072  (    0.00000E+000      -0.274072   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2200 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5086 (142961 out of 281069)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4791 (135175 out of 282131)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.17438  (    0.00000E+000       -1.17438   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2300 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5086 (149495 out of 293927)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4791 (141271 out of 294873)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.17456  (    0.00000E+000       -1.17456   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2400 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5085 (155933 out of 306655)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4791 (147448 out of 307745)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.860079  (    0.00000E+000      -0.860079   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2500 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5083 (162378 out of 319478)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4790 (153515 out of 320522)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.201671  (    0.00000E+000      -0.201671   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2600 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5087 (168995 out of 332236)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4788 (159623 out of 333364)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :  -6.32604E-002  (    0.00000E+000  -6.32604E-002   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2700 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5088 (175540 out of 345010)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4781 (165508 out of 346190)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.69938  (    0.00000E+000       -1.69938   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2800 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5089 (181987 out of 357603)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4776 (171554 out of 359197)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.228399  (    0.00000E+000       0.228399   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2900 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5090 (188470 out of 370299)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4777 (177739 out of 372101)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.23546  (    0.00000E+000       -1.23546   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5088 (194947 out of 383138)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4775 (183775 out of 384862)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.25538  (    0.00000E+000       -1.25538   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3100 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5090 (201448 out of 395804)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4775 (189964 out of 397796)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.15000  (    0.00000E+000       -1.15000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3200 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5087 (207954 out of 408785)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4774 (195922 out of 410415)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.68090  (    0.00000E+000       -1.68090   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3300 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5086 (214481 out of 421702)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4773 (201931 out of 423098)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.04853  (    0.00000E+000       -1.04853   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3400 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5085 (220924 out of 434466)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4771 (207987 out of 435934)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.856640  (    0.00000E+000      -0.856640   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3500 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5084 (227380 out of 447217)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4772 (214167 out of 448783)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.954101  (    0.00000E+000      -0.954101   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3600 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5085 (233925 out of 460007)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4775 (220432 out of 461593)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.74869  (    0.00000E+000       -1.74869   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3700 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5085 (240463 out of 472852)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4777 (226610 out of 474348)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.743264  (    0.00000E+000      -0.743264   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3800 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5083 (246900 out of 485708)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4777 (232680 out of 487092)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       0.288311  (    0.00000E+000       0.288311   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3900 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5084 (253452 out of 498547)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4780 (238943 out of 499853)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.354010  (    0.00000E+000      -0.354010   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5087 (260145 out of 511379)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4782 (245139 out of 512621)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.42256  (    0.00000E+000       -1.42256   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4100 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5089 (266676 out of 523979)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4780 (251224 out of 525621)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.58216  (    0.00000E+000       -1.58216   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4200 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5089 (273190 out of 536776)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4780 (257368 out of 538424)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.47246  (    0.00000E+000       -1.47246   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4300 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5090 (279688 out of 549522)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4780 (263532 out of 551278)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.33594  (    0.00000E+000       -1.33594   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4400 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5089 (286214 out of 562391)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4780 (269610 out of 564009)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.89529  (    0.00000E+000       -1.89529   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4500 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5089 (292717 out of 575227)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4781 (275758 out of 576773)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.58740  (    0.00000E+000       -1.58740   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4600 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5086 (299050 out of 587980)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4780 (281835 out of 589620)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.02348  (    0.00000E+000       -1.02348   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4700 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5086 (305509 out of 600682)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4779 (287920 out of 602518)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.615292  (    0.00000E+000      -0.615292   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4800 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5088 (312137 out of 613449)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4778 (294030 out of 615351)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.16102  (    0.00000E+000       -1.16102   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4900 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5090 (318801 out of 626280)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4777 (300042 out of 628120)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :      -0.159045  (    0.00000E+000      -0.159045   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5092 (325426 out of 639102)
+Move Statitics for B
+Translation Move              Success Ratio : 0.4778 (306236 out of 640898)
+------------------------------------------------------------------------------
+Number of molecules of A      :  128
+Number of molecules of B      :  128
+Box Length                    :         8.0000         8.0000         8.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       512.0000
+Number Density                :         0.5000
+Total Energy                  :       -1.22226  (    0.00000E+000       -1.22226   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :             -1.2223
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             -1.2223
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :              5.9266
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              5.9266
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+B-B                Total               :              5.3935
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              5.3935
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-B                Total               :            -12.5423
+                   van der Waals       :              0.0000
+                   Real Coulombic      :            -12.5423
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total               :             -1.6806
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             -1.6806
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :              9.8742
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              9.8742
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+B-B                Total               :              9.1781
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              9.1781
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-B                Total               :            -20.7329
+                   van der Waals       :              0.0000
+                   Real Coulombic      :            -20.7329
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :             -1.2223
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             -1.2223
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :              5.9266
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              5.9266
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+B-B                Total               :              5.3935
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              5.3935
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-B                Total               :            -12.5423
+                   van der Waals       :              0.0000
+                   Real Coulombic      :            -12.5423
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total               :             -1.6806
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             -1.6806
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :              9.8742
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              9.8742
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+B-B                Total               :              9.1781
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              9.1781
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-B                Total               :            -20.7329
+                   van der Waals       :              0.0000
+                   Real Coulombic      :            -20.7329
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 

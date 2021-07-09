@@ -1,0 +1,39 @@
+Simulation Name                    Ethane In FAU
+Forcefield Directory               Dubbeldam
+
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        10000
+Display Frequency                  100
+Restart Frequency                  10
+Storage Frequency                  10 
+Random Number Seed                 243
+Potential cutoff distance          12.0
+
+Simulation Cell   Shape                  Box
+                  Box Lengths            25.099 25.099 25.099
+                  Box Angles             90.0   90.0   90.0
+                  Boundary conditions    1  1  1
+
+Temperature  1  330.0
+
+Species   Name                            Ethane
+          Initialization Method           Random
+          Initial number of molecules     0 
+          Translation weight              1
+          Maximum displacement            0.1
+          Rotation weight                 1
+          Insertion weight                1
+          Fugacity                        1    1.0e5
+
+Species   Name                            Sodium
+          Initialization Method           Random
+          Initial number of molecules     86
+          Translation weight              1
+          Maximum displacement            0.1
+
+Species   Name                            FAU_86
+          Initialization Method           Molecule
+
+Calculate Number   Ethane          1    5000
+

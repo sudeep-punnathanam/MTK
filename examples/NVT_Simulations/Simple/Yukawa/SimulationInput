@@ -1,0 +1,51 @@
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 Yukawa
+Potential cutoff distance            4.0
+Coulomb Evaluation MIN_IMAGE
+Coulomb screening  3.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        5000
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            8.0  8.0  8.0
+                  Box Angles             90.0  90.0  90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            A
+          Initialization Method           File FCC.config
+          Translation weight              1
+          Maximum displacement            0.1
+
+Species   Name                            B
+          Initialization Method           File FCC.config
+          Translation weight              1
+          Maximum displacement            0.1
+
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1          1.0
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Pressure                  1                    1000
+ Calculate     WPressure                 1                    1000
+ Calculate     Energy                    1                    1000
+

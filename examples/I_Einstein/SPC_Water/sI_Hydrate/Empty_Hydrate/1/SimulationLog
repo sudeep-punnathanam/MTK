@@ -1,0 +1,732 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4767 (1773 out of 3719)
+Rotation Move                 Success Ratio : 0.0612 (223 out of 3641)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.82382E+007  (    5.46210E+006  -2.28503E+007       -850025.   8.78809E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5041 (9249 out of 18346)
+Rotation Move                 Success Ratio : 0.0681 (1257 out of 18454)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.79555E+007  (    5.23801E+006  -2.23412E+007       -852274.   1.38148E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 200 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5072 (18637 out of 36744)
+Rotation Move                 Success Ratio : 0.0701 (2584 out of 36856)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.78516E+007  (    5.00486E+006  -2.20100E+007       -846485.   1.76972E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 300 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5082 (28080 out of 55250)
+Rotation Move                 Success Ratio : 0.0717 (3957 out of 55150)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.75241E+007  (    4.99495E+006  -2.16830E+007       -836039.   2.19438E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 400 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5141 (37889 out of 73706)
+Rotation Move                 Success Ratio : 0.0717 (5268 out of 73494)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.75541E+007  (    4.81232E+006  -2.15295E+007       -836890.   2.51400E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 500 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5163 (47557 out of 92104)
+Rotation Move                 Success Ratio : 0.0722 (6634 out of 91896)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.75418E+007  (    4.68118E+006  -2.13774E+007       -845644.   2.60231E+007 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.175418E+08
+                   van der Waals(J/mol)          :        0.468118E+07
+                   Real Coulombic(J/mol)         :       -0.213774E+08
+                   Fourier Coulombic(J/mol)      :       -0.845644E+06
+                   Einstein(J/mol)               :        0.260231E+08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.175418E+08
+                   van der Waals(J/mol)          :        0.468118E+07
+                   Real Coulombic(J/mol)         :       -0.213774E+08
+                   Fourier Coulombic(J/mol)      :       -0.845644E+06
+                   Einstein(J/mol)               :        0.260231E+08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.175418E+08
+                   van der Waals(J/mol)          :        0.468118E+07
+                   Real Coulombic(J/mol)         :       -0.213774E+08
+                   Fourier Coulombic(J/mol)      :       -0.845644E+06
+                   Einstein(J/mol)               :        0.260231E+08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.175418E+08
+                   van der Waals(J/mol)          :        0.468118E+07
+                   Real Coulombic(J/mol)         :       -0.213774E+08
+                   Fourier Coulombic(J/mol)      :       -0.845644E+06
+                   Einstein(J/mol)               :        0.260231E+08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4319 (1588 out of 3677)
+Rotation Move                 Success Ratio : 0.0565 (208 out of 3683)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.81864E+007  (    5.96632E+006  -2.33092E+007       -843441.   1.66824E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4423 (8150 out of 18426)
+Rotation Move                 Success Ratio : 0.0717 (1318 out of 18374)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.77997E+007  (    5.93464E+006  -2.28887E+007       -845606.   2.02405E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 200 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4385 (16096 out of 36709)
+Rotation Move                 Success Ratio : 0.0713 (2631 out of 36891)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.74028E+007  (    5.94828E+006  -2.25191E+007       -831917.   2.14772E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 300 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4405 (24210 out of 54956)
+Rotation Move                 Success Ratio : 0.0706 (3913 out of 55444)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.72127E+007  (    5.92696E+006  -2.23152E+007       -824468.   2.13922E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 400 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4423 (32491 out of 73451)
+Rotation Move                 Success Ratio : 0.0710 (5235 out of 73749)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.71915E+007  (    5.92871E+006  -2.22968E+007       -823441.   2.17479E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 500 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4436 (40678 out of 91702)
+Rotation Move                 Success Ratio : 0.0705 (6507 out of 92298)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.71384E+007  (    5.97741E+006  -2.23101E+007       -805707.   2.26245E+006 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.171384E+08
+                   van der Waals(J/mol)          :        0.597741E+07
+                   Real Coulombic(J/mol)         :       -0.223101E+08
+                   Fourier Coulombic(J/mol)      :       -0.805707E+06
+                   Einstein(J/mol)               :        0.226245E+07
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.171384E+08
+                   van der Waals(J/mol)          :        0.597741E+07
+                   Real Coulombic(J/mol)         :       -0.223101E+08
+                   Fourier Coulombic(J/mol)      :       -0.805707E+06
+                   Einstein(J/mol)               :        0.226245E+07
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.171384E+08
+                   van der Waals(J/mol)          :        0.597741E+07
+                   Real Coulombic(J/mol)         :       -0.223101E+08
+                   Fourier Coulombic(J/mol)      :       -0.805707E+06
+                   Einstein(J/mol)               :        0.226245E+07
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.171384E+08
+                   van der Waals(J/mol)          :        0.597741E+07
+                   Real Coulombic(J/mol)         :       -0.223101E+08
+                   Fourier Coulombic(J/mol)      :       -0.805707E+06
+                   Einstein(J/mol)               :        0.226245E+07
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5190 (1885 out of 3632)
+Rotation Move                 Success Ratio : 0.1102 (411 out of 3728)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.79392E+007  (    5.66121E+006  -2.27546E+007       -845734.   9.26090E+006 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5094 (9370 out of 18394)
+Rotation Move                 Success Ratio : 0.1196 (2202 out of 18406)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.78171E+007  (    5.33039E+006  -2.22981E+007       -849326.   1.37049E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 200 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5151 (18952 out of 36795)
+Rotation Move                 Success Ratio : 0.1186 (4366 out of 36805)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.77248E+007  (    5.06272E+006  -2.19418E+007       -845675.   1.78003E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 300 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5196 (28726 out of 55290)
+Rotation Move                 Success Ratio : 0.1198 (6604 out of 55110)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.76931E+007  (    4.88550E+006  -2.17355E+007       -843042.   2.10167E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 400 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5219 (38355 out of 73492)
+Rotation Move                 Success Ratio : 0.1215 (8955 out of 73708)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.76768E+007  (    4.96635E+006  -2.17927E+007       -850421.   2.15582E+007 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 500 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5237 (48101 out of 91853)
+Rotation Move                 Success Ratio : 0.1231 (11343 out of 92147)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.76631E+007  (    4.71820E+006  -2.15378E+007       -843538.   2.48244E+007 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.176631E+08
+                   van der Waals(J/mol)          :        0.471820E+07
+                   Real Coulombic(J/mol)         :       -0.215378E+08
+                   Fourier Coulombic(J/mol)      :       -0.843538E+06
+                   Einstein(J/mol)               :        0.248244E+08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.176631E+08
+                   van der Waals(J/mol)          :        0.471820E+07
+                   Real Coulombic(J/mol)         :       -0.215378E+08
+                   Fourier Coulombic(J/mol)      :       -0.843538E+06
+                   Einstein(J/mol)               :        0.248244E+08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.176631E+08
+                   van der Waals(J/mol)          :        0.471820E+07
+                   Real Coulombic(J/mol)         :       -0.215378E+08
+                   Fourier Coulombic(J/mol)      :       -0.843538E+06
+                   Einstein(J/mol)               :        0.248244E+08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.176631E+08
+                   van der Waals(J/mol)          :        0.471820E+07
+                   Real Coulombic(J/mol)         :       -0.215378E+08
+                   Fourier Coulombic(J/mol)      :       -0.843538E+06
+                   Einstein(J/mol)               :        0.248244E+08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 2 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5106 (1896 out of 3713)
+Rotation Move                 Success Ratio : 0.1508 (550 out of 3647)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.81462E+007  (    5.56462E+006  -2.28638E+007       -847081.   8.72910E+006 )
+==============================================================================
+
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 100 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4901 (9001 out of 18366)
+Rotation Move                 Success Ratio : 0.1566 (2887 out of 18434)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.79173E+007  (    5.23714E+006  -2.23010E+007       -853452.   1.29372E+007 )
+==============================================================================
+
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 200 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4930 (18023 out of 36558)
+Rotation Move                 Success Ratio : 0.1586 (5875 out of 37042)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.77663E+007  (    5.16917E+006  -2.20869E+007       -848600.   1.55432E+007 )
+==============================================================================
+
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 300 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4939 (27173 out of 55016)
+Rotation Move                 Success Ratio : 0.1573 (8713 out of 55384)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.77672E+007  (    5.13411E+006  -2.20548E+007       -846539.   1.59301E+007 )
+==============================================================================
+
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 400 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4942 (36293 out of 73440)
+Rotation Move                 Success Ratio : 0.1579 (11646 out of 73760)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.77666E+007  (    5.04262E+006  -2.19597E+007       -849590.   1.78780E+007 )
+==============================================================================
+
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 500 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4951 (45404 out of 91701)
+Rotation Move                 Success Ratio : 0.1576 (14543 out of 92299)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.78668E+007  (    5.06822E+006  -2.20870E+007       -848010.   1.69339E+007 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.178668E+08
+                   van der Waals(J/mol)          :        0.506822E+07
+                   Real Coulombic(J/mol)         :       -0.220870E+08
+                   Fourier Coulombic(J/mol)      :       -0.848010E+06
+                   Einstein(J/mol)               :        0.169339E+08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.178668E+08
+                   van der Waals(J/mol)          :        0.506822E+07
+                   Real Coulombic(J/mol)         :       -0.220870E+08
+                   Fourier Coulombic(J/mol)      :       -0.848010E+06
+                   Einstein(J/mol)               :        0.169339E+08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.178668E+08
+                   van der Waals(J/mol)          :        0.506822E+07
+                   Real Coulombic(J/mol)         :       -0.220870E+08
+                   Fourier Coulombic(J/mol)      :       -0.848010E+06
+                   Einstein(J/mol)               :        0.169339E+08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.178668E+08
+                   van der Waals(J/mol)          :        0.506822E+07
+                   Real Coulombic(J/mol)         :       -0.220870E+08
+                   Fourier Coulombic(J/mol)      :       -0.848010E+06
+                   Einstein(J/mol)               :        0.169339E+08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :       -0.194167E+08
+                   van der Waals(J/mol)          :        0.549376E+07
+                   Real Coulombic(J/mol)         :       -0.240470E+08
+                   Fourier Coulombic(J/mol)      :       -0.863424E+06
+                   Einstein(J/mol)               :        0.285638E-08
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Water-Water        Total(J/mol)                  :        0.936054E+06
+                   van der Waals(J/mol)          :        0.331506E+08
+                   Real Coulombic(J/mol)         :       -0.322219E+08
+                   Fourier Coulombic(J/mol)      :        0.739499E+04
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 3 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4816 (1751 out of 3636)
+Rotation Move                 Success Ratio : 0.1786 (665 out of 3724)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.81719E+007  (    5.61768E+006  -2.29397E+007       -849969.   6.46785E+006 )
+==============================================================================
+
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 100 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5034 (9215 out of 18307)
+Rotation Move                 Success Ratio : 0.1840 (3403 out of 18493)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.80129E+007  (    5.63872E+006  -2.28010E+007       -850603.   7.30612E+006 )
+==============================================================================
+
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 200 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.5005 (18376 out of 36716)
+Rotation Move                 Success Ratio : 0.1877 (6922 out of 36884)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.80993E+007  (    5.53117E+006  -2.27793E+007       -851164.   7.74444E+006 )
+==============================================================================
+
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 300 out of 500
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.4997 (27577 out of 55187)
+Rotation Move                 Success Ratio : 0.1892 (10445 out of 55213)
+------------------------------------------------------------------------------
+Number of molecules of Water  :  368
+Box Length (Ang)              :        23.6400        23.6400        23.6400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        13211.2
+Density (kg/m^3)              :        832.582
+Total Energy (J/mol)          :  -1.80956E+007  (    5.57259E+006  -2.28175E+007       -850751.   7.14544E+006 )
+==============================================================================
+

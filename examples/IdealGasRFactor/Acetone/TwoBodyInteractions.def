@@ -1,0 +1,8 @@
+  Atom 1     Atom 2        Rule/Potential            Parameters
+CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0   2.0
+C_sp2         C_sp2        Lennard-Jones   3.82   40.0   2.0
+O             O            Lennard-Jones   3.05   79.0   2.0
+CH3_sp3       C_sp2             Lorentz-Berthelot
+CH3_sp3       O                 Lorentz-Berthelot
+C_sp2         O                 Lorentz-Berthelot
+

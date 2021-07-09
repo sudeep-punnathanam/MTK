@@ -1,0 +1,8 @@
+#PBS -N 20_Sim
+#PBS -o Test.o
+#PBS -e Test.e
+
+cd $PBS_O_WORKDIR
+
+~/mtk3.1/bin/simulate
+

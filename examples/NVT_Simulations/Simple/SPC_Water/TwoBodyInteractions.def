@@ -1,0 +1,6 @@
+# Atom 1        Atom 2            Rule/Potential         Parameters
+O             O                 Lennard-Jones      3.166  78.0   2.5
+H             H                 off
+O             H                 off
+
+

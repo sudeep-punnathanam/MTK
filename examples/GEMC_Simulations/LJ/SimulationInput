@@ -1,0 +1,67 @@
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Gibbs Ensemble Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               LJ
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        4000
+Display Frequency                  100
+Restart Frequency                  1000
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            9.91  9.91  9.91
+                  Box Angles             90.0 90.0 90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            LJ
+          Initialization Method           Random
+          Initial number of molecules     3
+          Translation weight              1
+          Maximum displacement            0.1
+          GibbsSwap weight                1
+
+Potential cutoff distance          2.5
+Gibbs Volume Change weight         1
+
+#------------------------------------------------------
+
+Simulation Cell   2
+                  Shape                  Box
+                  Box Lengths            9.91  9.91  9.91
+                  Box Angles             90.0 90.0 90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            LJ
+          Initialization Method           Random
+          Initial number of molecules     390
+          Translation weight              1
+          Maximum displacement            0.1
+          GibbsSwap weight                1
+
+Potential cutoff distance          2.5
+Gibbs Volume Change weight         1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1           0.80
+   Temperature                         1              2           0.80
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Pressure                  1                    1000
+ Calculate     Energy                    1                    1000
+ Calculate     Density                   1                    1000
+ Calculate     Number     LJ             1                    1000
+ Calculate     Fugacity   LJ             1                    1000
+

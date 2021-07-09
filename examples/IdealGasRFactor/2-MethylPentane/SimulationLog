@@ -1,0 +1,2985 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+        6000   1.1773121690628286E-005
+        7000   5.0978487893872833E-006
+        8000   1.5218162748130442E-006
+        9000   1.5155990501087310E-006
+       10000   8.2355222069604373E-008
+       11000   5.0219284149371243E-007
+       12000   2.2528365646119271E-009
+       13000   1.3599285984146532E-006
+       14000   2.5961598268479483E-007
+       15000   7.4976749738473300E-007
+       16000   6.7155043569299452E-008
+       17000   5.1391960810877818E-006
+       18000   2.8888767695278001E-007
+       19000   2.0186626725311104E-006
+       20000   4.2953841568636393E-008
+       21000   3.3787807860757612E-007
+       22000   7.8198884261195196E-008
+       23000   1.7596809846899625E-006
+       24000   6.3727713587365461E-009
+       25000   2.5114219629329801E-007
+       26000   2.3790290325602025E-006
+       27000   4.5306821101548506E-008
+       28000   7.4201748958014276E-006
+       29000   9.7457725421863744E-007
+       30000   1.0792975933996750E-007
+       31000   4.7968459194459262E-006
+       32000   9.2854995473288025E-008
+       33000   2.0791423299351170E-006
+       34000   7.2239584270302931E-006
+       35000   1.2928887992625350E-007
+       36000   3.4576450082636339E-006
+       37000   3.4352917441178380E-006
+       38000   2.6758347664962784E-005
+       39000   4.9735525137037727E-006
+       40000   2.2856913906720066E-005
+       41000   5.3366206546111574E-007
+       42000   6.5298625314220946E-007
+       43000   5.3217948977138862E-006
+       44000   6.5897014367115232E-008
+       45000   2.4160282308635668E-009
+       46000   3.2725030176593642E-006
+       47000   1.4926623820799619E-007
+       48000   1.0728835376381042E-005
+       49000   1.9483504249268133E-008
+       50000   5.2865988502579764E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+        6000   1.1773121690628286E-005
+        7000   5.0978487893872833E-006
+        8000   1.5218162748130442E-006
+        9000   1.5155990501087310E-006
+       10000   8.2355222069604373E-008
+       11000   5.0219284149371243E-007
+       12000   2.2528365646119271E-009
+       13000   1.3599285984146532E-006
+       14000   2.5961598268479483E-007
+       15000   7.4976749738473300E-007
+       16000   6.7155043569299452E-008
+       17000   5.1391960810877818E-006
+       18000   2.8888767695278001E-007
+       19000   2.0186626725311104E-006
+       20000   4.2953841568636393E-008
+       21000   3.3787807860757612E-007
+       22000   7.8198884261195196E-008
+       23000   1.7596809846899625E-006
+       24000   6.3727713587365461E-009
+       25000   2.5114219629329801E-007
+       26000   2.3790290325602025E-006
+       27000   4.5306821101548506E-008
+       28000   7.4201748958014276E-006
+       29000   9.7457725421863744E-007
+       30000   1.0792975933996750E-007
+       31000   4.7968459194459262E-006
+       32000   9.2854995473288025E-008
+       33000   2.0791423299351170E-006
+       34000   7.2239584270302931E-006
+       35000   1.2928887992625350E-007
+       36000   3.4576450082636339E-006
+       37000   3.4352917441178380E-006
+       38000   2.6758347664962784E-005
+       39000   4.9735525137037727E-006
+       40000   2.2856913906720066E-005
+       41000   5.3366206546111574E-007
+       42000   6.5298625314220946E-007
+       43000   5.3217948977138862E-006
+       44000   6.5897014367115232E-008
+       45000   2.4160282308635668E-009
+       46000   3.2725030176593642E-006
+       47000   1.4926623820799619E-007
+       48000   1.0728835376381042E-005
+       49000   1.9483504249268133E-008
+       50000   5.2865988502579764E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+        6000   1.1773121690628286E-005
+        7000   5.0978487893872833E-006
+        8000   1.5218162748130442E-006
+        9000   1.5155990501087310E-006
+       10000   8.2355222069604373E-008
+       11000   5.0219284149371243E-007
+       12000   2.2528365646119271E-009
+       13000   1.3599285984146532E-006
+       14000   2.5961598268479483E-007
+       15000   7.4976749738473300E-007
+       16000   6.7155043569299452E-008
+       17000   5.1391960810877818E-006
+       18000   2.8888767695278001E-007
+       19000   2.0186626725311104E-006
+       20000   4.2953841568636393E-008
+       21000   3.3787807860757612E-007
+       22000   7.8198884261195196E-008
+       23000   1.7596809846899625E-006
+       24000   6.3727713587365461E-009
+       25000   2.5114219629329801E-007
+       26000   2.3790290325602025E-006
+       27000   4.5306821101548506E-008
+       28000   7.4201748958014276E-006
+       29000   9.7457725421863744E-007
+       30000   1.0792975933996750E-007
+       31000   4.7968459194459262E-006
+       32000   9.2854995473288025E-008
+       33000   2.0791423299351170E-006
+       34000   7.2239584270302931E-006
+       35000   1.2928887992625350E-007
+       36000   3.4576450082636339E-006
+       37000   3.4352917441178380E-006
+       38000   2.6758347664962784E-005
+       39000   4.9735525137037727E-006
+       40000   2.2856913906720066E-005
+       41000   5.3366206546111574E-007
+       42000   6.5298625314220946E-007
+       43000   5.3217948977138862E-006
+       44000   6.5897014367115232E-008
+       45000   2.4160282308635668E-009
+       46000   3.2725030176593642E-006
+       47000   1.4926623820799619E-007
+       48000   1.0728835376381042E-005
+       49000   1.9483504249268133E-008
+       50000   5.2865988502579764E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+        6000   1.1773121690628286E-005
+        7000   5.0978487893872833E-006
+        8000   1.5218162748130442E-006
+        9000   1.5155990501087310E-006
+       10000   8.2355222069604373E-008
+       11000   5.0219284149371243E-007
+       12000   2.2528365646119271E-009
+       13000   1.3599285984146532E-006
+       14000   2.5961598268479483E-007
+       15000   7.4976749738473300E-007
+       16000   6.7155043569299452E-008
+       17000   5.1391960810877818E-006
+       18000   2.8888767695278001E-007
+       19000   2.0186626725311104E-006
+       20000   4.2953841568636393E-008
+       21000   3.3787807860757612E-007
+       22000   7.8198884261195196E-008
+       23000   1.7596809846899625E-006
+       24000   6.3727713587365461E-009
+       25000   2.5114219629329801E-007
+       26000   2.3790290325602025E-006
+       27000   4.5306821101548506E-008
+       28000   7.4201748958014276E-006
+       29000   9.7457725421863744E-007
+       30000   1.0792975933996750E-007
+       31000   4.7968459194459262E-006
+       32000   9.2854995473288025E-008
+       33000   2.0791423299351170E-006
+       34000   7.2239584270302931E-006
+       35000   1.2928887992625350E-007
+       36000   3.4576450082636339E-006
+       37000   3.4352917441178380E-006
+       38000   2.6758347664962784E-005
+       39000   4.9735525137037727E-006
+       40000   2.2856913906720066E-005
+       41000   5.3366206546111574E-007
+       42000   6.5298625314220946E-007
+       43000   5.3217948977138862E-006
+       44000   6.5897014367115232E-008
+       45000   2.4160282308635668E-009
+       46000   3.2725030176593642E-006
+       47000   1.4926623820799619E-007
+       48000   1.0728835376381042E-005
+       49000   1.9483504249268133E-008
+       50000   5.2865988502579764E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+        6000   1.1773121690628286E-005
+        7000   5.0978487893872833E-006
+        8000   1.5218162748130442E-006
+        9000   1.5155990501087310E-006
+       10000   8.2355222069604373E-008
+       11000   5.0219284149371243E-007
+       12000   2.2528365646119271E-009
+       13000   1.3599285984146532E-006
+       14000   2.5961598268479483E-007
+       15000   7.4976749738473300E-007
+       16000   6.7155043569299452E-008
+       17000   5.1391960810877818E-006
+       18000   2.8888767695278001E-007
+       19000   2.0186626725311104E-006
+       20000   4.2953841568636393E-008
+       21000   3.3787807860757612E-007
+       22000   7.8198884261195196E-008
+       23000   1.7596809846899625E-006
+       24000   6.3727713587365461E-009
+       25000   2.5114219629329801E-007
+       26000   2.3790290325602025E-006
+       27000   4.5306821101548506E-008
+       28000   7.4201748958014276E-006
+       29000   9.7457725421863744E-007
+       30000   1.0792975933996750E-007
+       31000   4.7968459194459262E-006
+       32000   9.2854995473288025E-008
+       33000   2.0791423299351170E-006
+       34000   7.2239584270302931E-006
+       35000   1.2928887992625350E-007
+       36000   3.4576450082636339E-006
+       37000   3.4352917441178380E-006
+       38000   2.6758347664962784E-005
+       39000   4.9735525137037727E-006
+       40000   2.2856913906720066E-005
+       41000   5.3366206546111574E-007
+       42000   6.5298625314220946E-007
+       43000   5.3217948977138862E-006
+       44000   6.5897014367115232E-008
+       45000   2.4160282308635668E-009
+       46000   3.2725030176593642E-006
+       47000   1.4926623820799619E-007
+       48000   1.0728835376381042E-005
+       49000   1.9483504249268133E-008
+       50000   5.2865988502579764E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   0.1
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   0.1
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   0.1
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        6000   3.3136855443471301E-007
+        7000   7.3934685589664217E-007
+        8000   2.1069192440167548E-006
+        9000   1.8835936571661326E-006
+       10000   2.7007119373898942E-007
+       11000   5.2625081052384686E-008
+       12000   4.1289400951685333E-007
+       13000   3.8167980877985768E-007
+       14000   1.1715364144888800E-008
+       15000   2.1545168851347015E-007
+       16000   2.1877379009588460E-006
+       17000   1.9969728536340468E-007
+       18000   1.3130669201048653E-007
+       19000   1.5192151907528061E-007
+       20000   6.3693655825065499E-008
+       21000   1.9137968338372557E-006
+       22000   1.3352352073578529E-007
+       23000   3.6216580421992169E-008
+       24000   1.3412708383861606E-007
+       25000   1.0495166308138807E-007
+       26000   3.4152795566032297E-007
+       27000   1.5812524159078163E-007
+       28000   1.4895738416495245E-006
+       29000   1.4688268714942708E-006
+       30000   2.3366837027578979E-006
+       31000   7.0752254731622435E-007
+       32000   9.7327309323828510E-011
+       33000   2.4875361720512735E-009
+       34000   1.8292803620979453E-007
+       35000   1.3809747034862048E-007
+       36000   5.5202908863360240E-008
+       37000   4.1233620885603633E-008
+       38000   1.7170873903285114E-007
+       39000   9.7637311191246525E-007
+       40000   1.5896166063145299E-006
+       41000   6.3103681729617040E-009
+       42000   3.0679449144499823E-007
+       43000   4.9619020994157312E-007
+       44000   9.5513045889152594E-008
+       45000   8.0047884290836069E-007
+       46000   4.6383220743787348E-009
+       47000   3.4114379661388851E-008
+       48000   1.2500078162093570E-006
+       49000   1.9208716278504306E-006
+       50000   1.0504542727066273E-007
+        1000   1.2572911130977394E-006
+        2000   1.6905746295163228E-006
+        3000   4.4714906810878177E-006
+        4000   3.2992116367393447E-007
+        5000   8.1578076373752904E-006
+        6000   1.1773121690628286E-005
+        7000   5.0978487893872833E-006
+        8000   1.5218162748130442E-006
+        9000   1.5155990501087310E-006
+       10000   8.2355222069604373E-008
+       11000   5.0219284149371243E-007
+       12000   2.2528365646119271E-009
+       13000   1.3599285984146532E-006
+       14000   2.5961598268479483E-007
+       15000   7.4976749738473300E-007
+       16000   6.7155043569299452E-008
+       17000   5.1391960810877818E-006
+       18000   2.8888767695278001E-007
+       19000   2.0186626725311104E-006
+       20000   4.2953841568636393E-008
+       21000   3.3787807860757612E-007
+       22000   7.8198884261195196E-008
+       23000   1.7596809846899625E-006
+       24000   6.3727713587365461E-009
+       25000   2.5114219629329801E-007
+       26000   2.3790290325602025E-006
+       27000   4.5306821101548506E-008
+       28000   7.4201748958014276E-006
+       29000   9.7457725421863744E-007
+       30000   1.0792975933996750E-007
+       31000   4.7968459194459262E-006
+       32000   9.2854995473288025E-008
+       33000   2.0791423299351170E-006
+       34000   7.2239584270302931E-006
+       35000   1.2928887992625350E-007
+       36000   3.4576450082636339E-006
+       37000   3.4352917441178380E-006
+       38000   2.6758347664962784E-005
+       39000   4.9735525137037727E-006
+       40000   2.2856913906720066E-005
+       41000   5.3366206546111574E-007
+       42000   6.5298625314220946E-007
+       43000   5.3217948977138862E-006
+       44000   6.5897014367115232E-008
+       45000   2.4160282308635668E-009
+       46000   3.2725030176593642E-006
+       47000   1.4926623820799619E-007
+       48000   1.0728835376381042E-005
+       49000   1.9483504249268133E-008
+       50000   5.2865988502579764E-007
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        1000   2.8708089218073857E-005
+        2000   4.6766402526219591E-007
+        3000   1.7344577414495206E-007
+        4000   4.0860541161728636E-007
+        5000   4.6606554434906974E-008
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        1000   2.8708089218073857E-005
+        2000   4.6766402526219591E-007
+        3000   1.7344577414495206E-007
+        4000   4.0860541161728636E-007
+        5000   4.6606554434906974E-008
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Forcefield Directory               TRaPPE
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 2433
+
+#======== Configuration and Species Information =======
+Species   Name                            2-MethylPentane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         190.0
+
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones            3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones            3.95   46.0   2.0
+CH_sp3        CH_sp3       Lennard-Jones            4.68   10.0   2.0
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH4           CH_sp3       Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH_sp3       Lorentz-Berthelot
+CH2_sp3       CH_sp3       Lorentz-Berthelot
+        1000   8.0655182188708447E-008
+        2000   6.2708392562972995E-007
+        3000   8.7788035232734213E-008
+        4000   6.3678858711985906E-007
+        5000   5.6069132117779026E-007
+        1000   2.8708089218073857E-005
+        2000   4.6766402526219591E-007
+        3000   1.7344577414495206E-007
+        4000   4.0860541161728636E-007
+        5000   4.6606554434906974E-008

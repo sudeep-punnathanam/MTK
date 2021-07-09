@@ -1,0 +1,51 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               SPCE_water
+Potential cutoff distance          11.5
+Coulomb evaluation EWALD default
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     100000
+Number of Production Cycles        400000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10 
+Random Number Seed                 4250
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            24.0 24.0 24.0
+                  Box Angles             90.0 90.0 90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            Water
+          Initialization Method           File SPCE_8unitcells
+          Translation weight              1
+          Maximum displacement            0.1
+          Rotation weight                 1
+
+Species   Name                            Methane
+          Initialization Method           Random
+          Initial number of molecules     0
+          Translation weight              1
+          Maximum displacement            0.1
+          Insertion weight                1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1         245.0
+   Pressure                            1              1         1.0e7
+   Fugacity           Methane          1              1         7205.e3
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Energy                    1                    100000
+ Calculate     Volume                    1                    100000
+ Calculate     Number    Methane         1                    100000
+

@@ -1,0 +1,49 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 Dubbeldam
+Potential cutoff distance            0.5
+Coulomb Evaluation ewald parameters  3.2   8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     100
+Number of Production Cycles        500
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10 
+Random Number Seed                 353
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            1.0  1.0  1.0
+                  Box Angles             90.0   90.0   90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            Sodium
+          Initialization Method           File StartConfig
+          Translation weight              1
+          Maximum displacement            0.1
+
+Species   Name                            Chlorine
+          Initialization Method           File StartConfig
+          Translation weight              1
+          Maximum displacement            0.1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1          230.0
+
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+#Calculate     Pressure                  1                    250
+#Calculate     Energy                    1                    250
+#Calculate     Density                   1                    250
+#Calculate     Number       LJ           1                    250
+

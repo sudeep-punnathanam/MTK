@@ -1,0 +1,8 @@
+#PBS -N test
+#PBS -o test.o
+#PBS -e test.e
+
+cd $PBS_O_WORKDIR
+
+~/mtk/3.1/bin/simulate
+

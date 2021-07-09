@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#PBS -N test
+#PBS -o test.o
+#PBS -e test.e
+
+cd $PBS_O_WORKDIR
+
+simulate_d
+

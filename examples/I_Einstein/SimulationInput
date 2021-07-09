@@ -1,0 +1,37 @@
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Interacting Einstein
+Einstein Constant                  632.026
+
+#========== Forcefield Information ====================
+Forcefield Directory               HardSphere
+Potential cutoff distance          1.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              20
+Number of Equilibration Cycles     10000
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  10000
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Cubic
+                  Density                1.04086
+                  Boundary conditions    1  1  1
+
+Species   Name                            HS
+          Shape                           Spherical
+          Initialization Method           File FCC.config
+          Initial number of molecules     108
+          Translation weight              1
+          Maximum displacement            0.1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1           1.0
+

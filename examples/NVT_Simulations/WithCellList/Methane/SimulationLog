@@ -1,0 +1,193 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ finished creating cell list
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.261726E+05
+                   van der Waals(J/mol)          :        0.261726E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :        0.261726E+05
+                   van der Waals(J/mol)          :        0.261726E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.146352E+06
+                   van der Waals(J/mol)          :        0.146352E+06
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :        0.146352E+06
+                   van der Waals(J/mol)          :        0.146352E+06
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.9824 (5030 out of 5120)
+------------------------------------------------------------------------------
+Number of molecules of Methane:  256
+Box Length (Ang)              :        161.993        161.993        161.993
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   4.25098E+006
+Density (kg/m^3)              :        1.60000
+Total Energy (J/mol)          :       -12474.0  (        -12474.0   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.9784 (250483 out of 256000)
+------------------------------------------------------------------------------
+Number of molecules of Methane:  256
+Box Length (Ang)              :        161.993        161.993        161.993
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   4.25098E+006
+Density (kg/m^3)              :        1.60000
+Total Energy (J/mol)          :       -5849.80  (        -5849.80   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.9780 (500756 out of 512000)
+------------------------------------------------------------------------------
+Number of molecules of Methane:  256
+Box Length (Ang)              :        161.993        161.993        161.993
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   4.25098E+006
+Density (kg/m^3)              :        1.60000
+Total Energy (J/mol)          :       -10717.0  (        -10717.0   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.9776 (750803 out of 768000)
+------------------------------------------------------------------------------
+Number of molecules of Methane:  256
+Box Length (Ang)              :        161.993        161.993        161.993
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   4.25098E+006
+Density (kg/m^3)              :        1.60000
+Total Energy (J/mol)          :       -11490.0  (        -11490.0   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.9771 (1000596 out of 1024000)
+------------------------------------------------------------------------------
+Number of molecules of Methane:  256
+Box Length (Ang)              :        161.993        161.993        161.993
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   4.25098E+006
+Density (kg/m^3)              :        1.60000
+Total Energy (J/mol)          :       -16748.2  (        -16748.2   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Methane
+Translation Move              Success Ratio : 0.9766 (1249997 out of 1280000)
+------------------------------------------------------------------------------
+Number of molecules of Methane:  256
+Box Length (Ang)              :        161.993        161.993        161.993
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   4.25098E+006
+Density (kg/m^3)              :        1.60000
+Total Energy (J/mol)          :       -7572.03  (        -7572.03   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.757203E+04
+                   van der Waals(J/mol)          :       -0.757203E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :       -0.757203E+04
+                   van der Waals(J/mol)          :       -0.757203E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.907363E+04
+                   van der Waals(J/mol)          :       -0.907363E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :       -0.907363E+04
+                   van der Waals(J/mol)          :       -0.907363E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.757203E+04
+                   van der Waals(J/mol)          :       -0.757203E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :       -0.757203E+04
+                   van der Waals(J/mol)          :       -0.757203E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.907363E+04
+                   van der Waals(J/mol)          :       -0.907363E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Methane-Methane    Total(J/mol)                  :       -0.907363E+04
+                   van der Waals(J/mol)          :       -0.907363E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+

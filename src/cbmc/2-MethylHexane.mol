@@ -1,0 +1,118 @@
+# Each molecule is a collection of groups. Each groups in turn is a collection of atoms.
+# Define eqch group in the following format
+#----------------------------------------------------------------------------------------
+
+# Group <number of atoms>
+# if <number of atoms> == 1
+# <atom number> <atom name>
+# else
+# <rigid> or <flexible>
+# if <rigid>
+# <atom number> <atom name> <x> <y> <z>
+# if <flexible>
+# <filename> that contains library of configurations
+#----------------------------------------------------------------------------------------
+
+Group  1
+1    CH3_sp3
+Group  1
+2    CH_sp3
+Group  1
+3    CH2_sp3
+Group  1
+4    CH2_sp3
+Group  1
+5    CH2_sp3
+Group  1
+6    CH3_sp3
+Group  1
+7    CH3_sp3
+
+#----------------------------------------------------------------------------------------
+# Define intramolecular potentials. Use the following format
+#
+# Number of bonds <n>
+# <a1>  <a2>   <potential>  <parameters, ...>
+#
+# Number of angles <n>
+# <a1>  <a2>   <a3>  <potential>  <parameters, ...>
+#
+# Number of torsions <n>
+# <a1>  <a2>   <a3>  <a4>  <potential>  <parameters, ...>
+#
+# Number of intra pairs <n>
+# <a1>  <a2>   <potential>  <parameters, ...>
+#----------------------------------------------------------------------------------------
+
+Number of bonds 6
+ 1        2       Rigid        1.54
+ 2        3       Rigid        1.54
+ 3        4       Rigid        1.54
+ 4        5       Rigid        1.54
+ 5        6       Rigid        1.54
+ 2        7       Rigid        1.54
+
+Number of angles 6
+ 1        2        3       Harmonic-angle     62500     120
+ 2        3        4       Harmonic-angle     62500     120
+ 3        4        5       Harmonic-angle     62500     120
+ 4        5        6       Harmonic-angle     62500     120
+ 1        2        7       Harmonic-angle     62500     120
+ 3        2        7       Harmonic-angle     62500     120
+
+Number of torsions 4
+ 1        2        3        4        Cosine-series     1.0 2.0 3.0 4.0
+ 2        3        4        5        Cosine-series     1.0 2.0 3.0 4.0
+ 3        4        5        6        Cosine-series     1.0 2.0 3.0 4.0
+ 7        2        3        4        Cosine-series     1.0 2.0 3.0 4.0
+
+Number of intra pairs 5
+ 1          5       Lennard-Jones    3.5  100.0     2.0   
+ 1          6       Lennard-Jones    3.5  100.0     2.0   
+ 2          6       Lennard-Jones    3.5  100.0     2.0   
+ 7          5       Lennard-Jones    3.5  100.0     2.0   
+ 7          6       Lennard-Jones    3.5  100.0     2.0   
+
+
+#----------------------------------------------------------------------------------------
+# Define configuration bias move sequences for flexible molecules. Use the following format.
+# Each sequence consists of a series of step. Depending of the nature of the step, the requsite inputs are provided.
+# The default is "Rigid Group Sampling" and fully rigid molecule
+#
+# CBMC Sequence
+# Number of Steps <number>
+# rgs   <group number>                                        Rigid Group sampling.
+# fas   <atom number>                                         First atom sampling
+# ss    <atom number>  <bond number>                          Sphere Sampling
+# bps   <number of atoms>                                     Branch Point Sampling
+#        <atom number> <bond number> <angle number> <B_angle number1, ...> <number of torsions> <torsion number1, ...> <number of IP> <IP number, ...>
+#----------------------------------------------------------------------------------------
+
+CBMC Sequence
+Number of Steps 9
+fas    1
+ss     2  1
+bps    2
+       3  2  1        0           0
+       7  6  5  6     0           0
+bps    1
+       4  3  2        2  1,4      0
+bps    1
+       5  4  3        1  2        2   1,4
+bps    1
+       6  5  4        1  3        3   2,3,5
+
+CBMC Sequence
+Number of Steps 9
+fas    6
+ss     5  5
+bps    1
+       4  4  4        0           0
+bps    1
+       3  3  3        1  3        0
+bps    1
+       2  2  2        1  2        1  3
+bps    2
+       1  1  1        1  1        2  1,2
+       7  6  6  5     1  4        2  4,5
+

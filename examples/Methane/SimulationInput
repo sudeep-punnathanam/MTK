@@ -1,0 +1,31 @@
+Simulation Name                    TestSimulation
+Forcefield Directory               /Users/sudeep/Projects/mtk
+
+Number Of Simulations              1
+Number of Equilibration Cycles     5000
+Number of Production Cycles        10000
+Display Frequency                  1000
+Restart Frequency                  10
+Storage Frequency                  10 
+Random Number Seed                 243
+Potential cutoff distance          9.0
+
+Simulation Cell   Shape                  Cubic
+                  Density                423.0
+                  Boundary conditions    1  1  1
+
+Temperature  1  111.0
+
+Pressure     1   89.0e3
+
+Maximum Volume Change   5.0
+
+Species   Name                            Methane
+          Initialization Method           Random
+          Initial number of molecules     256
+          Translation weight              1
+          Maximum displacement            1.0
+
+Calculate Density            1    5000
+Calculate Energy             1    5000
+

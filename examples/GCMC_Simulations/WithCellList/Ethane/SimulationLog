@@ -1,0 +1,211 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ finished creating cell list
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.542077E+03
+                   van der Waals(J/mol)          :        0.542077E+03
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Ethane-Ethane      Total(J/mol)                  :        0.542077E+03
+                   van der Waals(J/mol)          :        0.542077E+03
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :        0.510672E+05
+                   van der Waals(J/mol)          :        0.510672E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Ethane-Ethane      Total(J/mol)                  :        0.510672E+05
+                   van der Waals(J/mol)          :        0.510672E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9401 (455 out of 484)
+Rotation Move                 Success Ratio : 0.9781 (446 out of 456)
+Insertion Move                Success Ratio : 0.8925 (21411 out of 23991)
+Deletion Move                 Success Ratio : 0.8766 (21418 out of 24432)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :   93
+Box Length (Ang)              :        96.1747        96.1747        96.1747
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        889574.
+Density (kg/m^3)              :        5.20800
+Total Energy (J/mol)          :       -11034.2  (        -11034.2   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9447 (23346 out of 24712)
+Rotation Move                 Success Ratio : 0.9787 (24080 out of 24603)
+Insertion Move                Success Ratio : 0.8821 (21622 out of 24513)
+Deletion Move                 Success Ratio : 0.8753 (21615 out of 24695)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        96.1747        96.1747        96.1747
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        889574.
+Density (kg/m^3)              :        5.60000
+Total Energy (J/mol)          :       -17185.3  (        -17185.3   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9459 (46906 out of 49590)
+Rotation Move                 Success Ratio : 0.9795 (48428 out of 49443)
+Insertion Move                Success Ratio : 0.8800 (43469 out of 49398)
+Deletion Move                 Success Ratio : 0.8779 (43453 out of 49498)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  109
+Box Length (Ang)              :        96.1747        96.1747        96.1747
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        889574.
+Density (kg/m^3)              :        6.10400
+Total Energy (J/mol)          :       -19702.9  (        -19702.9   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9442 (70674 out of 74849)
+Rotation Move                 Success Ratio : 0.9791 (73696 out of 75267)
+Insertion Move                Success Ratio : 0.8756 (65489 out of 74793)
+Deletion Move                 Success Ratio : 0.8787 (65482 out of 74519)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  100
+Box Length (Ang)              :        96.1747        96.1747        96.1747
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        889574.
+Density (kg/m^3)              :        5.60000
+Total Energy (J/mol)          :       -17402.7  (        -17402.7   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9444 (94124 out of 99667)
+Rotation Move                 Success Ratio : 0.9792 (97934 out of 100010)
+Insertion Move                Success Ratio : 0.8757 (87167 out of 99545)
+Deletion Move                 Success Ratio : 0.8776 (87148 out of 99300)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  112
+Box Length (Ang)              :        96.1747        96.1747        96.1747
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        889574.
+Density (kg/m^3)              :        6.27200
+Total Energy (J/mol)          :       -23481.9  (        -23481.9   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for Ethane
+Translation Move              Success Ratio : 0.9438 (117432 out of 124422)
+Rotation Move                 Success Ratio : 0.9791 (122060 out of 124663)
+Insertion Move                Success Ratio : 0.8770 (108764 out of 124020)
+Deletion Move                 Success Ratio : 0.8767 (108751 out of 124045)
+------------------------------------------------------------------------------
+Number of molecules of Ethane :  106
+Box Length (Ang)              :        96.1747        96.1747        96.1747
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        889574.
+Density (kg/m^3)              :        5.93600
+Total Energy (J/mol)          :       -16777.6  (        -16777.6   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.167776E+05
+                   van der Waals(J/mol)          :       -0.167776E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Ethane-Ethane      Total(J/mol)                  :       -0.167776E+05
+                   van der Waals(J/mol)          :       -0.167776E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.702874E+04
+                   van der Waals(J/mol)          :       -0.702874E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Ethane-Ethane      Total(J/mol)                  :       -0.702874E+04
+                   van der Waals(J/mol)          :       -0.702874E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.167776E+05
+                   van der Waals(J/mol)          :       -0.167776E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Ethane-Ethane      Total(J/mol)                  :       -0.167776E+05
+                   van der Waals(J/mol)          :       -0.167776E+05
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total(J/mol)                  :       -0.702874E+04
+                   van der Waals(J/mol)          :       -0.702874E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+Ethane-Ethane      Total(J/mol)                  :       -0.702874E+04
+                   van der Waals(J/mol)          :       -0.702874E+04
+                   Real Coulombic(J/mol)         :        0.000000E+00
+                   Fourier Coulombic(J/mol)      :        0.000000E+00
+                   Einstein(J/mol)               :        0.000000E+00
+-----------------------------------------------------------------
+

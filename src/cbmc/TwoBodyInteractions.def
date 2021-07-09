@@ -1,0 +1,8 @@
+# <Atom 1>   <Atom 2>      <Rule/Potential>          <Parameters>
+CH4           CH4          Lennard-Jones            3.73  148.0   2.98
+CH3_sp3       CH3_sp3      Lennard-Jones            3.75   98.0   3.0
+N             N            Lennard-Jones            3.31   36.0   2.6
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           N            Lorentz-Berthelot
+CH3_sp3       N            Lorentz-Berthelot
+

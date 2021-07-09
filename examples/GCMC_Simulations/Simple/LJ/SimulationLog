@@ -1,0 +1,2416 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               LJ
+Potential cutoff distance          2.5
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     10000
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Cubic
+Density                0.2
+Boundary conditions    1  1  1
+
+Species   Name                            LJ
+Initialization Method           Random
+Initial number of molecules     256
+Translation weight              1
+Maximum displacement            0.1
+Insertion weight                1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1           2.0
+Fugacity            LJ              1              1           0.1594
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Pressure                  1                    12500
+Calculate     Energy                    1                    12500
+Calculate     Density                   1                    12500
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+LJ            LJ          1.0        0.0
+A             A           1.0        0.0
+B             B           1.0        0.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+LJ            LJ          Lennard-Jones             1.0    1.0    0.8
+A             A           Truncated-Lennard-Jones   1.0    1.0    0.8   2.5
+B             B           Shifted-Lennard-Jones     1.0    1.0    0.8   2.5
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total                         :        0.987098E+02
+                   van der Waals                 :        0.987098E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total                         :        0.208488E+04
+                   van der Waals                 :        0.208488E+04
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5519 (542 out of 982)
+Insertion Move                Success Ratio : 0.6705 (28485 out of 42486)
+Deletion Move                 Success Ratio : 0.6724 (28632 out of 42580)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -67.9600  (        -67.9600   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5352 (479 out of 895)
+Insertion Move                Success Ratio : 0.6718 (57163 out of 85095)
+Deletion Move                 Success Ratio : 0.6732 (57274 out of 85074)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  145
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1133
+Total Energy                  :       -125.792  (        -125.792   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5303 (472 out of 890)
+Insertion Move                Success Ratio : 0.6725 (85745 out of 127501)
+Deletion Move                 Success Ratio : 0.6737 (85856 out of 127447)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  145
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1133
+Total Energy                  :       -108.856  (        -108.856   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5817 (445 out of 765)
+Insertion Move                Success Ratio : 0.6732 (114334 out of 169840)
+Deletion Move                 Success Ratio : 0.6727 (114485 out of 170192)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  105
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0820
+Total Energy                  :       -54.0303  (        -54.0303   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5308 (491 out of 925)
+Insertion Move                Success Ratio : 0.6736 (142877 out of 212110)
+Deletion Move                 Success Ratio : 0.6735 (143004 out of 212333)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  129
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1008
+Total Energy                  :       -82.5781  (        -82.5781   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 6000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.4994 (424 out of 849)
+Insertion Move                Success Ratio : 0.6742 (171020 out of 253668)
+Deletion Move                 Success Ratio : 0.6724 (171148 out of 254543)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  128
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1000
+Total Energy                  :       -92.7541  (        -92.7541   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 7000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5566 (462 out of 830)
+Insertion Move                Success Ratio : 0.6737 (200096 out of 296990)
+Deletion Move                 Success Ratio : 0.6729 (200253 out of 297597)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :   99
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0773
+Total Energy                  :       -52.5278  (        -52.5278   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 8000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5440 (457 out of 840)
+Insertion Move                Success Ratio : 0.6734 (229200 out of 340381)
+Deletion Move                 Success Ratio : 0.6734 (229329 out of 340560)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  127
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0992
+Total Energy                  :       -94.1952  (        -94.1952   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 9000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5184 (436 out of 841)
+Insertion Move                Success Ratio : 0.6729 (258159 out of 383652)
+Deletion Move                 Success Ratio : 0.6734 (258282 out of 383523)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  133
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1039
+Total Energy                  :       -83.1707  (        -83.1707   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5309 (430 out of 810)
+Insertion Move                Success Ratio : 0.6727 (286958 out of 426556)
+Deletion Move                 Success Ratio : 0.6738 (287100 out of 426111)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  114
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0891
+Total Energy                  :       -74.2132  (        -74.2132   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5427 (23146 out of 42650)
+Insertion Move                Success Ratio : 0.6754 (28895 out of 42783)
+Deletion Move                 Success Ratio : 0.6734 (28882 out of 42889)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  127
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0992
+Total Energy                  :       -83.6676  (        -83.6676   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5438 (46526 out of 85561)
+Insertion Move                Success Ratio : 0.6748 (57844 out of 85722)
+Deletion Move                 Success Ratio : 0.6743 (57842 out of 85775)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  116
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0906
+Total Energy                  :       -69.2355  (        -69.2355   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5464 (70081 out of 128266)
+Insertion Move                Success Ratio : 0.6741 (86641 out of 128527)
+Deletion Move                 Success Ratio : 0.6747 (86603 out of 128364)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  152
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1187
+Total Energy                  :       -108.430  (        -108.430   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5462 (93173 out of 170593)
+Insertion Move                Success Ratio : 0.6733 (115460 out of 171474)
+Deletion Move                 Success Ratio : 0.6756 (115433 out of 170867)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  141
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1102
+Total Energy                  :       -108.323  (        -108.323   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5455 (116461 out of 213504)
+Insertion Move                Success Ratio : 0.6729 (144212 out of 214324)
+Deletion Move                 Success Ratio : 0.6752 (144203 out of 213560)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  123
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0961
+Total Energy                  :       -77.8368  (        -77.8368   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 6000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5453 (139815 out of 256400)
+Insertion Move                Success Ratio : 0.6722 (172923 out of 257243)
+Deletion Move                 Success Ratio : 0.6744 (172918 out of 256393)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  119
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0930
+Total Energy                  :       -70.1266  (        -70.1266   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 7000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5459 (163279 out of 299105)
+Insertion Move                Success Ratio : 0.6725 (201780 out of 300044)
+Deletion Move                 Success Ratio : 0.6744 (201745 out of 299161)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  149
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1164
+Total Energy                  :       -126.700  (        -126.700   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 8000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5459 (186375 out of 341410)
+Insertion Move                Success Ratio : 0.6725 (230530 out of 342810)
+Deletion Move                 Success Ratio : 0.6742 (230495 out of 341896)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  149
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1164
+Total Energy                  :       -119.312  (        -119.312   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 9000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5462 (209558 out of 383689)
+Insertion Move                Success Ratio : 0.6728 (258848 out of 384710)
+Deletion Move                 Success Ratio : 0.6738 (258842 out of 384146)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  120
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0937
+Total Energy                  :       -74.5617  (        -74.5617   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5459 (232942 out of 426746)
+Insertion Move                Success Ratio : 0.6723 (287735 out of 428006)
+Deletion Move                 Success Ratio : 0.6741 (287707 out of 426827)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  142
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1109
+Total Energy                  :       -105.198  (        -105.198   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 11000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (256346 out of 469028)
+Insertion Move                Success Ratio : 0.6726 (316229 out of 470166)
+Deletion Move                 Success Ratio : 0.6743 (316234 out of 468967)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -56.5140  (        -56.5140   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 12000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (279252 out of 510630)
+Insertion Move                Success Ratio : 0.6727 (344695 out of 512419)
+Deletion Move                 Success Ratio : 0.6741 (344687 out of 511360)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  122
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0953
+Total Energy                  :       -82.0553  (        -82.0553   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 13000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5476 (302303 out of 552068)
+Insertion Move                Success Ratio : 0.6733 (372802 out of 553683)
+Deletion Move                 Success Ratio : 0.6739 (372792 out of 553170)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  124
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0969
+Total Energy                  :       -91.0461  (        -91.0461   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 14000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5473 (325708 out of 595080)
+Insertion Move                Success Ratio : 0.6734 (401677 out of 596509)
+Deletion Move                 Success Ratio : 0.6741 (401650 out of 595869)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  141
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1102
+Total Energy                  :       -115.251  (        -115.251   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 15000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5475 (348865 out of 637211)
+Insertion Move                Success Ratio : 0.6737 (430300 out of 638732)
+Deletion Move                 Success Ratio : 0.6741 (430305 out of 638295)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -62.9547  (        -62.9547   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 16000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5474 (371970 out of 679554)
+Insertion Move                Success Ratio : 0.6738 (458814 out of 680913)
+Deletion Move                 Success Ratio : 0.6742 (458799 out of 680527)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  129
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1008
+Total Energy                  :       -81.9329  (        -81.9329   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 17000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5474 (395319 out of 722165)
+Insertion Move                Success Ratio : 0.6740 (487200 out of 722806)
+Deletion Move                 Success Ratio : 0.6740 (487208 out of 722864)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  106
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0828
+Total Energy                  :       -61.4693  (        -61.4693   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 18000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5476 (418570 out of 764303)
+Insertion Move                Success Ratio : 0.6743 (515645 out of 764676)
+Deletion Move                 Success Ratio : 0.6741 (515649 out of 764895)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  110
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0859
+Total Energy                  :       -67.3281  (        -67.3281   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 19000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5475 (441917 out of 807203)
+Insertion Move                Success Ratio : 0.6741 (544545 out of 807790)
+Deletion Move                 Success Ratio : 0.6743 (544535 out of 807586)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  124
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0969
+Total Energy                  :       -87.8308  (        -87.8308   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5477 (465292 out of 849485)
+Insertion Move                Success Ratio : 0.6743 (573061 out of 849860)
+Deletion Move                 Success Ratio : 0.6744 (573030 out of 849719)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  145
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1133
+Total Energy                  :       -109.752  (        -109.752   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 21000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5476 (488139 out of 891458)
+Insertion Move                Success Ratio : 0.6743 (601565 out of 892091)
+Deletion Move                 Success Ratio : 0.6742 (601561 out of 892266)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  118
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0922
+Total Energy                  :       -74.0856  (        -74.0856   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 22000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5475 (511628 out of 934417)
+Insertion Move                Success Ratio : 0.6740 (630292 out of 935110)
+Deletion Move                 Success Ratio : 0.6741 (630284 out of 935005)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  122
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0953
+Total Energy                  :       -80.6315  (        -80.6315   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 23000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5473 (534760 out of 977064)
+Insertion Move                Success Ratio : 0.6741 (659258 out of 977990)
+Deletion Move                 Success Ratio : 0.6740 (659224 out of 978130)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  148
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1156
+Total Energy                  :       -119.776  (        -119.776   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 24000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5471 (558115 out of 1020160)
+Insertion Move                Success Ratio : 0.6739 (687999 out of 1020915)
+Deletion Move                 Success Ratio : 0.6739 (687985 out of 1020852)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  128
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1000
+Total Energy                  :       -78.0331  (        -78.0331   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 25000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (581391 out of 1063013)
+Insertion Move                Success Ratio : 0.6739 (717126 out of 1064097)
+Deletion Move                 Success Ratio : 0.6742 (717120 out of 1063723)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  120
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0937
+Total Energy                  :       -73.4966  (        -73.4966   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 26000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (604718 out of 1106230)
+Insertion Move                Success Ratio : 0.6736 (746171 out of 1107662)
+Deletion Move                 Success Ratio : 0.6741 (746167 out of 1106943)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  118
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0922
+Total Energy                  :       -79.3177  (        -79.3177   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 27000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (627827 out of 1148417)
+Insertion Move                Success Ratio : 0.6737 (774564 out of 1149684)
+Deletion Move                 Success Ratio : 0.6740 (774560 out of 1149188)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  118
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0922
+Total Energy                  :       -71.5104  (        -71.5104   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 28000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (651034 out of 1191141)
+Insertion Move                Success Ratio : 0.6736 (803180 out of 1192383)
+Deletion Move                 Success Ratio : 0.6739 (803165 out of 1191801)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  129
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1008
+Total Energy                  :       -83.6777  (        -83.6777   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 29000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (674431 out of 1233746)
+Insertion Move                Success Ratio : 0.6735 (831893 out of 1235155)
+Deletion Move                 Success Ratio : 0.6739 (831882 out of 1234358)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  125
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0977
+Total Energy                  :       -78.6003  (        -78.6003   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5468 (697695 out of 1275860)
+Insertion Move                Success Ratio : 0.6737 (860273 out of 1277012)
+Deletion Move                 Success Ratio : 0.6739 (860246 out of 1276516)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  141
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1102
+Total Energy                  :       -102.533  (        -102.533   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 31000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5470 (720986 out of 1318037)
+Insertion Move                Success Ratio : 0.6736 (888857 out of 1319493)
+Deletion Move                 Success Ratio : 0.6739 (888821 out of 1319012)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  150
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1172
+Total Energy                  :       -113.484  (        -113.484   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 32000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (744160 out of 1360570)
+Insertion Move                Success Ratio : 0.6736 (917289 out of 1361762)
+Deletion Move                 Success Ratio : 0.6736 (917278 out of 1361672)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  125
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0977
+Total Energy                  :       -90.6961  (        -90.6961   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 33000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5470 (767387 out of 1403013)
+Insertion Move                Success Ratio : 0.6737 (945671 out of 1403713)
+Deletion Move                 Success Ratio : 0.6735 (945630 out of 1404038)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  155
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1211
+Total Energy                  :       -127.065  (        -127.065   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 34000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5471 (790569 out of 1445069)
+Insertion Move                Success Ratio : 0.6737 (973919 out of 1445611)
+Deletion Move                 Success Ratio : 0.6734 (973898 out of 1446319)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  135
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1055
+Total Energy                  :       -95.5006  (        -95.5006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 35000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5468 (813668 out of 1487985)
+Insertion Move                Success Ratio : 0.6736 (1002821 out of 1488786)
+Deletion Move                 Success Ratio : 0.6734 (1002824 out of 1489241)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  111
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0867
+Total Energy                  :       -70.4817  (        -70.4817   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 36000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (837207 out of 1530907)
+Insertion Move                Success Ratio : 0.6735 (1031533 out of 1531571)
+Deletion Move                 Success Ratio : 0.6733 (1031510 out of 1532050)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  137
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1070
+Total Energy                  :       -93.4646  (        -93.4646   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 37000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5468 (860614 out of 1574001)
+Insertion Move                Success Ratio : 0.6734 (1060516 out of 1574865)
+Deletion Move                 Success Ratio : 0.6734 (1060520 out of 1574944)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  110
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0859
+Total Energy                  :       -56.8369  (        -56.8369   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 38000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (884050 out of 1616933)
+Insertion Move                Success Ratio : 0.6733 (1089408 out of 1618008)
+Deletion Move                 Success Ratio : 0.6734 (1089399 out of 1617702)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  123
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0961
+Total Energy                  :       -77.3568  (        -77.3568   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 39000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (907192 out of 1659510)
+Insertion Move                Success Ratio : 0.6732 (1117896 out of 1660645)
+Deletion Move                 Success Ratio : 0.6733 (1117897 out of 1660384)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  113
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0883
+Total Energy                  :       -66.9296  (        -66.9296   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (930517 out of 1702499)
+Insertion Move                Success Ratio : 0.6732 (1146598 out of 1703303)
+Deletion Move                 Success Ratio : 0.6732 (1146553 out of 1703158)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  159
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1242
+Total Energy                  :       -135.027  (        -135.027   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 41000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (953589 out of 1744233)
+Insertion Move                Success Ratio : 0.6732 (1174916 out of 1745249)
+Deletion Move                 Success Ratio : 0.6731 (1174894 out of 1745441)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  136
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1062
+Total Energy                  :       -89.1586  (        -89.1586   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 42000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (976752 out of 1786617)
+Insertion Move                Success Ratio : 0.6732 (1203617 out of 1787905)
+Deletion Move                 Success Ratio : 0.6732 (1203624 out of 1788017)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  107
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0836
+Total Energy                  :       -58.2554  (        -58.2554   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 43000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (999952 out of 1828998)
+Insertion Move                Success Ratio : 0.6733 (1232532 out of 1830670)
+Deletion Move                 Success Ratio : 0.6732 (1232515 out of 1830742)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  131
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1023
+Total Energy                  :       -94.6577  (        -94.6577   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 44000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (1023051 out of 1871380)
+Insertion Move                Success Ratio : 0.6733 (1261216 out of 1873115)
+Deletion Move                 Success Ratio : 0.6732 (1261198 out of 1873543)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  132
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1031
+Total Energy                  :       -110.141  (        -110.141   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 45000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (1046355 out of 1914495)
+Insertion Move                Success Ratio : 0.6732 (1290251 out of 1916457)
+Deletion Move                 Success Ratio : 0.6732 (1290255 out of 1916606)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  110
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0859
+Total Energy                  :       -74.2148  (        -74.2148   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 46000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (1069838 out of 1957539)
+Insertion Move                Success Ratio : 0.6732 (1319111 out of 1959388)
+Deletion Move                 Success Ratio : 0.6733 (1319099 out of 1959117)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  126
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0984
+Total Energy                  :       -82.0251  (        -82.0251   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 47000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (1092942 out of 1999590)
+Insertion Move                Success Ratio : 0.6734 (1347789 out of 2001570)
+Deletion Move                 Success Ratio : 0.6734 (1347773 out of 2001563)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  130
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1016
+Total Energy                  :       -88.8664  (        -88.8664   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 48000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (1116149 out of 2041688)
+Insertion Move                Success Ratio : 0.6734 (1375910 out of 2043356)
+Deletion Move                 Success Ratio : 0.6734 (1375886 out of 2043327)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  138
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1078
+Total Energy                  :       -103.056  (        -103.056   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 49000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (1139659 out of 2084531)
+Insertion Move                Success Ratio : 0.6734 (1404760 out of 2086181)
+Deletion Move                 Success Ratio : 0.6734 (1404761 out of 2086096)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  113
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0883
+Total Energy                  :       -57.7246  (        -57.7246   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (1162897 out of 2127806)
+Insertion Move                Success Ratio : 0.6732 (1433872 out of 2129788)
+Deletion Move                 Success Ratio : 0.6734 (1433877 out of 2129442)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -59.3614  (        -59.3614   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total                         :       -0.593614E+02
+                   van der Waals                 :       -0.593614E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total                         :       -0.423494E+02
+                   van der Waals                 :       -0.423494E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total                         :       -0.593614E+02
+                   van der Waals                 :       -0.593614E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total                         :       -0.423494E+02
+                   van der Waals                 :       -0.423494E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               LJ
+Potential cutoff distance          2.5
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     10000
+Number of Production Cycles        50000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Cubic
+Density                0.2
+Boundary conditions    1  1  1
+
+Species   Name                            LJ
+Initialization Method           Random
+Initial number of molecules     256
+Translation weight              1
+Maximum displacement            0.1
+Insertion weight                1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1           2.0
+Fugacity            LJ              1              1           0.1594
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Pressure                  1                    12500
+Calculate     Energy                    1                    12500
+Calculate     Density                   1                    12500
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+LJ            LJ          1.0        0.0
+A             A           1.0        0.0
+B             B           1.0        0.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+LJ            LJ          Lennard-Jones             1.0    1.0    0.8
+A             A           Truncated-Lennard-Jones   1.0    1.0    0.8   2.5
+B             B           Shifted-Lennard-Jones     1.0    1.0    0.8   2.5
+
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total                         :        0.987098E+02
+                   van der Waals                 :        0.987098E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total                         :        0.208488E+04
+                   van der Waals                 :        0.208488E+04
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5519 (542 out of 982)
+Insertion Move                Success Ratio : 0.6705 (28485 out of 42486)
+Deletion Move                 Success Ratio : 0.6724 (28632 out of 42580)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -67.9600  (        -67.9600   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5352 (479 out of 895)
+Insertion Move                Success Ratio : 0.6718 (57163 out of 85095)
+Deletion Move                 Success Ratio : 0.6732 (57274 out of 85074)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  145
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1133
+Total Energy                  :       -125.792  (        -125.792   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5303 (472 out of 890)
+Insertion Move                Success Ratio : 0.6725 (85745 out of 127501)
+Deletion Move                 Success Ratio : 0.6737 (85856 out of 127447)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  145
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1133
+Total Energy                  :       -108.856  (        -108.856   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5817 (445 out of 765)
+Insertion Move                Success Ratio : 0.6732 (114334 out of 169840)
+Deletion Move                 Success Ratio : 0.6727 (114485 out of 170192)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  105
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0820
+Total Energy                  :       -54.0303  (        -54.0303   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5308 (491 out of 925)
+Insertion Move                Success Ratio : 0.6736 (142877 out of 212110)
+Deletion Move                 Success Ratio : 0.6735 (143004 out of 212333)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  129
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1008
+Total Energy                  :       -82.5781  (        -82.5781   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 6000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.4994 (424 out of 849)
+Insertion Move                Success Ratio : 0.6742 (171020 out of 253668)
+Deletion Move                 Success Ratio : 0.6724 (171148 out of 254543)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  128
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1000
+Total Energy                  :       -92.7541  (        -92.7541   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 7000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5566 (462 out of 830)
+Insertion Move                Success Ratio : 0.6737 (200096 out of 296990)
+Deletion Move                 Success Ratio : 0.6729 (200253 out of 297597)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :   99
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0773
+Total Energy                  :       -52.5278  (        -52.5278   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 8000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5440 (457 out of 840)
+Insertion Move                Success Ratio : 0.6734 (229200 out of 340381)
+Deletion Move                 Success Ratio : 0.6734 (229329 out of 340560)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  127
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0992
+Total Energy                  :       -94.1952  (        -94.1952   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 9000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5184 (436 out of 841)
+Insertion Move                Success Ratio : 0.6729 (258159 out of 383652)
+Deletion Move                 Success Ratio : 0.6734 (258282 out of 383523)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  133
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1039
+Total Energy                  :       -83.1707  (        -83.1707   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5309 (430 out of 810)
+Insertion Move                Success Ratio : 0.6727 (286958 out of 426556)
+Deletion Move                 Success Ratio : 0.6738 (287100 out of 426111)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  114
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0891
+Total Energy                  :       -74.2132  (        -74.2132   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5427 (23146 out of 42650)
+Insertion Move                Success Ratio : 0.6754 (28895 out of 42783)
+Deletion Move                 Success Ratio : 0.6734 (28882 out of 42889)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  127
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0992
+Total Energy                  :       -83.6676  (        -83.6676   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5438 (46526 out of 85561)
+Insertion Move                Success Ratio : 0.6748 (57844 out of 85722)
+Deletion Move                 Success Ratio : 0.6743 (57842 out of 85775)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  116
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0906
+Total Energy                  :       -69.2355  (        -69.2355   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5464 (70081 out of 128266)
+Insertion Move                Success Ratio : 0.6741 (86641 out of 128527)
+Deletion Move                 Success Ratio : 0.6747 (86603 out of 128364)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  152
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1187
+Total Energy                  :       -108.430  (        -108.430   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5462 (93173 out of 170593)
+Insertion Move                Success Ratio : 0.6733 (115460 out of 171474)
+Deletion Move                 Success Ratio : 0.6756 (115433 out of 170867)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  141
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1102
+Total Energy                  :       -108.323  (        -108.323   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5455 (116461 out of 213504)
+Insertion Move                Success Ratio : 0.6729 (144212 out of 214324)
+Deletion Move                 Success Ratio : 0.6752 (144203 out of 213560)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  123
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0961
+Total Energy                  :       -77.8368  (        -77.8368   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 6000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5453 (139815 out of 256400)
+Insertion Move                Success Ratio : 0.6722 (172923 out of 257243)
+Deletion Move                 Success Ratio : 0.6744 (172918 out of 256393)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  119
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0930
+Total Energy                  :       -70.1266  (        -70.1266   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 7000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5459 (163279 out of 299105)
+Insertion Move                Success Ratio : 0.6725 (201780 out of 300044)
+Deletion Move                 Success Ratio : 0.6744 (201745 out of 299161)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  149
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1164
+Total Energy                  :       -126.700  (        -126.700   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 8000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5459 (186375 out of 341410)
+Insertion Move                Success Ratio : 0.6725 (230530 out of 342810)
+Deletion Move                 Success Ratio : 0.6742 (230495 out of 341896)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  149
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1164
+Total Energy                  :       -119.312  (        -119.312   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 9000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5462 (209558 out of 383689)
+Insertion Move                Success Ratio : 0.6728 (258848 out of 384710)
+Deletion Move                 Success Ratio : 0.6738 (258842 out of 384146)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  120
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0937
+Total Energy                  :       -74.5617  (        -74.5617   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5459 (232942 out of 426746)
+Insertion Move                Success Ratio : 0.6723 (287735 out of 428006)
+Deletion Move                 Success Ratio : 0.6741 (287707 out of 426827)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  142
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1109
+Total Energy                  :       -105.198  (        -105.198   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 11000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (256346 out of 469028)
+Insertion Move                Success Ratio : 0.6726 (316229 out of 470166)
+Deletion Move                 Success Ratio : 0.6743 (316234 out of 468967)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -56.5140  (        -56.5140   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 12000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (279252 out of 510630)
+Insertion Move                Success Ratio : 0.6727 (344695 out of 512419)
+Deletion Move                 Success Ratio : 0.6741 (344687 out of 511360)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  122
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0953
+Total Energy                  :       -82.0553  (        -82.0553   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 13000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5476 (302303 out of 552068)
+Insertion Move                Success Ratio : 0.6733 (372802 out of 553683)
+Deletion Move                 Success Ratio : 0.6739 (372792 out of 553170)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  124
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0969
+Total Energy                  :       -91.0461  (        -91.0461   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 14000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5473 (325708 out of 595080)
+Insertion Move                Success Ratio : 0.6734 (401677 out of 596509)
+Deletion Move                 Success Ratio : 0.6741 (401650 out of 595869)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  141
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1102
+Total Energy                  :       -115.251  (        -115.251   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 15000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5475 (348865 out of 637211)
+Insertion Move                Success Ratio : 0.6737 (430300 out of 638732)
+Deletion Move                 Success Ratio : 0.6741 (430305 out of 638295)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -62.9547  (        -62.9547   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 16000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5474 (371970 out of 679554)
+Insertion Move                Success Ratio : 0.6738 (458814 out of 680913)
+Deletion Move                 Success Ratio : 0.6742 (458799 out of 680527)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  129
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1008
+Total Energy                  :       -81.9329  (        -81.9329   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 17000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5474 (395319 out of 722165)
+Insertion Move                Success Ratio : 0.6740 (487200 out of 722806)
+Deletion Move                 Success Ratio : 0.6740 (487208 out of 722864)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  106
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0828
+Total Energy                  :       -61.4693  (        -61.4693   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 18000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5476 (418570 out of 764303)
+Insertion Move                Success Ratio : 0.6743 (515645 out of 764676)
+Deletion Move                 Success Ratio : 0.6741 (515649 out of 764895)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  110
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0859
+Total Energy                  :       -67.3281  (        -67.3281   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 19000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5475 (441917 out of 807203)
+Insertion Move                Success Ratio : 0.6741 (544545 out of 807790)
+Deletion Move                 Success Ratio : 0.6743 (544535 out of 807586)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  124
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0969
+Total Energy                  :       -87.8308  (        -87.8308   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5477 (465292 out of 849485)
+Insertion Move                Success Ratio : 0.6743 (573061 out of 849860)
+Deletion Move                 Success Ratio : 0.6744 (573030 out of 849719)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  145
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1133
+Total Energy                  :       -109.752  (        -109.752   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 21000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5476 (488139 out of 891458)
+Insertion Move                Success Ratio : 0.6743 (601565 out of 892091)
+Deletion Move                 Success Ratio : 0.6742 (601561 out of 892266)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  118
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0922
+Total Energy                  :       -74.0856  (        -74.0856   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 22000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5475 (511628 out of 934417)
+Insertion Move                Success Ratio : 0.6740 (630292 out of 935110)
+Deletion Move                 Success Ratio : 0.6741 (630284 out of 935005)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  122
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0953
+Total Energy                  :       -80.6315  (        -80.6315   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 23000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5473 (534760 out of 977064)
+Insertion Move                Success Ratio : 0.6741 (659258 out of 977990)
+Deletion Move                 Success Ratio : 0.6740 (659224 out of 978130)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  148
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1156
+Total Energy                  :       -119.776  (        -119.776   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 24000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5471 (558115 out of 1020160)
+Insertion Move                Success Ratio : 0.6739 (687999 out of 1020915)
+Deletion Move                 Success Ratio : 0.6739 (687985 out of 1020852)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  128
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1000
+Total Energy                  :       -78.0331  (        -78.0331   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 25000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (581391 out of 1063013)
+Insertion Move                Success Ratio : 0.6739 (717126 out of 1064097)
+Deletion Move                 Success Ratio : 0.6742 (717120 out of 1063723)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  120
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0937
+Total Energy                  :       -73.4966  (        -73.4966   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 26000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (604718 out of 1106230)
+Insertion Move                Success Ratio : 0.6736 (746171 out of 1107662)
+Deletion Move                 Success Ratio : 0.6741 (746167 out of 1106943)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  118
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0922
+Total Energy                  :       -79.3177  (        -79.3177   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 27000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (627827 out of 1148417)
+Insertion Move                Success Ratio : 0.6737 (774564 out of 1149684)
+Deletion Move                 Success Ratio : 0.6740 (774560 out of 1149188)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  118
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0922
+Total Energy                  :       -71.5104  (        -71.5104   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 28000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (651034 out of 1191141)
+Insertion Move                Success Ratio : 0.6736 (803180 out of 1192383)
+Deletion Move                 Success Ratio : 0.6739 (803165 out of 1191801)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  129
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1008
+Total Energy                  :       -83.6777  (        -83.6777   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 29000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (674431 out of 1233746)
+Insertion Move                Success Ratio : 0.6735 (831893 out of 1235155)
+Deletion Move                 Success Ratio : 0.6739 (831882 out of 1234358)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  125
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0977
+Total Energy                  :       -78.6003  (        -78.6003   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5468 (697695 out of 1275860)
+Insertion Move                Success Ratio : 0.6737 (860273 out of 1277012)
+Deletion Move                 Success Ratio : 0.6739 (860246 out of 1276516)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  141
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1102
+Total Energy                  :       -102.533  (        -102.533   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 31000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5470 (720986 out of 1318037)
+Insertion Move                Success Ratio : 0.6736 (888857 out of 1319493)
+Deletion Move                 Success Ratio : 0.6739 (888821 out of 1319012)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  150
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1172
+Total Energy                  :       -113.484  (        -113.484   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 32000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (744160 out of 1360570)
+Insertion Move                Success Ratio : 0.6736 (917289 out of 1361762)
+Deletion Move                 Success Ratio : 0.6736 (917278 out of 1361672)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  125
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0977
+Total Energy                  :       -90.6961  (        -90.6961   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 33000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5470 (767387 out of 1403013)
+Insertion Move                Success Ratio : 0.6737 (945671 out of 1403713)
+Deletion Move                 Success Ratio : 0.6735 (945630 out of 1404038)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  155
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1211
+Total Energy                  :       -127.065  (        -127.065   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 34000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5471 (790569 out of 1445069)
+Insertion Move                Success Ratio : 0.6737 (973919 out of 1445611)
+Deletion Move                 Success Ratio : 0.6734 (973898 out of 1446319)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  135
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1055
+Total Energy                  :       -95.5006  (        -95.5006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 35000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5468 (813668 out of 1487985)
+Insertion Move                Success Ratio : 0.6736 (1002821 out of 1488786)
+Deletion Move                 Success Ratio : 0.6734 (1002824 out of 1489241)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  111
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0867
+Total Energy                  :       -70.4817  (        -70.4817   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 36000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5469 (837207 out of 1530907)
+Insertion Move                Success Ratio : 0.6735 (1031533 out of 1531571)
+Deletion Move                 Success Ratio : 0.6733 (1031510 out of 1532050)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  137
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1070
+Total Energy                  :       -93.4646  (        -93.4646   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 37000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5468 (860614 out of 1574001)
+Insertion Move                Success Ratio : 0.6734 (1060516 out of 1574865)
+Deletion Move                 Success Ratio : 0.6734 (1060520 out of 1574944)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  110
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0859
+Total Energy                  :       -56.8369  (        -56.8369   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 38000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (884050 out of 1616933)
+Insertion Move                Success Ratio : 0.6733 (1089408 out of 1618008)
+Deletion Move                 Success Ratio : 0.6734 (1089399 out of 1617702)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  123
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0961
+Total Energy                  :       -77.3568  (        -77.3568   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 39000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (907192 out of 1659510)
+Insertion Move                Success Ratio : 0.6732 (1117896 out of 1660645)
+Deletion Move                 Success Ratio : 0.6733 (1117897 out of 1660384)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  113
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0883
+Total Energy                  :       -66.9296  (        -66.9296   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (930517 out of 1702499)
+Insertion Move                Success Ratio : 0.6732 (1146598 out of 1703303)
+Deletion Move                 Success Ratio : 0.6732 (1146553 out of 1703158)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  159
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1242
+Total Energy                  :       -135.027  (        -135.027   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 41000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (953589 out of 1744233)
+Insertion Move                Success Ratio : 0.6732 (1174916 out of 1745249)
+Deletion Move                 Success Ratio : 0.6731 (1174894 out of 1745441)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  136
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1062
+Total Energy                  :       -89.1586  (        -89.1586   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 42000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (976752 out of 1786617)
+Insertion Move                Success Ratio : 0.6732 (1203617 out of 1787905)
+Deletion Move                 Success Ratio : 0.6732 (1203624 out of 1788017)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  107
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0836
+Total Energy                  :       -58.2554  (        -58.2554   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 43000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (999952 out of 1828998)
+Insertion Move                Success Ratio : 0.6733 (1232532 out of 1830670)
+Deletion Move                 Success Ratio : 0.6732 (1232515 out of 1830742)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  131
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1023
+Total Energy                  :       -94.6577  (        -94.6577   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 44000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (1023051 out of 1871380)
+Insertion Move                Success Ratio : 0.6733 (1261216 out of 1873115)
+Deletion Move                 Success Ratio : 0.6732 (1261198 out of 1873543)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  132
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1031
+Total Energy                  :       -110.141  (        -110.141   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 45000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (1046355 out of 1914495)
+Insertion Move                Success Ratio : 0.6732 (1290251 out of 1916457)
+Deletion Move                 Success Ratio : 0.6732 (1290255 out of 1916606)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  110
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0859
+Total Energy                  :       -74.2148  (        -74.2148   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 46000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (1069838 out of 1957539)
+Insertion Move                Success Ratio : 0.6732 (1319111 out of 1959388)
+Deletion Move                 Success Ratio : 0.6733 (1319099 out of 1959117)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  126
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0984
+Total Energy                  :       -82.0251  (        -82.0251   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 47000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5466 (1092942 out of 1999590)
+Insertion Move                Success Ratio : 0.6734 (1347789 out of 2001570)
+Deletion Move                 Success Ratio : 0.6734 (1347773 out of 2001563)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  130
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1016
+Total Energy                  :       -88.8664  (        -88.8664   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 48000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (1116149 out of 2041688)
+Insertion Move                Success Ratio : 0.6734 (1375910 out of 2043356)
+Deletion Move                 Success Ratio : 0.6734 (1375886 out of 2043327)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  138
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.1078
+Total Energy                  :       -103.056  (        -103.056   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 49000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5467 (1139659 out of 2084531)
+Insertion Move                Success Ratio : 0.6734 (1404760 out of 2086181)
+Deletion Move                 Success Ratio : 0.6734 (1404761 out of 2086096)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  113
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0883
+Total Energy                  :       -57.7246  (        -57.7246   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.5465 (1162897 out of 2127806)
+Insertion Move                Success Ratio : 0.6732 (1433872 out of 2129788)
+Deletion Move                 Success Ratio : 0.6734 (1433877 out of 2129442)
+------------------------------------------------------------------------------
+Number of molecules of LJ     :  109
+Box Length                    :        10.8577        10.8577        10.8577
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1280.0000
+Number Density                :         0.0852
+Total Energy                  :       -59.3614  (        -59.3614   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total                         :       -0.593614E+02
+                   van der Waals                 :       -0.593614E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total                         :       -0.423494E+02
+                   van der Waals                 :       -0.423494E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total                         :       -0.593614E+02
+                   van der Waals                 :       -0.593614E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total                         :       -0.423494E+02
+                   van der Waals                 :       -0.423494E+02
+                   Real Coulombic                :        0.000000E+00
+                   Fourier Coulombic             :        0.000000E+00
+                   Einstein                      :        0.000000E+00
+-----------------------------------------------------------------
+

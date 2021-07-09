@@ -1,0 +1,319 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ finished creating cell list
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+HS-HS              Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+HS-HS              Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.7350 (1470 out of 2000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6215 (1243 out of 2000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6330 (1266 out of 2000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6285 (1257 out of 2000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6280 (1256 out of 2000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6338 (63375 out of 100000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6323 (126461 out of 200000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6331 (189919 out of 300000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6327 (253060 out of 400000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6320 (316000 out of 500000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 6000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6320 (379172 out of 600000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 7000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6318 (442280 out of 700000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 8000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6318 (505462 out of 800000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 9000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6317 (568572 out of 900000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for HS
+Translation Move              Success Ratio : 0.6318 (631828 out of 1000000)
+------------------------------------------------------------------------------
+Number of molecules of HS     :  100
+Box Length                    :        10.0000        10.0000        10.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :      1000.0000
+Number Density                :         0.1000
+Total Energy                  :   0.00000E+000  (    0.00000E+000   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+HS-HS              Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+STORED VIRIALS
+-----------------------------------------------------------------
+System             Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+HS-HS              Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+HS-HS              Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED VIRIALS
+-----------------------------------------------------------------
+System             Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+HS-HS              Total               :              0.0000
+                   van der Waals       :              0.0000
+                   Real Coulombic      :              0.0000
+                   Fourier Coulombic   :              0.0000
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 

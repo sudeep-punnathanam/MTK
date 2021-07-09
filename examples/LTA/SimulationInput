@@ -1,0 +1,60 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 Dubbeldam
+Potential cutoff distance            12.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        10000
+Display Frequency                  100
+Restart Frequency                  10
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            24.555 24.555 24.555
+                  Box Angles             90.0   90.0   90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            Methane
+          Initialization Method           Random
+          Initial number of molecules     0 
+          Translation weight              1
+          Maximum displacement            0.1
+          Insertion weight                1
+
+Species   Name                            Sodium
+          Initialization Method           Random
+          Initial number of molecules     24
+          Translation weight              1
+          Maximum displacement            0.1
+
+Species   Name                            Calcium
+          Initialization Method           Random
+          Initial number of molecules     36
+          Translation weight              1
+          Maximum displacement            0.1
+
+Species   Name                            LTA
+          Initialization Method           Molecule
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1          230.0
+   Fugacity           Methane          1              1          1.0e3
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+#Calculate     Pressure                  1                    250
+#Calculate     Energy                    1                    250
+#Calculate     Density                   1                    250
+ Calculate     Number     Methane        1                    5000
+

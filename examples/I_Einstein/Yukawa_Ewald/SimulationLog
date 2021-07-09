@@ -1,0 +1,1526 @@
+ Reading input file :SimulationInput
+ finished reading forcefield
+ finished reading molecule info
+ finished normalizing move probabilities
+ finished reading input file
+ finished initializing starting config
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5319 (1149 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2694.15  (    0.00000E+000        20.3106        2673.84        812.342 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4992 (539083 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.98  (    0.00000E+000        20.2890        2673.69        778.889 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4993 (1078487 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2694.09  (    0.00000E+000        20.2941        2673.79        940.229 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5009 (1622768 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.86  (    0.00000E+000        20.3089        2673.55        845.591 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5012 (2165256 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2694.01  (    0.00000E+000        20.3558        2673.65        961.673 )
+==============================================================================
+ 
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5022 (2711638 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2694.08  (    0.00000E+000        20.3461        2673.74        832.289 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2694.0829
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.3461
+                   Fourier Coulombic   :           2673.7368
+                   Einstein            :            832.2893
+-----------------------------------------------------------------
+A-A                Total               :           2694.0829
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.3461
+                   Fourier Coulombic   :           2673.7368
+                   Einstein            :            832.2893
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2694.0829
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.3461
+                   Fourier Coulombic   :           2673.7368
+                   Einstein            :            832.2893
+-----------------------------------------------------------------
+A-A                Total               :           2694.0829
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.3461
+                   Fourier Coulombic   :           2673.7368
+                   Einstein            :            832.2893
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 2 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4815 (1040 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.91  (    0.00000E+000        20.2437        2673.67        701.932 )
+==============================================================================
+ 
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5034 (543622 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.50  (    0.00000E+000        20.0927        2673.40        590.851 )
+==============================================================================
+ 
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5033 (1087074 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.81  (    0.00000E+000        20.2092        2673.60        701.788 )
+==============================================================================
+ 
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5034 (1631149 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.74  (    0.00000E+000        20.2203        2673.52        643.368 )
+==============================================================================
+ 
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5030 (2172790 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.71  (    0.00000E+000        20.1860        2673.52        699.916 )
+==============================================================================
+ 
+SIMULATION NUMBER 2 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5029 (2715874 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.81  (    0.00000E+000        20.2641        2673.55        707.872 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.8128
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.2641
+                   Fourier Coulombic   :           2673.5487
+                   Einstein            :            707.8723
+-----------------------------------------------------------------
+A-A                Total               :           2693.8128
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.2641
+                   Fourier Coulombic   :           2673.5487
+                   Einstein            :            707.8723
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.8128
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.2641
+                   Fourier Coulombic   :           2673.5487
+                   Einstein            :            707.8723
+-----------------------------------------------------------------
+A-A                Total               :           2693.8128
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.2641
+                   Fourier Coulombic   :           2673.5487
+                   Einstein            :            707.8723
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 3 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4588 (991 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.69  (    0.00000E+000        20.1327        2673.55        462.732 )
+==============================================================================
+ 
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4843 (523085 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.65  (    0.00000E+000        20.1268        2673.52        498.311 )
+==============================================================================
+ 
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4844 (1046278 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.57  (    0.00000E+000        20.0802        2673.49        438.579 )
+==============================================================================
+ 
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4847 (1570304 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.72  (    0.00000E+000        20.1032        2673.61        491.676 )
+==============================================================================
+ 
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4850 (2095044 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.63  (    0.00000E+000        20.0840        2673.55        471.239 )
+==============================================================================
+ 
+SIMULATION NUMBER 3 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4851 (2619705 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.58  (    0.00000E+000        20.0856        2673.50        449.223 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.5822
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0856
+                   Fourier Coulombic   :           2673.4966
+                   Einstein            :            449.2232
+-----------------------------------------------------------------
+A-A                Total               :           2693.5822
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0856
+                   Fourier Coulombic   :           2673.4966
+                   Einstein            :            449.2232
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.5822
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0856
+                   Fourier Coulombic   :           2673.4966
+                   Einstein            :            449.2232
+-----------------------------------------------------------------
+A-A                Total               :           2693.5822
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0856
+                   Fourier Coulombic   :           2673.4966
+                   Einstein            :            449.2232
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 4 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5255 (1135 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.50  (    0.00000E+000        19.9803        2673.52        341.059 )
+==============================================================================
+ 
+SIMULATION NUMBER 4 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4884 (527427 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.37  (    0.00000E+000        19.9751        2673.39        345.745 )
+==============================================================================
+ 
+SIMULATION NUMBER 4 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4880 (1054048 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.48  (    0.00000E+000        19.9951        2673.48        363.696 )
+==============================================================================
+ 
+SIMULATION NUMBER 4 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4878 (1580481 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.31  (    0.00000E+000        19.9412        2673.37        329.973 )
+==============================================================================
+ 
+SIMULATION NUMBER 4 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4881 (2108479 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.57  (    0.00000E+000        20.0603        2673.51        387.109 )
+==============================================================================
+ 
+SIMULATION NUMBER 4 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4880 (2635281 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.54  (    0.00000E+000        20.0353        2673.50        354.928 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.5367
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0353
+                   Fourier Coulombic   :           2673.5014
+                   Einstein            :            354.9277
+-----------------------------------------------------------------
+A-A                Total               :           2693.5367
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0353
+                   Fourier Coulombic   :           2673.5014
+                   Einstein            :            354.9277
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.5367
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0353
+                   Fourier Coulombic   :           2673.5014
+                   Einstein            :            354.9277
+-----------------------------------------------------------------
+A-A                Total               :           2693.5367
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             20.0353
+                   Fourier Coulombic   :           2673.5014
+                   Einstein            :            354.9277
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 5 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5199 (1123 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.27  (    0.00000E+000        19.8997        2673.37        267.822 )
+==============================================================================
+ 
+SIMULATION NUMBER 5 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4777 (515947 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.31  (    0.00000E+000        19.9556        2673.35        304.699 )
+==============================================================================
+ 
+SIMULATION NUMBER 5 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4780 (1032580 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.30  (    0.00000E+000        19.8818        2673.42        277.918 )
+==============================================================================
+ 
+SIMULATION NUMBER 5 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4779 (1548397 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.19  (    0.00000E+000        19.8420        2673.35        244.406 )
+==============================================================================
+ 
+SIMULATION NUMBER 5 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4779 (2064557 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.34  (    0.00000E+000        19.9202        2673.42        283.541 )
+==============================================================================
+ 
+SIMULATION NUMBER 5 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4779 (2580697 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.21  (    0.00000E+000        19.8598        2673.35        253.469 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.2063
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8598
+                   Fourier Coulombic   :           2673.3465
+                   Einstein            :            253.4690
+-----------------------------------------------------------------
+A-A                Total               :           2693.2063
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8598
+                   Fourier Coulombic   :           2673.3465
+                   Einstein            :            253.4690
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.2063
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8598
+                   Fourier Coulombic   :           2673.3465
+                   Einstein            :            253.4690
+-----------------------------------------------------------------
+A-A                Total               :           2693.2063
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8598
+                   Fourier Coulombic   :           2673.3465
+                   Einstein            :            253.4690
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 6 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4861 (1050 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.25  (    0.00000E+000        19.8674        2673.38        249.527 )
+==============================================================================
+ 
+SIMULATION NUMBER 6 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5039 (544247 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.20  (    0.00000E+000        19.8640        2673.33        231.392 )
+==============================================================================
+ 
+SIMULATION NUMBER 6 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5039 (1088468 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.15  (    0.00000E+000        19.8225        2673.33        211.542 )
+==============================================================================
+ 
+SIMULATION NUMBER 6 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5038 (1632226 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.16  (    0.00000E+000        19.8261        2673.34        223.859 )
+==============================================================================
+ 
+SIMULATION NUMBER 6 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5037 (2175777 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.22  (    0.00000E+000        19.8742        2673.34        267.647 )
+==============================================================================
+ 
+SIMULATION NUMBER 6 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5036 (2719457 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.14  (    0.00000E+000        19.8232        2673.32        219.416 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.1442
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8232
+                   Fourier Coulombic   :           2673.3209
+                   Einstein            :            219.4163
+-----------------------------------------------------------------
+A-A                Total               :           2693.1442
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8232
+                   Fourier Coulombic   :           2673.3209
+                   Einstein            :            219.4163
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.1442
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8232
+                   Fourier Coulombic   :           2673.3209
+                   Einstein            :            219.4163
+-----------------------------------------------------------------
+A-A                Total               :           2693.1442
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8232
+                   Fourier Coulombic   :           2673.3209
+                   Einstein            :            219.4163
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 7 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5139 (1110 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.06  (    0.00000E+000        19.7699        2673.29        197.083 )
+==============================================================================
+ 
+SIMULATION NUMBER 7 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4870 (525923 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.09  (    0.00000E+000        19.7970        2673.29        190.385 )
+==============================================================================
+ 
+SIMULATION NUMBER 7 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4871 (1052164 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.14  (    0.00000E+000        19.8142        2673.32        207.130 )
+==============================================================================
+ 
+SIMULATION NUMBER 7 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4872 (1578428 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.09  (    0.00000E+000        19.8138        2673.28        228.807 )
+==============================================================================
+ 
+SIMULATION NUMBER 7 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4875 (2106121 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.04  (    0.00000E+000        19.7646        2673.27        190.470 )
+==============================================================================
+ 
+SIMULATION NUMBER 7 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4875 (2632400 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.12  (    0.00000E+000        19.8265        2673.30        202.549 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.1240
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8265
+                   Fourier Coulombic   :           2673.2975
+                   Einstein            :            202.5488
+-----------------------------------------------------------------
+A-A                Total               :           2693.1240
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8265
+                   Fourier Coulombic   :           2673.2975
+                   Einstein            :            202.5488
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.1240
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8265
+                   Fourier Coulombic   :           2673.2975
+                   Einstein            :            202.5488
+-----------------------------------------------------------------
+A-A                Total               :           2693.1240
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.8265
+                   Fourier Coulombic   :           2673.2975
+                   Einstein            :            202.5488
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 8 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5051 (1091 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.05  (    0.00000E+000        19.7566        2673.29        164.749 )
+==============================================================================
+ 
+SIMULATION NUMBER 8 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4748 (512815 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.97  (    0.00000E+000        19.7332        2673.24        162.486 )
+==============================================================================
+ 
+SIMULATION NUMBER 8 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4752 (1026398 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.06  (    0.00000E+000        19.7635        2673.29        189.557 )
+==============================================================================
+ 
+SIMULATION NUMBER 8 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4751 (1539438 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.12  (    0.00000E+000        19.8006        2673.32        194.045 )
+==============================================================================
+ 
+SIMULATION NUMBER 8 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4753 (2053210 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.99  (    0.00000E+000        19.7242        2673.26        153.115 )
+==============================================================================
+ 
+SIMULATION NUMBER 8 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4750 (2565153 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.08  (    0.00000E+000        19.7709        2673.31        184.978 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.0781
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7709
+                   Fourier Coulombic   :           2673.3072
+                   Einstein            :            184.9777
+-----------------------------------------------------------------
+A-A                Total               :           2693.0781
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7709
+                   Fourier Coulombic   :           2673.3072
+                   Einstein            :            184.9777
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.0781
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7709
+                   Fourier Coulombic   :           2673.3072
+                   Einstein            :            184.9777
+-----------------------------------------------------------------
+A-A                Total               :           2693.0781
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7709
+                   Fourier Coulombic   :           2673.3072
+                   Einstein            :            184.9777
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 9 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4940 (1067 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.97  (    0.00000E+000        19.7255        2673.24        163.805 )
+==============================================================================
+ 
+SIMULATION NUMBER 9 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5110 (551893 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.99  (    0.00000E+000        19.7424        2673.25        164.297 )
+==============================================================================
+ 
+SIMULATION NUMBER 9 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5110 (1103724 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.99  (    0.00000E+000        19.7330        2673.25        157.099 )
+==============================================================================
+ 
+SIMULATION NUMBER 9 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5110 (1655713 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.96  (    0.00000E+000        19.7355        2673.22        175.916 )
+==============================================================================
+ 
+SIMULATION NUMBER 9 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5109 (2207268 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.98  (    0.00000E+000        19.7284        2673.25        171.433 )
+==============================================================================
+ 
+SIMULATION NUMBER 9 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5110 (2759146 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2693.00  (    0.00000E+000        19.7453        2673.26        157.049 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.0036
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7453
+                   Fourier Coulombic   :           2673.2583
+                   Einstein            :            157.0489
+-----------------------------------------------------------------
+A-A                Total               :           2693.0036
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7453
+                   Fourier Coulombic   :           2673.2583
+                   Einstein            :            157.0489
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2693.0036
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7453
+                   Fourier Coulombic   :           2673.2583
+                   Einstein            :            157.0489
+-----------------------------------------------------------------
+A-A                Total               :           2693.0036
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7453
+                   Fourier Coulombic   :           2673.2583
+                   Einstein            :            157.0489
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2692.4653
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.4193
+                   Fourier Coulombic   :           2673.0460
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+INITIAL VIRIALS
+-----------------------------------------------------------------
+System             Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+A-A                Total               :           2773.1347
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             42.2069
+                   Fourier Coulombic   :           2730.9278
+                   Einstein            :              0.0000
+-----------------------------------------------------------------
+ 
+SIMULATION NUMBER 10 :  EQUILIBRATION STAGE
+Cycle Number 10000 out of 10000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.4963 (1072 out of 2160)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.95  (    0.00000E+000        19.7062        2673.25        147.270 )
+==============================================================================
+ 
+SIMULATION NUMBER 10 :  PRODUCTION STAGE
+Cycle Number 10000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5119 (552834 out of 1080000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.98  (    0.00000E+000        19.7359        2673.24        163.316 )
+==============================================================================
+ 
+SIMULATION NUMBER 10 :  PRODUCTION STAGE
+Cycle Number 20000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5121 (1106228 out of 2160000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.96  (    0.00000E+000        19.7186        2673.24        153.834 )
+==============================================================================
+ 
+SIMULATION NUMBER 10 :  PRODUCTION STAGE
+Cycle Number 30000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5122 (1659401 out of 3240000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.99  (    0.00000E+000        19.7286        2673.27        154.386 )
+==============================================================================
+ 
+SIMULATION NUMBER 10 :  PRODUCTION STAGE
+Cycle Number 40000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5121 (2212404 out of 4320000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.96  (    0.00000E+000        19.7033        2673.26        139.886 )
+==============================================================================
+ 
+SIMULATION NUMBER 10 :  PRODUCTION STAGE
+Cycle Number 50000 out of 50000
+------------------------------------------------------------------------------
+Move Statitics for A
+Translation Move              Success Ratio : 0.5123 (2766429 out of 5400000)
+------------------------------------------------------------------------------
+Number of molecules of A      :  108
+Box Length                    :         4.6991         4.6991         4.6991
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :       103.7604
+Number Density                :         1.0409
+Total Energy                  :        2692.94  (    0.00000E+000        19.7109        2673.22        156.308 )
+==============================================================================
+ 
+ 
+-----------------------------------------------------------------
+STORED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.9359
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7109
+                   Fourier Coulombic   :           2673.2249
+                   Einstein            :            156.3083
+-----------------------------------------------------------------
+A-A                Total               :           2692.9359
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7109
+                   Fourier Coulombic   :           2673.2249
+                   Einstein            :            156.3083
+-----------------------------------------------------------------
+ 
+ 
+-----------------------------------------------------------------
+CALCULATED ENERGIES
+-----------------------------------------------------------------
+System             Total               :           2692.9359
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7109
+                   Fourier Coulombic   :           2673.2249
+                   Einstein            :            156.3083
+-----------------------------------------------------------------
+A-A                Total               :           2692.9359
+                   van der Waals       :              0.0000
+                   Real Coulombic      :             19.7109
+                   Fourier Coulombic   :           2673.2249
+                   Einstein            :            156.3083
+-----------------------------------------------------------------
+ 

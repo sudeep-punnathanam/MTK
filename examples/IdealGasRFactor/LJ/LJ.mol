@@ -1,0 +1,49 @@
+# Each molecule is a collection of groups. Each groups in turn is a collection of atoms.
+# Define eqch group in the following format
+#----------------------------------------------------------------------------------------
+
+# Group <number of atoms>
+# if <number of atoms> == 1
+# <atom number> <atom name>
+# else
+# <rigid> or <flexible>
+# if <rigid>
+# <atom number> <atom name> <x> <y> <z>
+# if <flexible>
+# <filename> that contains library of configurations
+#----------------------------------------------------------------------------------------
+
+Group  1
+1  LJ
+
+#----------------------------------------------------------------------------------------
+# Define intramolecular potentials. Use the following format
+#
+# Number of bonds <n>
+# <a1>  <a2>   <potential>  <parameters, ...>
+#
+# Number of angles <n>
+# <a1>  <a2>   <a3>  <potential>  <parameters, ...>
+#
+# Number of torsions <n>
+# <a1>  <a2>   <a3>  <a4>  <potential>  <parameters, ...>
+#
+# Number of intra pairs <n>
+# <a1>  <a2>   <potential>  <parameters, ...>
+#----------------------------------------------------------------------------------------
+
+
+#----------------------------------------------------------------------------------------
+# Define configuration bias move sequences for flexible molecules. Use the following format.
+# Each sequence consists of a series of step. Depending of the nature of the step, the requsite inputs are provided.
+# The default is "Rigid Group Sampling" and fully rigid molecule. In this case, no move has to be explicitly specified
+#
+# CBMC Sequence
+# Number of Steps <number>
+# rgs   <group number>                                        Rigid Group sampling.
+# fas   <atom number>                                         First atom sampling
+# ss    <atom number>  <bond number>                          Sphere Sampling
+# bps   <number of atoms>                                     Branch Point Sampling
+#        <atom number> <bond number> <angle number> <B_angle number1, ...> <number of torsions> <torsion number1, ...> <number of IP> <IP number, ...>
+#----------------------------------------------------------------------------------------
+

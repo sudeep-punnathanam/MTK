@@ -1,0 +1,67 @@
+#======= Simulation Type ===============================
+Simulation Type                    Gibbs Ensemble Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 SPC_water
+Coulomb Evaluation ewald default
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     100
+Number of Production Cycles        500
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            25.0 25.0 25.0
+                  Box Angles             90.0 90.0 90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            Water
+          Initialization Method           File Vapor.config
+          Initial number of molecules     5 
+          Translation weight              1
+          Maximum displacement            0.1
+          Rotation weight                 1
+          GibbsSwap weight                1
+
+Potential cutoff distance            10.0
+Gibbs Volume Change weight           1
+
+#-----------------------------------------------------
+Simulation Cell   2
+                  Shape                  Box
+                  Box Lengths            25.0 25.0 25.0
+                  Box Angles             90.0 90.0 90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            Water
+          Initialization Method           File Liquid.config
+          Initial number of molecules     413
+          Translation weight              1
+          Maximum displacement            0.1
+          Rotation weight                 1
+          GibbsSwap weight                1
+
+Potential cutoff distance            10.0
+Gibbs Volume Change weight           1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1          503.19
+   Temperature                         1              2          503.19
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Pressure                  1                    250
+ Calculate     Energy                    1                    250
+ Calculate     Density                   1                    250
+#Calculate     Fugacity   Water          1                    25000
+
