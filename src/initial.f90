@@ -1,6 +1,6 @@
 module initial
   use consts, only: PR, xlstrlen, strlen, INCR_SIZE
-  use utils, only: ErrorMessage, GetFileUnit, FindStringInFile, lowercase, RotateVectors
+  use utils, only: ErrorMessage, FindStringInFile, lowercase, RotateVectors, OpenFile, CloseFile
   use atoms_and_molecules, only: NumberOfSpecies, Molecule, GetCenterOfMass
   use variables, only: NumberOfSystems, CurrentCoordinates, TrialCoordinates, initmethod, &
     CurrentSimulationCell, MainCellList, beta
@@ -86,11 +86,8 @@ contains
     integer :: im,ia
     
     error=.false.
-    unitno=GetFileUnit(trim(filename),lopen,error)
+    call OpenFile(filename,'read','rewind',unitno,error)
     if(error)return
-    if(.not. lopen)then
-      open(unit=unitno,file=trim(filename))
-    end if
 
     call FindStringInFile(trim(Molecule(spc)%Name),unitno,lineno,line,error)
     if(error)return
@@ -108,7 +105,8 @@ contains
       end do
       call SetCenterOfMass(CurrentCoordinates(spc,sys),spc,mol)
     end do
-    close(unit=unitno)
+    call CloseFile(unitno,error)
+    if(error)return
 
 !!$    !** Einstein Crystal
 !!$    if(SimulationType == NON_INTERACTING_EINSTEIN .or. SimulationType == INTERACTING_EINSTEIN)then

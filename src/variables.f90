@@ -1,7 +1,8 @@
 module variables
   use consts, only: PR, PI, strlen, lstrlen, xlstrlen, MAX_NO_OF_SIMULATIONS, MAX_NO_OF_SYSTEMS, MAX_NO_OF_SPECIES, NO_OF_SUBSETS, &
     K_B, UNIT_PRESSURE, UNIT_DENSITY
-  use utils, only: ErrorMessage, ReadStringFromFile, ReadString, GetSubsetNumber, swap, uppercase, FindStringInFile, GetFileUnit, lowercase
+  use utils, only: ErrorMessage, ReadStringFromFile, ReadString, GetSubsetNumber, swap, uppercase, FindStringInFile, lowercase, &
+    OpenFile, CloseFile
   use atoms_and_molecules, only: GetSpeciesNumber, Molecule
   use config, only: SpeciesCoordinates, AllocateMemoryForCoordinates
   use simcell, only: SimcellInfo, SetSimulationCellBoxLengthsAndBoxAngles
@@ -289,11 +290,8 @@ contains
         case ('file')
           read(initmethod(spc,sys),*)string,filename
           filename=adjustl(filename)
-          unitno=GetFileUnit(trim(filename),lopen,error)
+          call OpenFile(filename,'read','rewind',unitno,error)
           if(error)return
-          if(.not. lopen)then
-            open(unit=unitno,file=trim(filename))
-          end if
 
           call FindStringInFile(trim(Molecule(spc)%Name),unitno,lineno,line,error)
           if(error)return
@@ -304,7 +302,8 @@ contains
             return
           end if
           read(line,*)nmoles
-          close(unit=unitno)
+          call CloseFile(unitno,error)
+          if(error)return
         case default
           error=.true.
           write(ErrorMessage,'(2a,i5,4x,2a)')__FILE__,':',__LINE__, &

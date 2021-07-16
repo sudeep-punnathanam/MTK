@@ -10,6 +10,56 @@ module utils
   character(len=xlstrlen) :: ErrorMessage=''
 
 contains
+  subroutine OpenFile(filename,action_type,position_type,unitno,error)
+    character(len=*), intent(in) :: filename
+    character(len=*), intent(in)       :: action_type,position_type
+    integer, intent(out)               :: unitno
+    logical, intent(out)               :: error
+
+    logical :: lopen
+    integer :: ierror
+
+    error=.false.
+    unitno=GetFileUnit(trim(filename),lopen,error)
+    if(error)return
+    if(lopen)then
+      error=.true.
+      write(ErrorMessage,'(2a,i5,4x,3a)')__FILE__,':',__LINE__, &
+        'Molecule file ',trim(filename),' already open'
+      return
+    end if
+    open(unit=unitno,file=trim(filename),action=trim(action_type),position=trim(position_type),iostat=ierror)
+    if(ierror /= 0)then
+      error=.true.
+      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
+        'Failed to open molecule file: ',trim(filename),'. iostat = ',ierror
+      return
+    end if
+
+  end subroutine OpenFile
+
+  subroutine CloseFile(unitno,error)
+    integer, intent(in)   :: unitno
+    logical, intent(out)  :: error
+
+    character(len=lstrlen) :: filename
+    integer :: ierror
+    logical :: lopen
+     
+
+    error=.false.
+    inquire(UNIT=unitno,OPENED=lopen,NAME=filename,IOSTAT=ierror)
+    if(.not. lopen)return
+
+    close(unit=unitno,iostat=ierror)
+    if(ierror /= 0)then
+      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
+        'Failed to close file ,',trim(filename),'. IOSTAT = ',ierror
+      error=.true.
+      return
+    end if
+  end subroutine CloseFile
+
   subroutine ReadStringFromFile(String,Tag,InputFile,filename,lineno,EndTag,error)
     character(len=lstrlen), intent(out) :: String
     character(len=*), intent(in) :: Tag

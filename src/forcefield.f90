@@ -2,7 +2,7 @@ module forcefield
   use consts, only: PR, PI, TWOPI, strlen, lstrlen, Dashed_Line, MAX_NO_OF_ATOMTYPES, K_B, COULOMBIC_CONVERSION_FACTOR, &
     MAX_NO_OF_SPECIES
   use variables, only: REDUCED_UNITS, CutOffDistance, CutOffDistanceSq
-  use utils, only: ErrorMessage, GetFileUnit, lowercase, ErrorFunctionComplement, split
+  use utils, only: ErrorMessage, lowercase, ErrorFunctionComplement, split, OpenFile, CloseFile
   use atoms_and_molecules, only: Atom, NumberOfAtomTypes, GetAtomType, NumberOfSpecies, Molecule
   use ewaldsum, only: Ewald_alpha, Ewald_alpha_by_sqrt_pi, Ewald_kappa, Ewald_kappa_by_two_alpha, PairCoulombInteraction, COULOMB_SCREENING
   use storage, only: InteractionAccumulator
@@ -60,21 +60,8 @@ contains
 
     error=.false.
     filename=trim(PROJECT_DIR)//'/TwoBodyInteractions.def'
-    unitno=GetFileUnit(trim(filename),lopen,error)
+    call OpenFile(filename,'read','rewind',unitno,error)
     if(error)return
-    if(lopen)then
-      error=.true.
-      write(ErrorMessage,'(2a,i5,4x,2a)')__FILE__,':',__LINE__,trim(filename),' already open'
-      return
-    end if
-
-    open(unit=unitno,file=trim(filename),action='read',iostat=ierror)
-    if(ierror /= 0)then
-      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-        'Failed to open file ,',trim(filename),'. IOSTAT = ',ierror
-      error=.true.
-      return
-    end if
 
     write(LogUnitNo,'(a)')trim(Dashed_Line)
     write(LogUnitNo,'(a,20x,a)')'#','Pairwise Interactions'
@@ -133,13 +120,8 @@ contains
       end if
     end do
 
-    close(unit=unitno,iostat=ierror)
-    if(ierror /= 0)then
-      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-        'Failed to close file ,',trim(filename),'. IOSTAT = ',ierror
-      error=.true.
-      return
-    end if
+    call CloseFile(unitno,error)
+    if(error)return
 
     !** Coulomb Interactions
     do type1=1,NumberOfAtomTypes
@@ -246,21 +228,8 @@ contains
     error=.false.
     do spc=1,NumberOfSpecies
       filename=trim(PROJECT_DIR)//'/'//adjustl(trim(Molecule(spc)%Name))//'.mol'
-      unitno=GetFileUnit(trim(filename),lopen,error)
+      call OpenFile(filename,'read','rewind',unitno,error)
       if(error)return
-      if(lopen)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a)')__FILE__,':',__LINE__, &
-          'Molecule file ',trim(filename),' already open'
-        return
-      end if
-      open(unit=unitno,file=trim(filename),action='read',iostat=ierror)
-      if(ierror /= 0)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-          'Failed to open molecule file: ',trim(filename),'. iostat = ',ierror
-        return
-      end if
 
       !** Bond Interaction
       call FindStringInFile('Number of Bonds',unitno,lineno,string,error)
@@ -417,13 +386,8 @@ contains
         Molecule_intra(spc)%NumberOfIntraCouls=0
       end if
 
-      close(unit=unitno,iostat=ierror)
-      if(ierror /= 0)then
-        write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-          'Failed to close file ,',trim(filename),'. IOSTAT = ',ierror
-        error=.true.
-        return
-      end if
+      call CloseFile(unitno,error)
+      if(error)return
     end do
 
   end subroutine ReadIntraMolecularPotentials

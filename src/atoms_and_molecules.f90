@@ -1,6 +1,6 @@
 module atoms_and_molecules
   use consts, only: PR, strlen, lstrlen, Dashed_Line, MAX_NO_OF_ATOMTYPES, MAX_NO_OF_SPECIES
-  use utils, only: ErrorMessage, GetFileUnit, ReadString, FindStringInFile, lowercase, split
+  use utils, only: ErrorMessage, ReadString, FindStringInFile, lowercase, split, OpenFile, CloseFile
 
   implicit none
   private
@@ -67,21 +67,8 @@ contains
 
     error=.false.
     filename=trim(PROJECT_DIR)//'/Atoms.def'
-    unitno=GetFileUnit(trim(filename),lopen,error)
+    call OpenFile(filename,'read','rewind',unitno,error)
     if(error)return
-    if(lopen)then
-      error=.true.
-      write(ErrorMessage,'(2a,i5,4x,2a)')__FILE__,':',__LINE__,trim(filename),' already open'
-      return
-    end if
-
-    open(unit=unitno,file=trim(filename),action='read',iostat=ierror)
-    if(ierror /= 0)then
-      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-        'Failed to open file ,',trim(filename),'. IOSTAT = ',ierror
-      error=.true.
-      return
-    end if
 
     write(LogUnitNo,'(a)')trim(Dashed_Line)
     write(LogUnitNo,'(a,20x,a)')'#','Atoms'
@@ -113,18 +100,8 @@ contains
     write(LogUnitNo,*)
     NumberOfAtomTypes=atype
 
-    close(unit=unitno,iostat=ierror)
-    if(ierror /= 0)then
-      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-        'Failed to close file ,',trim(filename),'. IOSTAT = ',ierror
-      error=.true.
-      return
-    end if
-
-!!$do atype=1,NumberOfAtomTypes
-!!$write(6,*)trim(Atom(atype)%Name),Atom(atype)%Mass,Atom(atype)%Charge,Atom(atype)%has_charge
-!!$end do
-!!$write(6,*)
+    call CloseFile(unitno,error)
+    if(error)return
   end subroutine ReadAtomInfo
 
   !=============================================================================================================
@@ -161,21 +138,8 @@ contains
       spc=NumberOfSpecies
       Molecule(spc)%Name=trim(spcname)
       filename=trim(PROJECT_DIR)//'/'//adjustl(trim(Molecule(spc)%Name))//'.mol'
-      unitno=GetFileUnit(trim(filename),lopen,error)
+      call OpenFile(filename,'read','rewind',unitno,error)
       if(error)return
-      if(lopen)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a)')__FILE__,':',__LINE__, &
-          'Molecule file ',trim(filename),' already open'
-        return
-      end if
-      open(unit=unitno,file=trim(filename),action='read',iostat=ierror)
-      if(ierror /= 0)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-          'Failed to open molecule file: ',trim(filename),'. iostat = ',ierror
-        return
-      end if
 
       !** Determine Number of groups and allocate space
       icount=0
@@ -282,29 +246,9 @@ contains
         end if
       end do
 
-      close(unit=unitno,iostat=ierror)
-      if(ierror /= 0)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-          'Failed to close molecule file: ',trim(filename),'. iostat = ',ierror
-        return
-      end if
+      call CloseFile(unitno,error)
+      if(error)return
     end do
-
-!!$do spc=1,NumberOfSpecies
-!!$write(6,*)trim(Molecule(spc)%Name)
-!!$write(6,*)Molecule(spc)%MolecularWeight,Molecule(spc)%HasPartialCharges
-!!$write(6,*)Molecule(spc)%NumberOfGroups,Molecule(spc)%NumberOfAtoms
-!!$do atype=1,Molecule(spc)%NumberOfAtoms
-!!$write(6,*)Molecule(spc)%AtomType(atype),trim(Atom(Molecule(spc)%AtomType(atype))%Name)
-!!$end do
-!!$do l=1,Molecule(spc)%NumberOfGroups
-!!$do atype=1,Molecule(spc)%Group(l)%NumberOfAtoms
-!!$write(6,*)Molecule(spc)%Group(l)%ReferencePosition(:,atype)
-!!$end do
-!!$end do
-!!$end do
-!!$write(6,*)
 
   end subroutine ReadMoleculeInfo
 

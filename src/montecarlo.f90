@@ -7,7 +7,7 @@ module montecarlo
   use mcmoves, only: ParticleMove, VolumeChangeMove, UpdateMoveParameters, ResetMoveStatistics, DisplayMoveStatistics, VolumeChange
   use averages, only: SampleStatistics, ComputeStatistics, ResetStatistics, PrintStatistics
   use inter, only: TotalShortRangePairwiseInteraction, TotalLongRangePairwiseInteraction
-  use utils, only: ErrorMessage, RealToString, GetFileUnit
+  use utils, only: ErrorMessage, RealToString, OpenFile, CloseFile
   use random, only: RandomNumber
   use storage, only: StorageInteractions, UpdateStorageInteractions, DisplayStorage, operator(+)
   use atoms_and_molecules, only: Molecule, NumberOfSpecies
@@ -268,11 +268,8 @@ contains
       logical :: lopen
 
       error=.false.
-      unitno=GetFileUnit(trim(filename),lopen,error)
+      call OpenFile(filename,'write','append',unitno,error)
       if(error)return
-      if(.not. lopen)then
-        open(unit=unitno,file=trim(filename),position='append')
-      end if
 
       do spc=1,NumberOfSpecies
         nmoles=CurrentCoordinates(spc,sys)%NumberOfMolecules
@@ -286,7 +283,8 @@ contains
       end do
 
       write(unitno,*)
-      close(unit=unitno)
+      call CloseFile(unitno,error)
+      if(error)return
 
 100   format(i5,2x,i5,3(4x,f15.4))
     end subroutine WriteConfigsToFile

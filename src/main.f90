@@ -1,7 +1,7 @@
 program main
   use consts, only: lstrlen, Dashed_Line
   use variables, only: SetReducedUnits, SetCutOffDistance, ReadSimulationVariables, CurrentSimulationCell, NumberOfSystems, ReadAndActivateCellLists
-  use utils, only: ErrorMessage, GetFileUnit, ReadStringFromFile, uppercase
+  use utils, only: ErrorMessage, GetFileUnit, ReadStringFromFile, uppercase, OpenFile, CloseFile
   use random, only: SetRandomNumberSeed
   use atoms_and_molecules, only: ReadAtomInfo, ReadMoleculeInfo
   use forcefield, only: ReadPairwiseInteractions, ReadIntraMolecularPotentials
@@ -198,21 +198,8 @@ contains
 
     error=.false.
     !** Open the input file
-    InputUnitNo=GetFileUnit('SimulationInput',lopen,error)
+    call OpenFile('SimulationInput','read','rewind',InputUnitNo,error)
     if(error)return
-    if(lopen)then
-      write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
-        'Input file "SimulationInput" already open.'
-      error=.true.
-      return
-    end if
-    open(unit=InputUnitNo,file='SimulationInput',action='read',iostat=ierror)
-    if(ierror /= 0)then
-      write(ErrorMessage,'(2a,i5,4x,a,i4)')__FILE__,':',__LINE__, &
-        'Failed to open file "SimulationInput". IOSTAT = ',ierror
-      error=.true.
-      return
-    end if
 
     write(LogUnitNo,'(a)')trim(Dashed_Line)
     write(LogUnitNo,'(a)')'#                         Simulation Input'
@@ -235,13 +222,8 @@ contains
     NumberOfInputLines=lineno
 
     !** Close the input file
-    close(unit=InputUnitNo,iostat=ierror)
-    if(ierror /= 0)then
-      write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-        'Failed to close file "SimulationInput". IOSTAT = ',ierror
-      error=.true.
-      return
-    end if
+    call CloseFile(InputUnitNo,error)
+    if(error)return
     call flush(LogUnitNo)
 
   end subroutine ReadInputFile

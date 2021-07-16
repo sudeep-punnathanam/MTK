@@ -12,7 +12,7 @@ module rosenbluth
   use atoms_and_molecules, only: ReadAtomInfo, ReadMoleculeInfo, Molecule, GetCenterOfMass, NumberOfSpecies
   use inter, only: MoleculeSystemShortRangePairwiseInteraction, AtomSystemShortRangePairwiseInteraction, &
     AllocateMemoryToSeparationVectors
-  use utils, only: ErrorMessage, RotateVectors, cross_product, GetFileUnit, split, ReadStringFromFile
+  use utils, only: ErrorMessage, RotateVectors, cross_product, split, ReadStringFromFile, OpenFile, CloseFile
   use simcell, only: RandomPointInCell, ApplyBoundaryCondition, SetSimulationCellBoxLengthsAndBoxAngles
   use forcefield, only: ReadPairwiseInteractions, ReadIntraMolecularPotentials, &
     PotentialModel_info, Molecule_Intra, GetBondLength, GetBendAngle, &
@@ -241,21 +241,8 @@ contains
     error=.false.
     do spc=1,NumberOfSpecies
       filename=trim(PROJECT_DIR)//'/'//adjustl(trim(Molecule(spc)%Name))//'.mol'
-      unitno=GetFileUnit(trim(filename),lopen,error)
+      call OpenFile(filename,'read','rewind',unitno,error)
       if(error)return
-      if(lopen)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a)')__FILE__,':',__LINE__, &
-          'Molecule file ',trim(filename),' already open'
-        return
-      end if
-      open(unit=unitno,file=trim(filename),action='read',iostat=ierror)
-      if(ierror /= 0)then
-        error=.true.
-        write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-          'Failed to open molecule file: ',trim(filename),'. iostat = ',ierror
-        return
-      end if
 
       !** Determine Number of Growth Sequences and allocate space
       SequenceNumber=0
@@ -386,13 +373,8 @@ contains
         end if
       end if
 
-      close(unit=unitno,iostat=ierror)
-      if(ierror /= 0)then
-        write(ErrorMessage,'(2a,i5,4x,3a,i4)')__FILE__,':',__LINE__, &
-          'Failed to close file ,',trim(filename),'. IOSTAT = ',ierror
-        error=.true.
-        return
-      end if
+      call CloseFile(unitno,error)
+      if(error)return
     end do
 
   end subroutine ReadCBMC_Moves
