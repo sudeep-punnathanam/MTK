@@ -79,7 +79,7 @@ bps    1    3    2
 bps    1    4    3
        5    4    3    0    1    2    1    1    0    0
 
-# CBMC Sequence
+CBMC Sequence
 5
 fas    3
 ss     4    3    3

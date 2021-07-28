@@ -1,7 +1,7 @@
 module rosenbluth
   use, intrinsic :: ieee_exceptions
   use, intrinsic :: ieee_features, only: ieee_underflow_flag
-  use consts, only: PR, PI, TWOPI, strlen, lstrlen, MAX_NO_OF_SPECIES
+  use consts, only: PR, PI, TWOPI, strlen, lstrlen, MAX_NO_OF_SPECIES, Dashed_Line
   use variables, only: SetReducedUnits, CurrentCoordinates, CurrentSimulationCell, TrialCoordinates, &
     MainCellList, NumberOfSimulations, DisplayFrequency, NumberOfProductionCycles, beta, Temperature, &
     K_B, MAX_NO_OF_SIMULATIONS, REDUCED_UNITS, NumberOfSystems
@@ -77,7 +77,7 @@ contains
     real(PR) :: energy, rosen, rosen_sum, rosen_avg, rosensq_sum, rosensq_avg, rosen_error
     integer :: iseed
 
-    integer :: simno, cycleno, lineno, sys, spc, mol
+    integer :: unitno, simno, cycleno, lineno, sys, spc, mol
     integer :: StartLine, SequenceNumber
     integer :: nmoles, natoms
     real(PR) :: rvalue
@@ -194,6 +194,10 @@ contains
     call AllocateMemoryForCoordinates(TrialCoordinates(spc,sys),nmoles,natoms,error)
     if(error)return
 
+    call OpenFile('IdealGasRosenbluthWeight.out','write','rewind',unitno,error)
+    if(error)return
+    write(unitno,'(4a20)')'Temperature','Sequence Number','Rosenbluth Weight','Error'
+    write(unitno,'(a)')trim(Dashed_Line)
     do simno=1,NumberOfSimulations
       do SequenceNumber=1,CBMC_Move(spc)%NumberOfGrowthSequences
         !** Production Stage **
@@ -214,9 +218,11 @@ contains
         rosen_avg=rosen_sum/real(NumberOfProductionCycles,PR)
         rosensq_avg=rosensq_sum/real(NumberOfProductionCycles,PR)
         rosen_error=2._PR*sqrt((rosensq_avg-rosen_avg**2)/real(NumberOfProductionCycles-1,PR))
-        write(6,'(i2,4x,f10.4,4x,i2,2es15.4)')simno, Temperature(simno,sys), SequenceNumber, rosen_avg,rosen_error
+        write(unitno,'(f20.4,i20,2es20.4)')Temperature(simno,sys), SequenceNumber, rosen_avg,rosen_error
       end do
     end do
+    call CloseFile(unitno,error)
+    if(error)return
 
   end subroutine CalculateIdealGasRosenbluthWeight
 
