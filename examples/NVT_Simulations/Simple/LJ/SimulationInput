@@ -10,7 +10,7 @@ Potential cutoff distance          2.5
 #========= Essential Simulation Information ============
 Number Of Simulations              1
 Number of Equilibration Cycles     2000
-Number of Production Cycles        10000
+Number of Production Cycles        2000
 Display Frequency                  1000
 Restart Frequency                  100 
 Configs Frequency                  10 
@@ -40,7 +40,7 @@ Species   Name                            LJ
 #------------------------------------------------------------------------
  Calculate     Pressure                  1                    1000
  Calculate     Energy                    1                    1000
-#Calculate     Fugacity   LJ             1                    1000
+ Calculate     Fugacity   LJ             1                    1000
 
 #======= Radial Distribution Function ===================================
 # Property   Species1  Atom No.   Species2 Atom No.   Bin Size  Max. Distance Sampling-Frequency    Block-Averaging

@@ -1,0 +1,196 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         300.0
+
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         300.0
+
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         300.0
+
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         300.0
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+  O          16.0
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         300.0
+
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1         300.0
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+  O          16.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH3_sp3       CH3_sp3      Truncated-Lennard-Jones   3.77   98.1   2.0   13.8
+CH2_sp3       CH2_sp3      Truncated-Lennard-Jones   3.93   47.0   2.0   13.8
+CH_sp3        CH_sp3       Truncated-Lennard-Jones   4.10   12.0   2.0   13.8
+O             O            off
+CH3_sp3       O            Truncated-Lennard-Jones   3.60   80.0   2.0   13.8
+CH2_sp3       O            Truncated-Lennard-Jones   3.60   58.0   2.0   13.8
+CH_sp3        O            Truncated-Lennard-Jones   3.60   58.0   2.0   13.8
+CH3_sp3       CH2_sp3      Truncated-Lennard-Jones   3.85   67.9   2.0   13.8
+CH3_sp3       CH_sp3       Truncated-Lennard-Jones   3.93   34.3   2.0   13.8
+CH2_sp3       CH_sp3       Truncated-Lennard-Jones   4.01   23.7   2.0   13.8
+       10000   8.0708284834878630E-002
+       20000   6.3293292106684870E-002
+       30000   8.0345975105761469E-002
+       40000   6.4406907195804317E-002
+       50000   7.6963422648236884E-002

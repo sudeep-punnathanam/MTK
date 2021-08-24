@@ -1,6 +1,7 @@
 program main
-  use consts, only: lstrlen, Dashed_Line
-  use variables, only: SetReducedUnits, SetCutOffDistance, ReadSimulationVariables, CurrentSimulationCell, NumberOfSystems, ReadAndActivateCellLists
+  use consts, only: lstrlen, Dashed_Line, PR
+  use variables, only: SetReducedUnits, SetCutOffDistance, ReadSimulationVariables, CurrentSimulationCell, NumberOfSystems, ReadAndActivateCellLists, &
+CurrentCoordinates, beta
   use utils, only: ErrorMessage, GetFileUnit, ReadStringFromFile, uppercase, OpenFile, CloseFile
   use random, only: SetRandomNumberSeed
   use atoms_and_molecules, only: ReadAtomInfo, ReadMoleculeInfo
@@ -233,6 +234,7 @@ contains
   !*****************************************************************************************
   subroutine PrintErrorMessage(LogUnitNo)
     integer, intent(in)     :: LogUnitNo
+
     write(LogUnitNo,'(a)')trim(ErrorMessage)
     stop
   end subroutine PrintErrorMessage

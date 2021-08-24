@@ -1,6 +1,4 @@
 module rosenbluth
-  use, intrinsic :: ieee_exceptions
-  use, intrinsic :: ieee_features, only: ieee_underflow_flag
   use consts, only: PR, PI, TWOPI, strlen, lstrlen, MAX_NO_OF_SPECIES, Dashed_Line
   use variables, only: SetReducedUnits, CurrentCoordinates, CurrentSimulationCell, TrialCoordinates, &
     MainCellList, NumberOfSimulations, DisplayFrequency, NumberOfProductionCycles, beta, Temperature, &
@@ -9,7 +7,8 @@ module rosenbluth
   use storage, only: StorageInteractions, UpdateStorageInteractions, ResetStorageInteractions, &
     Operator(+), InteractionAccumulator
   use config, only: AllocateMemoryForCoordinates, ReAllocateMemoryForCoordinates
-  use atoms_and_molecules, only: ReadAtomInfo, ReadMoleculeInfo, Molecule, GetCenterOfMass, NumberOfSpecies
+  use atoms_and_molecules, only: ReadAtomInfo, ReadMoleculeInfo, Molecule, GetCenterOfMass, NumberOfSpecies, &
+    GetSpeciesNumber
   use inter, only: MoleculeSystemShortRangePairwiseInteraction, AtomSystemShortRangePairwiseInteraction, &
     AllocateMemoryToSeparationVectors
   use utils, only: ErrorMessage, RotateVectors, cross_product, split, ReadStringFromFile, OpenFile, CloseFile
@@ -27,11 +26,8 @@ module rosenbluth
 
   type :: CBMC_Step_Info
     character(len=strlen) :: SamplingType='rgs'
-    integer :: NumberOfAtoms=1
+    integer :: NumberOfAtoms=1, NumberOfTorsions=0, NumberOfIntraPairs=0, NumberOfIntraCouls=0
     integer :: GroupNumber=1
-    integer, dimension(MAX_NO_OF_BRANCH_POINTS) :: NumberOfTorsions=0
-    integer, dimension(MAX_NO_OF_BRANCH_POINTS) :: NumberOfIntraPairs=0
-    integer, dimension(MAX_NO_OF_BRANCH_POINTS) :: NumberOfIntraCouls=0
 
     integer, dimension(MAX_NO_OF_BRANCH_POINTS) :: Atom=0
     integer, dimension(MAX_NO_OF_BRANCH_POINTS) :: BondNumber=0
@@ -202,6 +198,7 @@ contains
       do SequenceNumber=1,CBMC_Move(spc)%NumberOfGrowthSequences
         !** Production Stage **
         rosen_sum=0._PR
+        rosensq_sum=0._PR
         do cycleno=1,NumberOfProductionCycles
           rosen=CBMC_grow(SequenceNumber,sys,spc,mol,beta(simno,sys),existing_molecule,overlap)
           !** Sample Averages
@@ -331,9 +328,13 @@ contains
                 read(field_1(3),*)Step%Atom_p1
                 read(field_1(4),*)Step%BondNumber(1)
               case ('bps')
+                !** Branch Point Sampling
                 read(field_1(2),*)Step%NumberOfAtoms
                 read(field_1(3),*)Step%Atom_p1
                 read(field_1(4),*)Step%Atom_p2
+                read(field_1(5),*)Step%NumberOfTorsions
+                read(field_1(6),*)Step%NumberOfIntraPairs
+                read(field_1(7),*)Step%NumberOfIntraCouls
                 do atomno=1,Step%NumberOfAtoms
                   read(unitno,'(a)')line
                   nfields_2=split(line,field_2)
@@ -342,12 +343,9 @@ contains
                   read(field_2(3),*)Step%A_AngleNumber(atomno)
 
                   read(field_2(4),*)Step%B_AngleNumber(atomno,1:atomno-1)
-                  read(field_2(5),*)Step%NumberOfTorsions(atomno)
-                  read(field_2(6),*)Step%TorsionNumber(atomno,1:Step%NumberOfTorsions(atomno))
-                  read(field_2(7),*)Step%NumberOfIntraPairs(atomno)
-                  read(field_2(8),*)Step%IntraPairNumber(atomno,1:Step%NumberOfIntraPairs(atomno))
-                  read(field_2(9),*)Step%NumberOfIntraCouls(atomno)
-                  read(field_2(10),*)Step%IntraCoulNumber(atomno,1:Step%NumberOfIntraCouls(atomno))
+                  read(field_2(5),*)Step%TorsionNumber(atomno,1:Step%NumberOfTorsions)
+                  read(field_2(6),*)Step%IntraPairNumber(atomno,1:Step%NumberOfIntraPairs)
+                  read(field_2(7),*)Step%IntraCoulNumber(atomno,1:Step%NumberOfIntraCouls)
                 end do
               case default
                 error=.true.
@@ -405,6 +403,8 @@ contains
       call ReadStringFromFile(string,'IdealRFactor',SimulationInput(StartLine:),'Simulation Input',lineno)
       if(lineno == 0)exit
       read(string,*)spcname,simno,sys,seqno,rvalue
+      spc=GetSpeciesNumber(spcname,error)
+      if(error)return
       if(simno > NumberOfSimulations)then
         write(ErrorMessage,'(2a,i5,4x,a,i2,a,i2)')__FILE__,':',__LINE__, &
           'Simulation number, ',simno,', exceeds Number of Simulations :',NumberOfSimulations
@@ -544,8 +544,10 @@ contains
     real(PR), dimension(3,3) :: RotationMatrix
     real(PR), dimension(:,:,:), allocatable :: TrialPosition
     real(PR), dimension(NumberOfTrialInsertions) :: rosen
+    logical, dimension(NumberOfTrialInsertions) :: rosen_overlaps
     type(StorageInteractions) :: TrialInteractions
     
+    overlap=.false.
     grp=Step%GroupNumber
     natoms=Molecule(spc)%Group(grp)%NumberOfAtoms
     allocate(TrialPosition(3,natoms,NumberOfTrialInsertions))
@@ -569,6 +571,7 @@ contains
     !** Calculate Energy from Short Range Interactions
     call MoleculeSystemShortRangePairwiseInteraction(TrialPosition(1:3,1:natoms,TrialNumber),vec, &
         CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),spc,mol,TrialInteractions,overlap)
+    rosen_overlaps(TrialNumber)=overlap
     if(overlap)then
       rosen(TrialNumber)=0._PR
       if(existing_molecule)return        !** Something wrong as existing atoms are overlapping
@@ -593,6 +596,7 @@ contains
       !** Calculate Energy from Short Range Interactions
       call MoleculeSystemShortRangePairwiseInteraction(TrialPosition(1:3,1:natoms,TrialNumber),vec, &
         CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),spc,mol,TrialInteractions,overlap)
+      rosen_overlaps(TrialNumber)=overlap
       if(overlap)then
         rosen(TrialNumber)=0._PR
       else
@@ -608,7 +612,7 @@ contains
     if(existing_molecule)then
       TrialNumber=1
     else
-      TrialNumber=ChosenTrialNumber(NumberOfTrialInsertions,rosen)
+      TrialNumber=ChosenTrialNumber(NumberOfTrialInsertions,rosen,rosen_overlaps)
       TrialCoordinates(spc,sys)%Positions(1:3,mol,1:natoms)=TrialPosition(1:3,1:natoms,TrialNumber)
     end if
     RosenbluthWeight=sum(rosen)/real(NumberOfTrialInsertions,PR)
@@ -625,11 +629,12 @@ contains
     real(PR)                                 :: RosenbluthWeight
 
     integer :: atm
-    integer :: TrialNumber
     real(PR), dimension(3) :: vec
     real(PR), dimension(NumberOfTrialInsertions) :: rosen
     type(StorageInteractions) :: TrialInteractions
+    logical :: underflow
     
+    overlap=.false.
     atm=Step%Atom(1)
 
     if(existing_molecule)then
@@ -664,8 +669,13 @@ contains
     real(PR), dimension(3) :: vec, Position_p1
     real(PR), dimension(3,NumberOfTrialInsertions) :: TrialPosition
     real(PR), dimension(NumberOfTrialInsertions) :: rosen
+    logical, dimension(NumberOfTrialInsertions) :: rosen_overlaps
     type(StorageInteractions) :: TrialInteractions
+    logical :: underflow
+
+rosen_overlaps=.false.
     
+    overlap=.false.
     atm=Step%Atom(1)
     Position_p1=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom_p1)
     if(existing_molecule)then
@@ -690,13 +700,14 @@ contains
     !** Calculate Energy from Short Range Interactions
     call AtomSystemShortRangePairwiseInteraction(vec,vec,CurrentCoordinates(:,sys),CurrentSimulationCell(sys), &
       MainCellList(sys),spc,mol,atm,TrialInteractions,overlap)
+    rosen_overlaps(TrialNumber)=overlap
     if(overlap)then
       rosen(TrialNumber)=0._PR
       if(existing_molecule)return        !** Something wrong as existing atoms are overlapping
     else
-      Success=.true.
       call UpdateStorageInteractions(TrialInteractions)
       rosen(TrialNumber)=exp(-beta*TrialInteractions%Energy%Total)
+      Success=.true.
     end if
 
     !** Rest of the trials
@@ -709,12 +720,13 @@ contains
       !** Calculate Energy from Short Range Interactions
       call AtomSystemShortRangePairwiseInteraction(vec,vec,CurrentCoordinates(:,sys),CurrentSimulationCell(sys), &
         MainCellList(sys),spc,mol,atm,TrialInteractions,overlap)
+      rosen_overlaps(TrialNumber)=overlap
       if(overlap)then
         rosen(TrialNumber)=0._PR
       else
-        Success=.true.
         call UpdateStorageInteractions(TrialInteractions)
         rosen(TrialNumber)=exp(-beta*TrialInteractions%Energy%Total)
+        Success=.true.
       end if
     end do
     overlap=(.not. Success)
@@ -724,7 +736,7 @@ contains
     if(existing_molecule)then
       TrialNumber=1
     else
-      TrialNumber=ChosenTrialNumber(NumberOfTrialInsertions,rosen)
+      TrialNumber=ChosenTrialNumber(NumberOfTrialInsertions,rosen,rosen_overlaps)
       TrialCoordinates(spc,sys)%Positions(1:3,mol,atm)=TrialPosition(:,TrialNumber)
     end if
     RosenbluthWeight=RosenbluthWeight*sum(rosen)/real(NumberOfTrialInsertions,PR)
@@ -753,10 +765,14 @@ contains
     real(PR), dimension(NumberOfB_AngleTrials) :: rosenB, phi_trial
     real(PR), dimension(NumberOfTorsionTrials) :: rosenT
     real(PR), dimension(NumberOfTrialInsertions) :: rosen, phi_T
+    logical, dimension(NumberOfB_AngleTrials) :: rosenB_overlaps
+    logical, dimension(NumberOfTorsionTrials) :: rosenT_overlaps
+    logical, dimension(NumberOfTrialInsertions) :: rosen_overlaps
     type(StorageInteractions) :: TrialInteractions
     type(InteractionAccumulator) :: Accumulator
     logical :: underflow
 
+    overlap=.false.
     !** Coordinates of previous two atoms
     Position_p1=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom_p1)
     Position_p2=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom_p2)
@@ -775,24 +791,25 @@ contains
     vecX=vecX/norm2(vecX)
     vecY=cross_product(vecZ,vecX)
 
-    !**Obtain Bondlength and theta for 1st atom
+    RosenbluthWeight=1._PR
+    !**Obtain Bondlength and A_Angles
     !----------------------------------------------------------------------------------------
-    if(existing_molecule)then
-      !** Calculate bond length and theta from current position
-      vec=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(1))-Position_p1 
-      Bondlength(1)=norm2(vec)
-      Theta(1)=acos(dot_product(vec,-vecZ))
-      !** Get a set of orthogonal vectors, i.e. vecX1 and vecY1 such that phi_B(1) = 0
-      vecY1=cross_product(vecZ,vec)
-      vecX1=cross_product(vecY,vecZ)
-    else
-      !** Generate bond length and theta from intramolecular potential
-      Bondlength(1)=GetBondLength(Molecule_intra(spc)%Bond(Step%BondNumber(1)),beta)
-      Theta(1)=GetBendAngle(Molecule_intra(spc)%Angle(Step%A_AngleNumber(1)),beta)
-    end if
-    RosenbluthWeight=GetRosenbluthWeightForBond(Molecule_intra(spc)%Bond(Step%BondNumber(1)),beta,Bondlength(1))
-    RosenbluthWeight=RosenbluthWeight*GetRosenbluthWeightForAngle(Molecule_intra(spc)%Angle(Step%A_AngleNumber(1)), &
-      beta,Theta(1))
+    do i=1,Step%NumberOfAtoms
+      if(existing_molecule)then
+        !** Get bond length, theta and phi from current position
+        vec=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(i))-Position_p1 
+        Bondlength(i)=norm2(vec)
+        vec=vec/Bondlength(i)
+        Theta(i)=acos(dot_product(vec,-vecZ))
+      else
+        !** Generate bond length and theta from intramolecular potential
+        Bondlength(i)=GetBondLength(Molecule_intra(spc)%Bond(Step%BondNumber(i)),beta)
+        Theta(i)=GetBendAngle(Molecule_intra(spc)%Angle(Step%A_AngleNumber(i)),beta)
+      end if
+
+      RosenbluthWeight=RosenbluthWeight*GetRosenbluthWeightForBond(Molecule_intra(spc)%Bond(Step%BondNumber(1)),beta,Bondlength(1))
+      RosenbluthWeight=RosenbluthWeight*GetRosenbluthWeightForAngle(Molecule_intra(spc)%Angle(Step%A_AngleNumber(1)),beta,Theta(1))
+    end do
 
     !** Sample B_Angles and calculate Rosenbluth Weight
     !----------------------------------------------------------------------------------------
@@ -800,195 +817,46 @@ contains
     r2(:,1)=(/sin(Theta(1)), 0._PR, -cos(Theta(1)) /)
     !** Branch Point Sampling
     do i=2,Step%NumberOfAtoms
-      TrialNumber=1
-      if(existing_molecule)then
-        !** Get bond length, theta and phi from current position
-        vec=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(i))-Position_p1 
-        Bondlength(i)=norm2(vec)
-        Theta(i)=acos(dot_product(vec,-vecZ))
-        phi_trial(TrialNumber)=atan2(dot_product(vec,vecY1),dot_product(vec,vecX1))
-      else
-        !** Generate bond length and theta from intramolecular potential
-        Bondlength(i)=GetBondLength(Molecule_intra(spc)%Bond(Step%BondNumber(i)),beta)
-        Theta(i)=GetBendAngle(Molecule_intra(spc)%Angle(Step%A_AngleNumber(i)),beta)
-        !** Choose phi uniformly between -pi an pi
-        phi_trial(TrialNumber)=TWOPI*RandomNumber()-PI
-      end if
-      RosenbluthWeight=RosenbluthWeight*GetRosenbluthWeightForBond(Molecule_intra(spc)%Bond(Step%BondNumber(i)), &
-        beta,Bondlength(i))
-      RosenbluthWeight=RosenbluthWeight*GetRosenbluthWeightForAngle(Molecule_intra(spc)%Angle(Step%A_AngleNumber(i)), &
-        beta,Theta(i))
-      r3=(/sin(Theta(i))*cos(phi_trial(TrialNumber)), sin(Theta(i))*sin(phi_trial(TrialNumber)), -cos(Theta(i)) /)
-      energy=0._PR
-      do j=1,i-1
-        B_Theta=acos(dot_product(r2(:,j),r3))
-        energy=energy+AngleInteraction(Molecule_intra(spc)%Angle(Step%B_AngleNumber(i,j)),B_Theta)
-      end do
-      rosenB(TrialNumber)=exp(-beta*energy)
-      call ieee_get_flag(ieee_underflow,underflow)
-      if(underflow)then
-        call ieee_set_flag(ieee_underflow,.false.)
-        rosenB(TrialNumber)=0._PR
-      end if
+      do TrialNumber=1,NumberOfB_AngleTrials
+        if(TrialNumber == 1 .and. existing_molecule)then
+          !** Get bond length, theta and phi from current position
+          r3=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(i))-Position_p1 
+          r3=r3/Bondlength(i)
+        else
+          !** Choose phi uniformly between -pi an pi
+          phi_trial(TrialNumber)=TWOPI*RandomNumber()-PI
+          r3=(/sin(Theta(i))*cos(phi_trial(TrialNumber)), sin(Theta(i))*sin(phi_trial(TrialNumber)), -cos(Theta(i)) /)
+        end if
 
-      do TrialNumber=2,NumberOfB_AngleTrials
-        !** Choose phi uniformly between -pi an pi
-        phi_trial(TrialNumber)=TWOPI*RandomNumber()-PI
-        r3=(/sin(Theta(i))*cos(phi_trial(TrialNumber)), sin(Theta(i))*sin(phi_trial(TrialNumber)), -cos(Theta(i)) /)
         energy=0._PR
         do j=1,i-1
           B_Theta=acos(dot_product(r2(:,j),r3))
           energy=energy+AngleInteraction(Molecule_intra(spc)%Angle(Step%B_AngleNumber(i,j)),B_Theta)
         end do
         rosenB(TrialNumber)=exp(-beta*energy)
-        call ieee_get_flag(ieee_underflow,underflow)
-        if(underflow)then
-          call ieee_set_flag(ieee_underflow,.false.)
-          rosenB(TrialNumber)=0._PR
-        end if
+        rosenB_overlaps(TrialNumber)=.false.
       end do
+
       if(existing_molecule)then
-        TrialNumber=1
+        r2(:,i)=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(i))-Position_p1 
+        r2(:,i)=r2(:,i)/Bondlength(i)
       else
-        TrialNumber=ChosenTrialNumber(NumberOfB_AngleTrials,rosenB)
+        TrialNumber=ChosenTrialNumber(NumberOfB_AngleTrials,rosenB,rosenB_overlaps)
+        phi_B(i)=phi_trial(TrialNumber)
+        r2(:,i)=(/sin(Theta(i))*cos(phi_B(i)), sin(Theta(i))*sin(phi_B(i)), -cos(Theta(i)) /)
       end if
-      phi_B(i)=phi_trial(TrialNumber)
-      r2(:,i)=(/sin(Theta(i))*cos(phi_B(i)), sin(Theta(i))*sin(phi_B(i)), -cos(Theta(i)) /)
       RosenbluthWeight=RosenbluthWeight*sum(rosenB)/real(NumberOfB_AngleTrials)
     end do
 
-    !** Sample Torsion Angles and compute Torsion Rosenbluth Weight for 1st Trial
-    !----------------------------------------------------------------------------------------
-    TrialNumber=1
-    if(all(Step%NumberOfTorsions == 0))then
-      phi_T(TrialNumber)=RandomNumber()*TWOPI
-      TorsionRosenbluthWeight=1._PR
-    else
-      !** First Torsion Trial
-      TorsionTrialNumber=1
-      !** Choose an angle phi between -pi and pi
-      if(.not. existing_molecule)phi_trial(TorsionTrialNumber)=RandomNumber()*TWOPI-PI
-      !** Calculate Torsion Energy
-      energy=0._PR
-      do i=1,Step%NumberOfAtoms
-        if(existing_molecule)then
-          r3=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(i))-Position_p1 
-        else
-          r3=sin(Theta(i))*cos(phi_B(i)+phi_trial(TorsionTrialNumber))*vecX+ &
-             sin(Theta(i))*sin(phi_B(i)+phi_trial(TorsionTrialNumber))*vecY- &
-             cos(Theta(i))*vecZ
-        end if
-        do j=1,Step%NumberOfTorsions(i)
-          Torsion=Molecule_intra(spc)%Torsion(Step%TorsionNumber(i,j))
-          a1=Molecule_Intra(spc)%TorsionAtom(Step%TorsionNumber(i,j),1)
-          a4=Molecule_Intra(spc)%TorsionAtom(Step%TorsionNumber(i,j),4)
-          if(Step%Atom(i) == a1)then
-            Position_p3=TrialCoordinates(spc,sys)%Positions(:,mol,a4)
-          else
-            Position_p3=TrialCoordinates(spc,sys)%Positions(:,mol,a1)
-          end if
-          vec=Position_p2-Position_p3
-          vecY1=cross_product(vec,vecZ)
-          vecY1=vecY1/norm2(vecY1)
-          vecX1=cross_product(vecY1,vecZ)
-          phi=atan2(dot_product(r3,vecY1),dot_product(r3,vecX1))
-          energy=energy+TorsionInteraction(Torsion,phi)
-        end do
-      end do
-      rosenT(TorsionTrialNumber)=exp(-beta*energy)
-      
-      !** Rest of Torsion Trials for First Trial
-      do TorsionTrialNumber=2,NumberOfTorsionTrials
-        !** Choose an angle phi between -pi and pi
-        phi_trial(TorsionTrialNumber)=RandomNumber()*TWOPI-PI
-        !** Calculate Torsion Energy
-        energy=0._PR
-        do i=1,Step%NumberOfAtoms
-          r3=sin(Theta(i))*cos(phi_B(i)+phi_trial(TorsionTrialNumber))*vecX+ &
-             sin(Theta(i))*sin(phi_B(i)+phi_trial(TorsionTrialNumber))*vecY- &
-             cos(Theta(i))*vecZ
-          do j=1,Step%NumberOfTorsions(i)
-            Torsion=Molecule_intra(spc)%Torsion(Step%TorsionNumber(i,j))
-            a1=Molecule_Intra(spc)%TorsionAtom(Step%TorsionNumber(i,j),1)
-            a4=Molecule_Intra(spc)%TorsionAtom(Step%TorsionNumber(i,j),4)
-            if(Step%Atom(i) == a1)then
-              Position_p3=TrialCoordinates(spc,sys)%Positions(:,mol,a4)
-            else
-              Position_p3=TrialCoordinates(spc,sys)%Positions(:,mol,a1)
-            end if
-            vec=Position_p2-Position_p3
-            vecY1=cross_product(vec,vecZ)
-            vecY1=vecY1/norm2(vecY1)
-            vecX1=cross_product(vecY1,vecZ)
-            phi=atan2(dot_product(r3,vecY1),dot_product(r3,vecX1))
-            energy=energy+TorsionInteraction(Torsion,phi)
-          end do
-        end do
-        rosenT(TorsionTrialNumber)=exp(-beta*energy)
-      end do
-      !** Choose Torsion Angle
-      if(.not. existing_molecule)then
-        TorsionTrialNumber=ChosenTrialNumber(NumberOfTorsionTrials,rosenT)
-        phi_T(TrialNumber)=phi_trial(TorsionTrialNumber)
-      end if
-      TorsionRosenbluthWeight=sum(rosenT)/real(NumberOfTorsionTrials,PR)
-    end if
-     
-    Success=.false.
-    !** Compute position and calculate LJ energy for First trial
-    energy=0._PR
-    loop1:do i=1,Step%NumberOfAtoms
-      atm=Step%Atom(i)
-      if(existing_molecule)then
-        !** Use current position
-        vec=TrialCoordinates(spc,sys)%Positions(:,mol,atm)
-      else
-        !** Compute Trial Position
-        vec=sin(Theta(i))*cos(phi_B(i)+phi_T(TrialNumber))*vecX+ &
-            sin(Theta(i))*sin(phi_B(i)+phi_T(TrialNumber))*vecY- &
-            cos(Theta(i))*vecZ
-        vec=Position_p1+vec*BondLength(i)
-      end if
-      !** Calculate Intra Pair Interactions
-      do j=1,Step%NumberOfIntraPairs(i)
-        IntraPair=Molecule_intra(spc)%IntraPair(Step%IntraPairNumber(i,j))
-        a1=Molecule_intra(spc)%IntraPairAtom(Step%IntraPairNumber(i,j),1)
-        a2=Molecule_intra(spc)%IntraPairAtom(Step%IntraPairNumber(i,j),2)
-        if(atm == a2)then
-          rijsq=sum((TrialCoordinates(spc,sys)%Positions(:,mol,a1)-vec)**2)
-        else
-          rijsq=sum((TrialCoordinates(spc,sys)%Positions(:,mol,a2)-vec)**2)
-        end if
-        energy=energy+IntraPairInteraction(Molecule_intra(spc)%IntraPair(i),rijsq,overlap)
-        if(overlap)exit loop1
-      end do
-
-      !** Calculate Intermolecular Interactions
-      call AtomSystemShortRangePairwiseInteraction(vec,vec,CurrentCoordinates(:,sys),CurrentSimulationCell(sys), &
-        MainCellList(sys),spc,mol,atm,TrialInteractions,overlap)
-      if(overlap)exit loop1
-      call UpdateStorageInteractions(TrialInteractions)
-      energy=energy+TrialInteractions%Energy%Total
-    end do loop1
-    !** RosenbluthWeight
-    if(overlap)then
-      rosen(TrialNumber)=0._PR
-      if(existing_molecule)return                    !** something wrong existing atoms overlapping
-    else
-      Success=.true.
-      rosen(TrialNumber)=exp(-beta*energy)*TorsionRosenbluthWeight
-      call ieee_get_flag(ieee_underflow,underflow)
-      if(underflow)then
-        call ieee_set_flag(ieee_underflow,.false.)
-        rosen(TrialNumber)=0._PR
-      end if
-    end if
-
     !** Sample Torsion Angles and compute Torsion Rosenbluth Weight for rest of the trials
     !----------------------------------------------------------------------------------------
-    do TrialNumber=2,NumberOfTrialInsertions
-      if(all(Step%NumberOfTorsions == 0))then
-        phi_T(TrialNumber)=RandomNumber()*TWOPI
+    Success=.false.
+    do TrialNumber=1,NumberOfTrialInsertions
+      if(Step%NumberOfTorsions == 0)then
+        if(.not. (TrialNumber == 1 .and. existing_molecule))then
+          !** Choose Torsion Angle
+          phi_T(TrialNumber)=RandomNumber()*TWOPI-PI
+        end if
         TorsionRosenbluthWeight=1._PR
       else
         do TorsionTrialNumber=1,NumberOfTorsionTrials
@@ -997,11 +865,16 @@ contains
           !** Calculate Torsion Energy
           energy=0._PR
           do i=1,Step%NumberOfAtoms
+            if(TrialNumber == 1 .and. TorsionTrialNumber == 1 .and. existing_molecule)then
+              r3=TrialCoordinates(spc,sys)%Positions(:,mol,Step%Atom(i))-Position_p1 
+            else
+              r3=sin(Theta(i))*cos(phi_B(i)+phi_trial(TorsionTrialNumber))*vecX+ &
+                 sin(Theta(i))*sin(phi_B(i)+phi_trial(TorsionTrialNumber))*vecY- &
+                 cos(Theta(i))*vecZ
+            end if
+
             atm=Step%Atom(i)
-            r3=sin(Theta(i))*cos(phi_B(i)+phi_trial(TorsionTrialNumber))*vecX+ &
-               sin(Theta(i))*sin(phi_B(i)+phi_trial(TorsionTrialNumber))*vecY- &
-               cos(Theta(i))*vecZ
-            do j=1,Step%NumberOfTorsions(i)
+            do j=1,Step%NumberOfTorsions
               Torsion=Molecule_intra(spc)%Torsion(Step%TorsionNumber(i,j))
               a1=Molecule_Intra(spc)%TorsionAtom(Step%TorsionNumber(i,j),1)
               a4=Molecule_Intra(spc)%TorsionAtom(Step%TorsionNumber(i,j),4)
@@ -1011,6 +884,7 @@ contains
                 Position_p3=TrialCoordinates(spc,sys)%Positions(:,mol,a1)
               end if
               vec=Position_p2-Position_p3
+              vec=vec/norm2(vec)
               vecY1=cross_product(vec,vecZ)
               vecY1=vecY1/norm2(vecY1)
               vecX1=cross_product(vecY1,vecZ)
@@ -1019,10 +893,11 @@ contains
             end do
           end do
           rosenT(TorsionTrialNumber)=exp(-beta*energy)
+          rosenT_overlaps(TorsionTrialNumber)=.false.
         end do
-        if(.not. existing_molecule)then
+        if(.not. (TrialNumber == 1 .and. existing_molecule))then
           !** Choose Torsion Angle
-          TorsionTrialNumber=ChosenTrialNumber(NumberOfTorsionTrials,rosenT)
+          TorsionTrialNumber=ChosenTrialNumber(NumberOfTorsionTrials,rosenT,rosenT_overlaps)
           phi_T(TrialNumber)=phi_trial(TorsionTrialNumber)
         end if
         TorsionRosenbluthWeight=sum(rosenT)/real(NumberOfTorsionTrials,PR)
@@ -1032,12 +907,17 @@ contains
       energy=0._PR
       loop2:do i=1,Step%NumberOfAtoms
         atm=Step%Atom(i)
-        vec=sin(Theta(i))*cos(phi_B(i)+phi_T(TrialNumber))*vecX+ &
-            sin(Theta(i))*sin(phi_B(i)+phi_T(TrialNumber))*vecY- &
-            cos(Theta(i))*vecZ
-        vec=Position_p1+vec*BondLength(i)
+        if(TrialNumber == 1 .and. existing_molecule)then
+          !** Use current position
+          vec=TrialCoordinates(spc,sys)%Positions(:,mol,atm)
+        else
+          vec=sin(Theta(i))*cos(phi_B(i)+phi_T(TrialNumber))*vecX+ &
+              sin(Theta(i))*sin(phi_B(i)+phi_T(TrialNumber))*vecY- &
+              cos(Theta(i))*vecZ
+          vec=Position_p1+vec*BondLength(i)
+        end if
         !** Calculate Intra Pair Interactions
-        do j=1,Step%NumberOfIntraPairs(i)
+        do j=1,Step%NumberOfIntraPairs
           IntraPair=Molecule_intra(spc)%IntraPair(Step%IntraPairNumber(i,j))
           a1=Molecule_intra(spc)%IntraPairAtom(Step%IntraPairNumber(i,j),1)
           a2=Molecule_intra(spc)%IntraPairAtom(Step%IntraPairNumber(i,j),2)
@@ -1058,26 +938,25 @@ contains
         energy=energy+TrialInteractions%Energy%Total
       end do loop2
       !** RosenbluthWeight
+      rosen_overlaps(TrialNumber)=overlap
       if(overlap)then
         rosen(TrialNumber)=0._PR
-      else
-        Success=.true.
-        rosen(TrialNumber)=exp(-beta*energy)*TorsionRosenbluthWeight
-        call ieee_get_flag(ieee_underflow,underflow)
-        if(underflow)then
-          call ieee_set_flag(ieee_underflow,.false.)
-          rosen(TrialNumber)=0._PR
+        if(TrialNumber == 1 .and. existing_molecule)then
+          !** Something wrong! Existing molecules are overlapping
+          overlap=.true.
+          return
         end if
+      else
+        rosen(TrialNumber)=exp(-beta*energy)*TorsionRosenbluthWeight
+        Success=.true.
       end if
     end do
     overlap=(.not. Success)
     if(overlap)return
 
     !** Choose Trial Number
-    if(existing_molecule)then
-      TrialNumber=1
-    else
-      TrialNumber=ChosenTrialNumber(NumberOfTrialInsertions,rosen)
+    if(.not. existing_molecule)then
+      TrialNumber=ChosenTrialNumber(NumberOfTrialInsertions,rosen,rosen_overlaps)
       do i=1,Step%NumberOfAtoms
         atm=Step%Atom(i)
         vec=sin(Theta(i))*cos(phi_B(i)+phi_T(TrialNumber))*vecX+ &
@@ -1088,24 +967,29 @@ contains
       end do
     end if
     RosenbluthWeight=RosenbluthWeight*sum(rosen)/real(NumberOfTrialInsertions,PR)
-
   end function BranchPointSampling
 
   !=================================================================================================
-  function ChosenTrialNumber(NumberOfTrials,rosen) result(TrialNumber)
+  function ChosenTrialNumber(NumberOfTrials,rosen,rosen_overlaps) result(TrialNumber)
     integer, intent(in)                :: NumberOfTrials
     real(PR), dimension(:), intent(in) :: rosen
+    logical, dimension(:), intent(in)  :: rosen_overlaps
     integer                            :: TrialNumber
 
     real(PR) :: xrnd,wt
+    integer :: i
 
     xrnd=RandomNumber()*sum(rosen)
     
     wt=0._PR
     do TrialNumber=1,NumberOfTrials
-      wt=wt+rosen(TrialNumber)
-      if(xrnd < wt)return
+      if(.not. rosen_overlaps(TrialNumber))then
+        i=TrialNumber
+        wt=wt+rosen(TrialNumber)
+        if(xrnd < wt)return
+      end if
     end do
+    if(TrialNumber > NumberOfTrials)TrialNumber=i
 
   end function ChosenTrialNumber
 

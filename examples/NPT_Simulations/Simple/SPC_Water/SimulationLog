@@ -1,210 +1,1347 @@
- Reading input file :SimulationInput
- finished reading forcefield
- finished reading molecule info
- finished normalizing move probabilities
- finished reading input file
- finished initializing starting config
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 SPC_water
+Potential cutoff distance            50.0
+Coulomb Evaluation ewald default
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        5000
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Cubic
+Density                0.77
+Boundary conditions    1  1  1
+
+Species   Name                            Water
+Initialization Method           Random
+Initial number of molecules     64
+Translation weight              1
+Maximum displacement            0.1
+Rotation weight                 1
+
+Volume Change Weight   1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1          373.13
+Pressure                            1              1          1.2e5
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Density                   1                    2500
+Calculate     Energy                    1                    2500
+#Calculate     Fugacity   Water          1                    2500
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  O          16.0       -0.82
+  H           1.0        0.41
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+O             O                 Lennard-Jones      3.166  78.0   2.5
+H             H                 off
+O             H                 off
 
 -----------------------------------------------------------------
-INITIAL ENERGIES
+                             INITIAL ENERGIES
 -----------------------------------------------------------------
-System             Total(J/mol)                  :        0.222679E+03
-                   van der Waals(J/mol)          :       -0.770523E+01
-                   Real Coulombic(J/mol)         :        0.126158E+03
-                   Fourier Coulombic(J/mol)      :        0.104226E+03
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-Water-Water        Total(J/mol)                  :        0.222679E+03
-                   van der Waals(J/mol)          :       -0.770523E+01
-                   Real Coulombic(J/mol)         :        0.126158E+03
-                   Fourier Coulombic(J/mol)      :        0.104226E+03
-                   Einstein(J/mol)               :        0.000000E+00
+Total(J/mol)                 :       -0.828380E+04
+van der Waals(J/mol)         :       -0.665415E+03
+Real Coulombic(J/mol)        :       -0.760753E+04
+Fourier Coulombic(J/mol)     :       -0.108531E+02
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
 -----------------------------------------------------------------
 
 
 -----------------------------------------------------------------
-INITIAL VIRIALS
+                             INITIAL VIRIALS
 -----------------------------------------------------------------
-System             Total(J/mol)                  :        0.257622E+03
-                   van der Waals(J/mol)          :       -0.154234E+02
-                   Real Coulombic(J/mol)         :        0.163331E+03
-                   Fourier Coulombic(J/mol)      :        0.109715E+03
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-Water-Water        Total(J/mol)                  :        0.257622E+03
-                   van der Waals(J/mol)          :       -0.154234E+02
-                   Real Coulombic(J/mol)         :        0.163331E+03
-                   Fourier Coulombic(J/mol)      :        0.109715E+03
-                   Einstein(J/mol)               :        0.000000E+00
+Total(J/mol)                 :       -0.872726E+04
+van der Waals(J/mol)         :       -0.105433E+04
+Real Coulombic(J/mol)        :       -0.779291E+04
+Fourier Coulombic(J/mol)     :        0.119982E+03
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
 -----------------------------------------------------------------
 
 SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
-Cycle Number 100 out of 100
+Cycle Number 100 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
 ------------------------------------------------------------------------------
 Move Statitics for Water
-Translation Move              Success Ratio : 1.0000 (605 out of 605)
-Rotation Move                 Success Ratio : 0.9912 (674 out of 680)
+Translation Move              Success Ratio : 0.9935 (607 out of 611)
+Rotation Move                 Success Ratio : 0.9569 (644 out of 673)
 ------------------------------------------------------------------------------
-Volume Change Move            Success Ratio : 1.0000 (15 out of 15)
+Volume Change Move            Success Ratio : 1.0000 (16 out of 16)
 ------------------------------------------------------------------------------
-Number of molecules of Water  :   64
-Box Length (Ang)              :        133.346        133.346        133.346
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        134.220        134.220        134.220
 Box Angles                    :        90.0000        90.0000        90.0000
-Simulation Volume (Ang^3)     :   2.37106E+006
-Density (kg/m^3)              :       0.806789
-Total Energy (J/mol)          :       -859.222  (        -8.32886       -524.694       -326.199   0.00000E+000 )
+Simulation Volume (Ang^3)     :   2.41797E+006
+Density (kg/m^3)              :       0.791136
+Total Energy (J/mol)          :       -6768.74  (        -814.240       -5557.80        1953.44   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 200 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9904 (617 out of 623)
+Rotation Move                 Success Ratio : 0.9475 (614 out of 648)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 1.0000 (29 out of 29)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        135.178        135.178        135.178
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.47011E+006
+Density (kg/m^3)              :       0.774436
+Total Energy (J/mol)          :       -9252.43  (        -1079.50       -8109.98        2287.18   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 300 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9921 (624 out of 629)
+Rotation Move                 Success Ratio : 0.9424 (622 out of 660)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.9091 (10 out of 11)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        133.677        133.677        133.677
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.38877E+006
+Density (kg/m^3)              :       0.800805
+Total Energy (J/mol)          :       -18019.6  (         13241.7       -31176.5        2265.35   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 400 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9921 (631 out of 636)
+Rotation Move                 Success Ratio : 0.9549 (614 out of 643)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 1.0000 (21 out of 21)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        134.576        134.576        134.576
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.43727E+006
+Density (kg/m^3)              :       0.784870
+Total Energy (J/mol)          :       -12098.9  (        -758.548       -11645.9        2655.65   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 500 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9877 (645 out of 653)
+Rotation Move                 Success Ratio : 0.9779 (619 out of 633)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 1.0000 (14 out of 14)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        139.417        139.417        139.417
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.70986E+006
+Density (kg/m^3)              :       0.705918
+Total Energy (J/mol)          :       -7456.83  (        -653.091       -6963.51        2509.90   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 600 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9555 (622 out of 651)
+Rotation Move                 Success Ratio : 0.9410 (590 out of 627)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7727 (17 out of 22)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.994        138.994        138.994
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.68529E+006
+Density (kg/m^3)              :       0.712377
+Total Energy (J/mol)          :       -47862.8  (         15715.1       -63548.4        2320.59   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 700 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9427 (609 out of 646)
+Rotation Move                 Success Ratio : 0.9073 (568 out of 626)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.9643 (27 out of 28)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        142.872        142.872        142.872
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.91637E+006
+Density (kg/m^3)              :       0.655932
+Total Energy (J/mol)          :       -40895.9  (         4616.63       -45589.9        2427.46   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 800 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9792 (613 out of 626)
+Rotation Move                 Success Ratio : 0.9344 (612 out of 655)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.9474 (18 out of 19)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        139.788        139.788        139.788
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.73153E+006
+Density (kg/m^3)              :       0.700318
+Total Energy (J/mol)          :       -18203.7  (        -1221.48       -17091.8        2459.71   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 900 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9667 (609 out of 630)
+Rotation Move                 Success Ratio : 0.9381 (606 out of 646)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.9167 (22 out of 24)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        132.407        132.407        132.407
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.32133E+006
+Density (kg/m^3)              :       0.824071
+Total Energy (J/mol)          :       -26329.6  (         17380.3       -43325.4        1965.63   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9372 (582 out of 621)
+Rotation Move                 Success Ratio : 0.9144 (609 out of 666)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.6923 (9 out of 13)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        137.436        137.436        137.436
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.59600E+006
+Density (kg/m^3)              :       0.736880
+Total Energy (J/mol)          :       -68596.7  (         21002.0       -89730.4        2481.85   0.00000E+000 )
 ==============================================================================
 
 SIMULATION NUMBER 1 :  PRODUCTION STAGE
-Cycle Number 100 out of 500
+Cycle Number 100 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
 ------------------------------------------------------------------------------
 Move Statitics for Water
-Translation Move              Success Ratio : 0.9997 (3195 out of 3196)
-Rotation Move                 Success Ratio : 0.9922 (3183 out of 3208)
+Translation Move              Success Ratio : 0.9135 (2969 out of 3250)
+Rotation Move                 Success Ratio : 0.9170 (2885 out of 3146)
 ------------------------------------------------------------------------------
-Volume Change Move            Success Ratio : 0.9792 (94 out of 96)
+Volume Change Move            Success Ratio : 0.7500 (78 out of 104)
 ------------------------------------------------------------------------------
-Number of molecules of Water  :   64
-Box Length (Ang)              :        130.646        130.646        130.646
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        135.401        135.401        135.401
 Box Angles                    :        90.0000        90.0000        90.0000
-Simulation Volume (Ang^3)     :   2.22991E+006
-Density (kg/m^3)              :       0.857857
-Total Energy (J/mol)          :       -356.117  (        -9.54473       -420.633        74.0598   0.00000E+000 )
+Simulation Volume (Ang^3)     :   2.48239E+006
+Density (kg/m^3)              :       0.770604
+Total Energy (J/mol)          :       -77944.7  (         17811.4       -95691.1        2285.19   0.00000E+000 )
 ==============================================================================
 
 SIMULATION NUMBER 1 :  PRODUCTION STAGE
-Cycle Number 200 out of 500
+Cycle Number 200 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
 ------------------------------------------------------------------------------
 Move Statitics for Water
-Translation Move              Success Ratio : 0.9997 (6447 out of 6449)
-Rotation Move                 Success Ratio : 0.9923 (6332 out of 6381)
+Translation Move              Success Ratio : 0.8886 (5806 out of 6534)
+Rotation Move                 Success Ratio : 0.8931 (5596 out of 6266)
 ------------------------------------------------------------------------------
-Volume Change Move            Success Ratio : 0.9882 (168 out of 170)
+Volume Change Move            Success Ratio : 0.7250 (145 out of 200)
 ------------------------------------------------------------------------------
-Number of molecules of Water  :   64
-Box Length (Ang)              :        129.932        129.932        129.932
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        133.658        133.658        133.658
 Box Angles                    :        90.0000        90.0000        90.0000
-Simulation Volume (Ang^3)     :   2.19355E+006
-Density (kg/m^3)              :       0.872077
-Total Energy (J/mol)          :       -353.561  (        -9.06355       -151.851       -192.646   0.00000E+000 )
+Simulation Volume (Ang^3)     :   2.38774E+006
+Density (kg/m^3)              :       0.801152
+Total Energy (J/mol)          :       -74609.5  (         49179.7       -123479.        2039.87   0.00000E+000 )
 ==============================================================================
 
 SIMULATION NUMBER 1 :  PRODUCTION STAGE
-Cycle Number 300 out of 500
+Cycle Number 300 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
 ------------------------------------------------------------------------------
 Move Statitics for Water
-Translation Move              Success Ratio : 0.9997 (9643 out of 9646)
-Rotation Move                 Success Ratio : 0.9915 (9501 out of 9582)
+Translation Move              Success Ratio : 0.9006 (8745 out of 9710)
+Rotation Move                 Success Ratio : 0.9033 (8561 out of 9477)
 ------------------------------------------------------------------------------
-Volume Change Move            Success Ratio : 0.9853 (268 out of 272)
+Volume Change Move            Success Ratio : 0.7380 (231 out of 313)
 ------------------------------------------------------------------------------
-Number of molecules of Water  :   64
-Box Length (Ang)              :        131.427        131.427        131.427
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        144.582        144.582        144.582
 Box Angles                    :        90.0000        90.0000        90.0000
-Simulation Volume (Ang^3)     :   2.27015E+006
-Density (kg/m^3)              :       0.842650
-Total Energy (J/mol)          :       -217.877  (        -7.83263       -153.625       -56.4188   0.00000E+000 )
+Simulation Volume (Ang^3)     :   3.02232E+006
+Density (kg/m^3)              :       0.632937
+Total Energy (J/mol)          :       -58299.1  (         8307.98       -66546.4        2289.48   0.00000E+000 )
 ==============================================================================
 
 SIMULATION NUMBER 1 :  PRODUCTION STAGE
-Cycle Number 400 out of 500
+Cycle Number 400 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
 ------------------------------------------------------------------------------
 Move Statitics for Water
-Translation Move              Success Ratio : 0.9998 (12945 out of 12948)
-Rotation Move                 Success Ratio : 0.9906 (12560 out of 12679)
+Translation Move              Success Ratio : 0.9064 (11692 out of 12899)
+Rotation Move                 Success Ratio : 0.9082 (11519 out of 12684)
 ------------------------------------------------------------------------------
-Volume Change Move            Success Ratio : 0.9812 (366 out of 373)
+Volume Change Move            Success Ratio : 0.7434 (310 out of 417)
 ------------------------------------------------------------------------------
-Number of molecules of Water  :   64
-Box Length (Ang)              :        133.839        133.839        133.839
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.130        138.130        138.130
 Box Angles                    :        90.0000        90.0000        90.0000
-Simulation Volume (Ang^3)     :   2.39743E+006
-Density (kg/m^3)              :       0.797915
-Total Energy (J/mol)          :       -78.4995  (        -6.98627       -48.3752       -23.1380   0.00000E+000 )
+Simulation Volume (Ang^3)     :   2.63551E+006
+Density (kg/m^3)              :       0.725832
+Total Energy (J/mol)          :       -52075.5  (         13213.7       -65166.1        2227.03   0.00000E+000 )
 ==============================================================================
 
 SIMULATION NUMBER 1 :  PRODUCTION STAGE
-Cycle Number 500 out of 500
+Cycle Number 500 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
 ------------------------------------------------------------------------------
 Move Statitics for Water
-Translation Move              Success Ratio : 0.9998 (16125 out of 16128)
-Rotation Move                 Success Ratio : 0.9908 (15748 out of 15894)
+Translation Move              Success Ratio : 0.9143 (14664 out of 16038)
+Rotation Move                 Success Ratio : 0.9155 (14619 out of 15968)
 ------------------------------------------------------------------------------
-Volume Change Move            Success Ratio : 0.9833 (470 out of 478)
+Volume Change Move            Success Ratio : 0.7632 (377 out of 494)
 ------------------------------------------------------------------------------
-Number of molecules of Water  :   64
-Box Length (Ang)              :        132.683        132.683        132.683
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        141.343        141.343        141.343
 Box Angles                    :        90.0000        90.0000        90.0000
-Simulation Volume (Ang^3)     :   2.33584E+006
-Density (kg/m^3)              :       0.818953
-Total Energy (J/mol)          :        508.043  (        -10.5365        555.610       -37.0303   0.00000E+000 )
+Simulation Volume (Ang^3)     :   2.82373E+006
+Density (kg/m^3)              :       0.677451
+Total Energy (J/mol)          :       -17331.5  (         7654.28       -25022.9        2387.24   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 600 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9245 (17807 out of 19261)
+Rotation Move                 Success Ratio : 0.9239 (17699 out of 19156)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7581 (442 out of 583)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        136.926        136.926        136.926
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.56717E+006
+Density (kg/m^3)              :       0.745155
+Total Energy (J/mol)          :       -9299.89  (        -654.854       -8728.93        2434.03   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 700 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9262 (20793 out of 22450)
+Rotation Move                 Success Ratio : 0.9255 (20699 out of 22365)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7504 (514 out of 685)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        139.123        139.123        139.123
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.69273E+006
+Density (kg/m^3)              :       0.710408
+Total Energy (J/mol)          :       -44893.7  (         11102.7       -56002.8        2356.57   0.00000E+000 )
+==============================================================================
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory                 SPC_water
+Potential cutoff distance            50.0
+Coulomb Evaluation ewald default
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        5000
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Cubic
+Density                0.77
+Boundary conditions    1  1  1
+
+Species   Name                            Water
+Initialization Method           Random
+Initial number of molecules     64
+Translation weight              1
+Maximum displacement            0.1
+Rotation weight                 1
+
+Volume Change Weight   1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1          373.13
+Pressure                            1              1          1.2e5
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Density                   1                    2500
+Calculate     Energy                    1                    2500
+#Calculate     Fugacity   Water          1                    2500
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  O          16.0       -0.82
+  H           1.0        0.41
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+O             O                 Lennard-Jones      3.166  78.0   2.5
+H             H                 off
+O             H                 off
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 700 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9262 (20793 out of 22450)
+Rotation Move                 Success Ratio : 0.9255 (20699 out of 22365)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7504 (514 out of 685)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        139.123        139.123        139.123
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.69273E+006
+Density (kg/m^3)              :       0.710408
+Total Energy (J/mol)          :       -44893.7  (         11102.7       -56002.8        2356.57   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 800 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9251 (23627 out of 25540)
+Rotation Move                 Success Ratio : 0.9255 (23764 out of 25677)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7510 (588 out of 783)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        139.286        139.286        139.286
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.70224E+006
+Density (kg/m^3)              :       0.707910
+Total Energy (J/mol)          :       -64060.2  (         10684.6       -74715.0        2320.33   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 900 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9240 (26503 out of 28682)
+Rotation Move                 Success Ratio : 0.9249 (26752 out of 28925)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7436 (664 out of 893)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        137.871        137.871        137.871
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.62069E+006
+Density (kg/m^3)              :       0.729939
+Total Energy (J/mol)          :       -36916.6  (         1496.49       -38285.9        2222.91   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9274 (29590 out of 31905)
+Rotation Move                 Success Ratio : 0.9271 (29766 out of 32105)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7535 (746 out of 990)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        135.780        135.780        135.780
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.50326E+006
+Density (kg/m^3)              :       0.764179
+Total Energy (J/mol)          :       -12197.5  (        -733.000       -11408.0        2293.65   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1100 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9315 (32730 out of 35136)
+Rotation Move                 Success Ratio : 0.9301 (32798 out of 35262)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7641 (842 out of 1102)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        150.519        150.519        150.519
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   3.41014E+006
+Density (kg/m^3)              :       0.560957
+Total Energy (J/mol)          :       -24294.4  (         1606.26       -26008.6        2458.10   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1200 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9355 (35857 out of 38331)
+Rotation Move                 Success Ratio : 0.9337 (35919 out of 38471)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7629 (914 out of 1198)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        129.581        129.581        129.581
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.17585E+006
+Density (kg/m^3)              :       0.879171
+Total Energy (J/mol)          :       -7337.00  (        -521.218       -6522.72        2057.07   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1300 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9402 (39035 out of 41519)
+Rotation Move                 Success Ratio : 0.9380 (39086 out of 41671)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7664 (1004 out of 1310)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        134.400        134.400        134.400
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.42774E+006
+Density (kg/m^3)              :       0.787952
+Total Energy (J/mol)          :       -6.12531  (        -5.02650        40.1614        2308.87   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1400 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9444 (42230 out of 44716)
+Rotation Move                 Success Ratio : 0.9420 (42264 out of 44868)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7768 (1100 out of 1416)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        141.271        141.271        141.271
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.81941E+006
+Density (kg/m^3)              :       0.678489
+Total Energy (J/mol)          :        21.5068  (        -3.59633       -92.2123        2467.45   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1500 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9480 (45356 out of 47846)
+Rotation Move                 Success Ratio : 0.9455 (45532 out of 48158)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7814 (1169 out of 1496)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        137.535        137.535        137.535
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.60157E+006
+Density (kg/m^3)              :       0.735303
+Total Energy (J/mol)          :        656.650  (        -11.4848        454.192        2564.07   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1600 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9511 (48585 out of 51081)
+Rotation Move                 Success Ratio : 0.9480 (48660 out of 51328)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7806 (1242 out of 1591)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        146.390        146.390        146.390
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   3.13716E+006
+Density (kg/m^3)              :       0.609768
+Total Energy (J/mol)          :        1163.94  (        -39.4502        1198.99        2354.53   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1700 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9540 (51863 out of 54363)
+Rotation Move                 Success Ratio : 0.9504 (51741 out of 54440)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7843 (1331 out of 1697)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        139.319        139.319        139.319
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.70416E+006
+Density (kg/m^3)              :       0.707406
+Total Energy (J/mol)          :       -131.454  (        -9.89422       -193.063        2421.63   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1800 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9563 (55016 out of 57531)
+Rotation Move                 Success Ratio : 0.9522 (54921 out of 57681)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7880 (1409 out of 1788)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        133.879        133.879        133.879
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.39957E+006
+Density (kg/m^3)              :       0.797200
+Total Energy (J/mol)          :       -8645.20  (        -494.667       -8097.94        2297.53   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1900 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9563 (58097 out of 60749)
+Rotation Move                 Success Ratio : 0.9518 (57933 out of 60864)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7891 (1489 out of 1887)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        125.355        125.355        125.355
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   1.96982E+006
+Density (kg/m^3)              :       0.971124
+Total Energy (J/mol)          :       -35967.2  (         19513.0       -55480.4        2350.38   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9567 (61146 out of 63911)
+Rotation Move                 Success Ratio : 0.9520 (61011 out of 64086)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7873 (1577 out of 2003)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        140.597        140.597        140.597
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.77927E+006
+Density (kg/m^3)              :       0.688290
+Total Energy (J/mol)          :       -20000.8  (         217.845       -20258.8        2390.31   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2100 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9576 (64284 out of 67131)
+Rotation Move                 Success Ratio : 0.9528 (64082 out of 67257)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7860 (1660 out of 2112)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.687        138.687        138.687
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.66749E+006
+Density (kg/m^3)              :       0.717132
+Total Energy (J/mol)          :       -30082.9  (         996.956       -31049.0        2319.27   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2200 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9571 (67321 out of 70337)
+Rotation Move                 Success Ratio : 0.9524 (67096 out of 70447)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7861 (1742 out of 2216)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.041        138.041        138.041
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.63039E+006
+Density (kg/m^3)              :       0.727247
+Total Energy (J/mol)          :       -19671.7  (         3746.98       -23188.0        2119.43   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2300 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9579 (70435 out of 73532)
+Rotation Move                 Success Ratio : 0.9531 (70201 out of 73657)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7884 (1822 out of 2311)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        153.994        153.994        153.994
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   3.65183E+006
+Density (kg/m^3)              :       0.523830
+Total Energy (J/mol)          :       -928.410  (        -52.3611       -807.436        2281.52   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2400 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9590 (73574 out of 76720)
+Rotation Move                 Success Ratio : 0.9537 (73333 out of 76893)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7893 (1884 out of 2387)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        137.362        137.362        137.362
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.59177E+006
+Density (kg/m^3)              :       0.738083
+Total Energy (J/mol)          :       -23779.5  (         2801.97       -26512.3        2280.94   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2500 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9587 (76655 out of 79954)
+Rotation Move                 Success Ratio : 0.9534 (76317 out of 80050)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7893 (1970 out of 2496)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        142.230        142.230        142.230
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.87725E+006
+Density (kg/m^3)              :       0.664851
+Total Energy (J/mol)          :       -20704.9  (         1789.04       -22539.3        2395.42   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2600 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9576 (79685 out of 83214)
+Rotation Move                 Success Ratio : 0.9524 (79212 out of 83175)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7882 (2058 out of 2611)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        148.886        148.886        148.886
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   3.30038E+006
+Density (kg/m^3)              :       0.579612
+Total Energy (J/mol)          :       -68113.3  (         11034.3       -79171.3        2373.93   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2700 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9568 (82635 out of 86367)
+Rotation Move                 Success Ratio : 0.9516 (82223 out of 86403)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7853 (2144 out of 2730)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.952        138.952        138.952
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.68284E+006
+Density (kg/m^3)              :       0.713028
+Total Energy (J/mol)          :       -30233.5  (         3593.71       -33969.8        2492.77   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2800 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9567 (85693 out of 89575)
+Rotation Move                 Success Ratio : 0.9510 (85201 out of 89594)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7863 (2226 out of 2831)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        140.707        140.707        140.707
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.78577E+006
+Density (kg/m^3)              :       0.686682
+Total Energy (J/mol)          :       -35103.9  (         1703.50       -36772.9        2315.64   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2900 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9556 (88588 out of 92708)
+Rotation Move                 Success Ratio : 0.9498 (88182 out of 92840)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7866 (2322 out of 2952)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        128.053        128.053        128.053
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.09974E+006
+Density (kg/m^3)              :       0.911038
+Total Energy (J/mol)          :       -47980.9  (         16378.9       -64485.5        2475.84   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9554 (91612 out of 95888)
+Rotation Move                 Success Ratio : 0.9495 (91205 out of 96057)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7856 (2400 out of 3055)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.796        138.796        138.796
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.67380E+006
+Density (kg/m^3)              :       0.715438
+Total Energy (J/mol)          :       -7830.00  (         11697.1       -19504.6        2327.64   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3100 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9560 (94746 out of 99110)
+Rotation Move                 Success Ratio : 0.9497 (94230 out of 99216)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7854 (2493 out of 3174)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        133.791        133.791        133.791
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.39487E+006
+Density (kg/m^3)              :       0.798765
+Total Energy (J/mol)          :       -18094.5  (         1138.72       -19336.5        2453.42   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3200 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9565 (97885 out of 102339)
+Rotation Move                 Success Ratio : 0.9501 (97274 out of 102381)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7857 (2577 out of 3280)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        126.944        126.944        126.944
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.04567E+006
+Density (kg/m^3)              :       0.935116
+Total Energy (J/mol)          :       -19282.8  (         2541.09       -21699.2        2225.43   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3300 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9563 (100947 out of 105563)
+Rotation Move                 Success Ratio : 0.9497 (100252 out of 105561)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7873 (2658 out of 3376)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        135.464        135.464        135.464
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.48583E+006
+Density (kg/m^3)              :       0.769539
+Total Energy (J/mol)          :       -52074.7  (         20237.9       -72617.5        2655.09   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3400 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9547 (103859 out of 108790)
+Rotation Move                 Success Ratio : 0.9478 (103058 out of 108732)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7855 (2732 out of 3478)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        128.038        128.038        128.038
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.09903E+006
+Density (kg/m^3)              :       0.911345
+Total Energy (J/mol)          :       -86882.9  (         14257.8       -101258.        2467.59   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3500 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9536 (106782 out of 111976)
+Rotation Move                 Success Ratio : 0.9471 (106034 out of 111956)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7845 (2799 out of 3568)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        126.396        126.396        126.396
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.01927E+006
+Density (kg/m^3)              :       0.947342
+Total Energy (J/mol)          :       -90064.8  (         13729.4       -103883.        2438.67   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3600 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9520 (109702 out of 115230)
+Rotation Move                 Success Ratio : 0.9458 (108871 out of 115112)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7805 (2855 out of 3658)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        135.103        135.103        135.103
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.46600E+006
+Density (kg/m^3)              :       0.775725
+Total Energy (J/mol)          :       -93522.2  (         14444.0       -107929.        2312.43   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3700 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9509 (112553 out of 118364)
+Rotation Move                 Success Ratio : 0.9447 (111828 out of 118375)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7769 (2922 out of 3761)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        133.212        133.212        133.212
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.36392E+006
+Density (kg/m^3)              :       0.809222
+Total Energy (J/mol)          :       -79159.0  (         42642.9       -122074.        2622.40   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3800 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9508 (115556 out of 121533)
+Rotation Move                 Success Ratio : 0.9445 (114863 out of 121610)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7783 (3002 out of 3857)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        129.960        129.960        129.960
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.19499E+006
+Density (kg/m^3)              :       0.871504
+Total Energy (J/mol)          :       -72109.8  (         19733.0       -91772.3        2279.66   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3900 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9507 (118547 out of 124689)
+Rotation Move                 Success Ratio : 0.9445 (117923 out of 124851)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7788 (3084 out of 3960)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        134.322        134.322        134.322
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.42352E+006
+Density (kg/m^3)              :       0.789325
+Total Energy (J/mol)          :       -31394.5  (         5194.80       -36450.5        2211.32   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9513 (121589 out of 127820)
+Rotation Move                 Success Ratio : 0.9449 (121043 out of 128104)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7785 (3173 out of 4076)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        127.698        127.698        127.698
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.08233E+006
+Density (kg/m^3)              :       0.918653
+Total Energy (J/mol)          :       -27071.8  (         1754.44       -28787.1        2310.96   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4100 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9512 (124660 out of 131061)
+Rotation Move                 Success Ratio : 0.9442 (123928 out of 131246)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7768 (3257 out of 4193)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        136.463        136.463        136.463
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.54122E+006
+Density (kg/m^3)              :       0.752765
+Total Energy (J/mol)          :       -48847.4  (         5498.71       -54018.7        2022.76   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4200 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9505 (127536 out of 134181)
+Rotation Move                 Success Ratio : 0.9438 (126957 out of 134512)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7762 (3343 out of 4307)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        144.048        144.048        144.048
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.98895E+006
+Density (kg/m^3)              :       0.640004
+Total Energy (J/mol)          :       -40852.9  (         13797.9       -54786.4        2485.65   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4300 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9502 (130571 out of 137419)
+Rotation Move                 Success Ratio : 0.9435 (129884 out of 137661)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7731 (3417 out of 4420)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        148.799        148.799        148.799
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   3.29457E+006
+Density (kg/m^3)              :       0.580634
+Total Energy (J/mol)          :       -66632.8  (         9169.58       -75646.1        2193.81   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4400 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9497 (133525 out of 140595)
+Rotation Move                 Success Ratio : 0.9430 (132851 out of 140887)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7729 (3492 out of 4518)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        138.852        138.852        138.852
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.67704E+006
+Density (kg/m^3)              :       0.714572
+Total Energy (J/mol)          :       -85668.3  (         23427.4       -109126.        2380.65   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4500 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9489 (136477 out of 143825)
+Rotation Move                 Success Ratio : 0.9424 (135750 out of 144040)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7730 (3583 out of 4635)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        135.684        135.684        135.684
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.49796E+006
+Density (kg/m^3)              :       0.765802
+Total Energy (J/mol)          :       -76946.0  (         25075.9       -101876.        2204.60   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4600 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9485 (139447 out of 147012)
+Rotation Move                 Success Ratio : 0.9423 (138752 out of 147243)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7720 (3663 out of 4745)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        136.827        136.827        136.827
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.56162E+006
+Density (kg/m^3)              :       0.746770
+Total Energy (J/mol)          :       -59666.8  (         16939.8       -76618.2        2361.72   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4700 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9486 (142424 out of 150135)
+Rotation Move                 Success Ratio : 0.9425 (141874 out of 150527)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7722 (3736 out of 4838)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        143.041        143.041        143.041
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.92671E+006
+Density (kg/m^3)              :       0.653615
+Total Energy (J/mol)          :       -56631.6  (         23640.3       -80031.2        2109.41   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4800 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9487 (145530 out of 153393)
+Rotation Move                 Success Ratio : 0.9425 (144830 out of 153658)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7731 (3826 out of 4949)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        141.051        141.051        141.051
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.80628E+006
+Density (kg/m^3)              :       0.681665
+Total Energy (J/mol)          :       -62486.4  (         19982.5       -82218.3        2099.51   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4900 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9483 (148485 out of 156577)
+Rotation Move                 Success Ratio : 0.9423 (147824 out of 156875)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7720 (3897 out of 5048)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        144.114        144.114        144.114
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.99306E+006
+Density (kg/m^3)              :       0.639125
+Total Energy (J/mol)          :       -67343.8  (         7354.02       -74562.8        2215.04   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Water
+Translation Move              Success Ratio : 0.9481 (151429 out of 159719)
+Rotation Move                 Success Ratio : 0.9421 (150864 out of 160139)
+------------------------------------------------------------------------------
+Volume Change Move            Success Ratio : 0.7717 (3968 out of 5142)
+------------------------------------------------------------------------------
+Number of molecules of Water                     :   64
+Box Length (Ang)              :        137.708        137.708        137.708
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :   2.61141E+006
+Density (kg/m^3)              :       0.732532
+Total Energy (J/mol)          :       -60405.4  (         23275.4       -83632.6        2301.99   0.00000E+000 )
 ==============================================================================
 
 
 -----------------------------------------------------------------
-STORED ENERGIES
+                             STORED ENERGIES               CALCULATED ENERGIES
 -----------------------------------------------------------------
-System             Total(J/mol)                  :        0.508043E+03
-                   van der Waals(J/mol)          :       -0.105365E+02
-                   Real Coulombic(J/mol)         :        0.555610E+03
-                   Fourier Coulombic(J/mol)      :       -0.370303E+02
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-Water-Water        Total(J/mol)                  :        0.508043E+03
-                   van der Waals(J/mol)          :       -0.105365E+02
-                   Real Coulombic(J/mol)         :        0.555610E+03
-                   Fourier Coulombic(J/mol)      :       -0.370303E+02
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-
-
------------------------------------------------------------------
-STORED VIRIALS
------------------------------------------------------------------
-System             Total(J/mol)                  :        0.509274E+03
-                   van der Waals(J/mol)          :       -0.209746E+02
-                   Real Coulombic(J/mol)         :        0.593394E+03
-                   Fourier Coulombic(J/mol)      :       -0.631450E+02
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-Water-Water        Total(J/mol)                  :        0.509274E+03
-                   van der Waals(J/mol)          :       -0.209746E+02
-                   Real Coulombic(J/mol)         :        0.593394E+03
-                   Fourier Coulombic(J/mol)      :       -0.631450E+02
-                   Einstein(J/mol)               :        0.000000E+00
+Total(J/mol)                 :       -0.604054E+05                -0.604054E+05
+van der Waals(J/mol)         :        0.232754E+05                 0.232754E+05
+Real Coulombic(J/mol)        :       -0.836326E+05                -0.836326E+05
+Fourier Coulombic(J/mol)     :       -0.481382E+02                -0.481382E+02
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
 -----------------------------------------------------------------
 
 
 -----------------------------------------------------------------
-CALCULATED ENERGIES
+                             STORED VIRIALS                CALCULATED VIRIALS
 -----------------------------------------------------------------
-System             Total(J/mol)                  :        0.508043E+03
-                   van der Waals(J/mol)          :       -0.105365E+02
-                   Real Coulombic(J/mol)         :        0.555610E+03
-                   Fourier Coulombic(J/mol)      :       -0.370303E+02
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-Water-Water        Total(J/mol)                  :        0.508043E+03
-                   van der Waals(J/mol)          :       -0.105365E+02
-                   Real Coulombic(J/mol)         :        0.555610E+03
-                   Fourier Coulombic(J/mol)      :       -0.370303E+02
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-
-
------------------------------------------------------------------
-CALCULATED VIRIALS
------------------------------------------------------------------
-System             Total(J/mol)                  :        0.509274E+03
-                   van der Waals(J/mol)          :       -0.209746E+02
-                   Real Coulombic(J/mol)         :        0.593394E+03
-                   Fourier Coulombic(J/mol)      :       -0.631450E+02
-                   Einstein(J/mol)               :        0.000000E+00
------------------------------------------------------------------
-Water-Water        Total(J/mol)                  :        0.509274E+03
-                   van der Waals(J/mol)          :       -0.209746E+02
-                   Real Coulombic(J/mol)         :        0.593394E+03
-                   Fourier Coulombic(J/mol)      :       -0.631450E+02
-                   Einstein(J/mol)               :        0.000000E+00
+Total(J/mol)                 :        0.306125E+05                 0.306125E+05
+van der Waals(J/mol)         :        0.129843E+06                 0.129843E+06
+Real Coulombic(J/mol)        :       -0.991892E+05                -0.991892E+05
+Fourier Coulombic(J/mol)     :       -0.413700E+02                -0.413700E+02
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
 -----------------------------------------------------------------
 

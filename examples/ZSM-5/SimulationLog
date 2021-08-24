@@ -1,0 +1,181 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     100
+Number of Production Cycles        100
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Box
+Box Lengths            40.14  39.84  40.26
+Box Angles             90.0  90.0  90.0
+Boundary conditions    1  1  1
+
+
+Species   Name                            iso-Butane
+Initialization Method           Random
+Initial number of molecules     0
+Translation weight              1
+Maximum displacement            0.1
+Rotation weight                 1
+Insertion weight                1
+Cut and Regrow weight           1
+
+Species   Name                            zsm5
+Initialization Method           File zsm5.config
+
+#=========== State Information =====================================================
+#    Variable         Species    Simulation-No    System-No     Sequence-No   Value
+#-----------------------------------------------------------------------------------
+Temperature                         1              1                       300.0
+Fugacity           iso-Butane       1              1                      100.0
+IdealRFactor       iso-Butane       1              1              1       7.68e-2
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Number    iso-Butane        1                    20
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+  CH_sp3     13.0
+  O          16.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH3_sp3       CH3_sp3      Truncated-Lennard-Jones   3.77   98.1   2.0   13.8
+CH2_sp3       CH2_sp3      Truncated-Lennard-Jones   3.93   47.0   2.0   13.8
+CH_sp3        CH_sp3       Truncated-Lennard-Jones   4.10   12.0   2.0   13.8
+O             O            off
+CH3_sp3       O            Truncated-Lennard-Jones   3.60   80.0   2.0   13.8
+CH2_sp3       O            Truncated-Lennard-Jones   3.60   58.0   2.0   13.8
+CH_sp3        O            Truncated-Lennard-Jones   3.60   58.0   2.0   13.8
+CH3_sp3       CH2_sp3      Truncated-Lennard-Jones   3.85   67.9   2.0   13.8
+CH3_sp3       CH_sp3       Truncated-Lennard-Jones   3.93   34.3   2.0   13.8
+CH2_sp3       CH_sp3       Truncated-Lennard-Jones   4.01   23.7   2.0   13.8
+
+-----------------------------------------------------------------
+                             INITIAL ENERGIES
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.000000E+00
+van der Waals(J/mol)         :        0.000000E+00
+Real Coulombic(J/mol)        :        0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             INITIAL VIRIALS
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.000000E+00
+van der Waals(J/mol)         :        0.000000E+00
+Real Coulombic(J/mol)        :        0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for iso-Butane
+Translation Move              Success Ratio : 0.8736 (76 out of 87)
+Rotation Move                 Success Ratio : 0.2338 (18 out of 77)
+Insertion Move                Success Ratio : 0.0077 (3 out of 389)
+Deletion Move                 Success Ratio : 0.0023 (1 out of 426)
+CutAndRegrow Move             Success Ratio : 0.2378 (88 out of 370)
+Move Statitics for zsm5
+------------------------------------------------------------------------------
+Number of molecules of iso-Butane                :    2
+Number of molecules of zsm5                      :    1
+Box Length (Ang)              :        40.1400        39.8400        40.2600
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        64382.9
+Density (kg/m^3)              :        953.774
+Total Energy (J/mol)          :   8.56441E+006  (        -92138.8   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100 out of 100
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for iso-Butane
+Translation Move              Success Ratio : 0.8213 (363 out of 442)
+Rotation Move                 Success Ratio : 0.2237 (83 out of 371)
+Insertion Move                Success Ratio : 0.0188 (7 out of 372)
+Deletion Move                 Success Ratio : 0.0000 (0 out of 416)
+CutAndRegrow Move             Success Ratio : 0.2155 (86 out of 399)
+Move Statitics for zsm5
+------------------------------------------------------------------------------
+Number of molecules of iso-Butane                :    9
+Number of molecules of zsm5                      :    1
+Box Length (Ang)              :        40.1400        39.8400        40.2600
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        64382.9
+Density (kg/m^3)              :        964.245
+Total Energy (J/mol)          :   3.78032E+007  (        -380167.   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+                             STORED ENERGIES               CALCULATED ENERGIES
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.378032E+08                 0.378032E+08
+van der Waals(J/mol)         :       -0.380167E+06                -0.380167E+06
+Real Coulombic(J/mol)        :        0.000000E+00                 0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00                 0.000000E+00
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.381834E+08                 0.381834E+08
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             STORED VIRIALS                CALCULATED VIRIALS
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.207512E+06                 0.207512E+06
+van der Waals(J/mol)         :        0.207512E+06                 0.207512E+06
+Real Coulombic(J/mol)        :        0.000000E+00                 0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00                 0.000000E+00
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+

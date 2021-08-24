@@ -1,0 +1,57 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        1000
+Display Frequency                  100
+Restart Frequency                  100 
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            30.0  30.0  30.0
+                  Box Angles             90.0  90.0  90.0
+                  Boundary conditions    1  1  1
+
+Species   Name                            n-Butane
+          Initialization Method           File StartConfig
+          Initial number of molecules     150
+          Translation weight              1
+          Maximum displacement            0.1
+          Rotation weight                 1
+          Insertion weight                1
+          Cut and Regrow weight           1
+
+#=========== State Information =====================================================
+#    Variable         Species    Simulation-No    System-No     Sequence-No   Value 
+#-----------------------------------------------------------------------------------
+#  Temperature                        1              1                       262.0
+#  Fugacity           n-Butane        1              1                       1.04e5
+#  IdealRFactor       n-Butane        1              1              1        1.13e-1
+  
+#  Temperature                        1              1                       295.0
+#  Fugacity           n-Butane        1              1                       2.65e5
+#  IdealRFactor       n-Butane        1              1              1        1.28e-1
+  
+#  Temperature                        1              1                       327.0
+#  Fugacity           n-Butane        1              1                       6.41e5
+#  IdealRFactor       n-Butane        1              1              1        1.43e-1
+
+   Temperature                        1              1                       360.0
+   Fugacity           n-Butane        1              1                       11.33e5
+   IdealRFactor       n-Butane        1              1              1        1.58e-1
+  
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Density                   1                    250
+

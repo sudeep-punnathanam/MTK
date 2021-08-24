@@ -1,6 +1,7 @@
 module mcmoves
-  use, intrinsic :: ieee_exceptions
-  use, intrinsic :: ieee_features, only: ieee_underflow_flag
+!!$  use, intrinsic :: ieee_exceptions
+!!$  use, intrinsic :: ieee_features, only: ieee_underflow_flag
+!!$  use, intrinsic :: ieee_arithmetic, only: ieee_is_nan
   use consts, only: PR, PI, strlen, lstrlen, MAX_NO_OF_SPECIES, MAX_NO_OF_SYSTEMS
   use variables, only: CutOffDistance, NumberOfSystems, TotalNumberOfMolecules, TotalMass, beta, Pressure, Fugacity, &
     CurrentCoordinates, CurrentSimulationCell, CurrentInteractions, TrialCoordinates, TrialSimulationCell, CurrentKfactor, CurrentStructureFactor, &
@@ -37,9 +38,9 @@ module mcmoves
   !** Particle Moves
   type(MoveParameters), dimension(MAX_NO_OF_SPECIES,MAX_NO_OF_SYSTEMS)    :: Translation
   type(MoveParameters), dimension(MAX_NO_OF_SPECIES,MAX_NO_OF_SYSTEMS)    :: Rotation
-  type(MoveParameters), dimension(MAX_NO_OF_SPECIES,MAX_NO_OF_SYSTEMS)    :: CutAndRegrow
   type(MoveParameters), dimension(MAX_NO_OF_SPECIES,MAX_NO_OF_SYSTEMS)    :: Insertion
   type(MoveParameters), dimension(MAX_NO_OF_SPECIES,MAX_NO_OF_SYSTEMS)    :: Deletion
+  type(MoveParameters), dimension(MAX_NO_OF_SPECIES,MAX_NO_OF_SYSTEMS)    :: CutAndRegrow
 
   !** Volume Move
   type(MoveParameters), dimension(MAX_NO_OF_SYSTEMS)                      :: VolumeChange
@@ -142,6 +143,10 @@ contains
     integer :: spc,sys
     integer :: i
 
+integer :: mol
+logical :: overlap
+real(PR) :: rosen
+
     !** Select a species for particle move
     call SelectSystemAndSpecies(spc,sys)
 
@@ -149,31 +154,41 @@ contains
     i=int(RandomNumber()*real(TotalWeights(spc,sys),PR))
     !**  Translation
     if(i < Translation(spc,sys)%CumulativeWeight)then
+!!$write(unit=6,fmt='(5x,a15)',advance='no')'Translation'
       call TranslationMove(spc,sys,simno,error)
+!!$write(unit=6,fmt='(5x,e15.4)',advance='yes')CurrentInteractions(sys)%Energy%vdW
       return
     end if
 
     !**  Rotation
     if(i < Rotation(spc,sys)%CumulativeWeight)then
+!!$write(unit=6,fmt='(5x,a15)',advance='no')'Rotation'
       call RotationMove(spc,sys,simno,error)
+!!$write(unit=6,fmt='(5x,e15.4)',advance='yes')CurrentInteractions(sys)%Energy%vdW
       return
     end if
 
     !**  Insertion
     if(i < Insertion(spc,sys)%CumulativeWeight)then
+!!$write(unit=6,fmt='(5x,a15)',advance='no')'Insertion'
       call InsertionMove(spc,sys,simno,error)
+!!$write(unit=6,fmt='(5x,e15.4)',advance='yes')CurrentInteractions(sys)%Energy%vdW
       return
     end if
 
     !**  Deletion
     if(i < Deletion(spc,sys)%CumulativeWeight)then
+!!$write(unit=6,fmt='(5x,a15)',advance='no')'Deletion'
       call DeletionMove(spc,sys,simno,error)
+!!$write(unit=6,fmt='(5x,e15.4)',advance='yes')CurrentInteractions(sys)%Energy%vdW
       return
     end if
 
     !**  Cut and Regrow
     if(i < CutAndRegrow(spc,sys)%CumulativeWeight)then
+!!$write(unit=6,fmt='(5x,a15)',advance='no')'CutAndRegrow'
       call CutAndRegrowMove(spc,sys,simno,error)
+!!$write(unit=6,fmt='(5x,e15.4)',advance='yes')CurrentInteractions(sys)%Energy%vdW
       return
     end if
 
@@ -249,12 +264,12 @@ contains
 
     !** Accept or Reject the move
     arg=exp(-beta(simno,sys)*DeltaInteractions%Energy%Total)
-    call ieee_get_flag(ieee_underflow,underflow)
-    if(underflow)then
-      call ieee_set_flag(ieee_underflow,.false.)
-      arg=0._PR
-    end if
-    if(RandomNumber() < arg .or. DeltaInteractions%Energy%Total < 0._PR)then
+!!$    call ieee_get_flag(ieee_underflow,underflow)
+!!$    if(underflow)then
+!!$      call ieee_set_flag(ieee_underflow,.false.)
+!!$      arg=0._PR
+!!$    end if
+    if(RandomNumber() < arg)then ! .or. DeltaInteractions%Energy%Total < 0._PR)then
       Translation(spc,sys)%Success=Translation(spc,sys)%Success+1
       if(Molecule(spc)%HasPartialCharges)CurrentStructureFactor(sys)=TrialStructureFactor
       CurrentInteractions(sys)=CurrentInteractions(sys)+DeltaInteractions
@@ -352,12 +367,12 @@ contains
 
     !** Accept or Reject the move
     arg=exp(-beta(simno,sys)*DeltaInteractions%Energy%Total)
-    call ieee_get_flag(ieee_underflow,underflow)
-    if(underflow)then
-      call ieee_set_flag(ieee_underflow,.false.)
-      arg=0._PR
-    end if
-    if(RandomNumber() < arg .or. DeltaInteractions%Energy%Total < 0._PR)then
+!!$    call ieee_get_flag(ieee_underflow,underflow)
+!!$    if(underflow)then
+!!$      call ieee_set_flag(ieee_underflow,.false.)
+!!$      arg=0._PR
+!!$    end if
+    if(RandomNumber() < arg)then ! .or. DeltaInteractions%Energy%Total < 0._PR)then
       Rotation(spc,sys)%Success=Rotation(spc,sys)%Success+1
       if(Molecule(spc)%HasPartialCharges)CurrentStructureFactor(sys)=TrialStructureFactor
       CurrentInteractions(sys)=CurrentInteractions(sys)+DeltaInteractions
@@ -506,13 +521,14 @@ contains
     Interactions=Interactions+IntraMolecularInteraction(CurrentCoordinates(spc,sys)%Positions(:,mol,:),spc,mol,overlap)
     call UpdateStorageInteractions(Interactions)
 
-    !** Calculate Long Range van der Waals and Ewald Fourier Interactions
+    !** Calculate Long Range van der Waals
     call MoleculeSystemLongRangePairwiseInteraction(spc,nmoles,CurrentCoordinates(:,sys)%NumberOfMolecules,CurrentSimulationCell(sys)%Volume,LongRangeInteractions)
     if(error)return
     call UpdateStorageInteractions(LongRangeInteractions)
     Interactions=Interactions+LongRangeInteractions
     deltaU=LongRangeInteractions%Energy%Total
 
+    !** Calculate Ewald Fourier Interactions
     if(Molecule(spc)%HasPartialCharges)then
       call CalculateMoleculeStructureFactor(sys,spc,CurrentCoordinates(spc,sys)%Positions(1:3,mol,1:natoms),CurrentCoordinates(spc,sys)%CenterOfMass(1:3,mol), &
         CurrentSimulationCell(sys),OldStructureFactor)
@@ -559,9 +575,10 @@ contains
 
     integer :: SequenceNumber
     integer :: natoms, nmoles, mol
-    real(PR) :: RosenbluthWeightRatio, arg, old_energy, new_energy, deltaU
+    real(PR) :: RosenbluthWeightRatio, arg, old_energy, new_energy
     logical :: overlap
     type(StorageInteractions) :: OldInteractions, NewInteractions, DeltaInteractions, EwaldInteractions
+    real(PR) :: deltaU
 
     error=.false.
     CutAndRegrow(spc,sys)%Attempts=CutAndRegrow(spc,sys)%Attempts+1
@@ -589,13 +606,14 @@ contains
     !** New Interactions
     !** Calculate Short Range van der Waals and Ewald Real Space Interactions
     call MoleculeSystemShortRangePairwiseInteraction(TrialCoordinates(spc,sys)%Positions(1:3,mol,1:natoms),TrialCoordinates(spc,sys)%CenterOfMass(1:3,mol), &
-      CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),spc,mol,OldInteractions,overlap)
+      CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),spc,mol,NewInteractions,overlap)
     !** Calculate Intermolecular Interactions
     NewInteractions=NewInteractions+IntraMolecularInteraction(TrialCoordinates(spc,sys)%Positions(:,mol,:),spc,mol,overlap)
     call UpdateStorageInteractions(NewInteractions)
 
     !** Interaction Difference
     DeltaInteractions=NewInteractions-OldInteractions
+    deltaU=0._PR
 
     !** Calculate Ewald Fourier Interactions
     if(Molecule(spc)%HasPartialCharges)then
@@ -611,7 +629,7 @@ contains
       EwaldInteractions%Energy%CoulFourier=EwaldInteractions%Energy%CoulFourier-CurrentInteractions(sys)%Energy%CoulFourier
       EwaldInteractions%Virial%CoulFourier=EwaldInteractions%Virial%CoulFourier-CurrentInteractions(sys)%Virial%CoulFourier
       DeltaInteractions=DeltaInteractions+EwaldInteractions
-      deltaU=deltaU+EwaldInteractions%Energy%CoulFourier-EwaldInteractions%Energy%IntraFourier
+      deltaU=EwaldInteractions%Energy%CoulFourier-EwaldInteractions%Energy%IntraFourier
     end if
     call UpdateStorageInteractions(DeltaInteractions)
 
@@ -735,11 +753,11 @@ contains
     N=TotalNumberOfMolecules(sys)
     arg=(TrialInteractions%Energy%Total-CurrentInteractions(sys)%Energy%Total)+Pressure(simno,sys)*(TrialSimulationCell(sys)%Volume-CurrentSimulationCell(sys)%Volume)
     arg=ratio**real(N-1,PR)*exp(-beta(simno,sys)*arg)
-    call ieee_get_flag(ieee_underflow,underflow)
-    if(underflow)then
-      call ieee_set_flag(ieee_underflow,.false.)
-      arg=0._PR
-    end if
+!!$    call ieee_get_flag(ieee_underflow,underflow)
+!!$    if(underflow)then
+!!$      call ieee_set_flag(ieee_underflow,.false.)
+!!$      arg=0._PR
+!!$    end if
     if(RandomNumber() < arg)then
       VolumeChange(sys)%Success=VolumeChange(sys)%Success+1
       do spc=1,NumberOfSpecies
@@ -824,6 +842,8 @@ contains
     Insertion%Attempts=0
     Deletion%Success=0
     Deletion%Attempts=0
+    CutAndRegrow%Success=0
+    CutAndRegrow%Attempts=0
     VolumeChange%Success=0
     VolumeChange%Attempts=0
   end subroutine ResetMoveStatistics
@@ -903,6 +923,15 @@ contains
         write(string2,'(i20)')Deletion(spc,sys)%Attempts
         string2=adjustl(string2)
         write(unitno,'(a,t31,7a)')'Deletion Move','Success Ratio : ',trim(ratio),' (',trim(string1),' out of ',trim(string2),')'
+      end if
+      if(CutAndRegrow(spc,sys)%Weight /= 0)then
+        write(ratio,'(f10.4)')real(CutAndRegrow(spc,sys)%Success,PR)/real(CutAndRegrow(spc,sys)%Attempts,PR)
+        ratio=adjustl(ratio)
+        write(string1,'(i20)')CutAndRegrow(spc,sys)%Success
+        string1=adjustl(string1)
+        write(string2,'(i20)')CutAndRegrow(spc,sys)%Attempts
+        string2=adjustl(string2)
+        write(unitno,'(a,t31,7a)')'CutAndRegrow Move','Success Ratio : ',trim(ratio),' (',trim(string1),' out of ',trim(string2),')'
       end if
     end do
     write(unitno,'(a)')'------------------------------------------------------------------------------'

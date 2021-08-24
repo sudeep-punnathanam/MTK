@@ -6,7 +6,7 @@ module forcefield
   use atoms_and_molecules, only: Atom, NumberOfAtomTypes, GetAtomType, NumberOfSpecies, Molecule
   use ewaldsum, only: Ewald_alpha, Ewald_alpha_by_sqrt_pi, Ewald_kappa, Ewald_kappa_by_two_alpha, PairCoulombInteraction, COULOMB_SCREENING
   use storage, only: InteractionAccumulator
-  use random, only: GaussianRandomNumber
+  use random, only: GaussianRandomNumber, RandomNumber
   use utils, only: CROSS_PRODUCT, FindStringInFile
   implicit none
   public
@@ -26,10 +26,10 @@ module forcefield
 
   !=============================================================================
   type :: PotentialModel_info
-    character(len=strlen)   :: Name=''
-    character(len=strlen)   :: Atom1,Atom2,Atom3,Atom4
-    integer                 :: ptype=OFF
-    real(PR), dimension(10) :: arg=0._PR
+    character(len=strlen)     :: Name=''
+    character(len=strlen)     :: Atom1,Atom2,Atom3,Atom4
+    integer                   :: ptype=OFF
+    real(PR), dimension(0:10) :: arg=0._PR
   end type PotentialModel_info
   !=============================================================================
 
@@ -91,7 +91,7 @@ contains
       if(.not. found)then
         error=.true.
         write(ErrorMessage,'(2a,i5,4x,5a)')__FILE__,':',__LINE__, &
-          'Pair potential between atoms ',trim(AtomName1),' and ',trim(AtomName2),' not found.'
+          'Pair potential between atoms ',trim(Atom(type1)%Name),' and ',trim(Atom(type1)%Name),' not found.'
         return
       end if
     end do
@@ -135,7 +135,6 @@ contains
         end if
       end do
     end do
-
   end subroutine ReadPairwiseInteractions
 
   !================================================================================
@@ -202,7 +201,7 @@ contains
         return
       end select
     case Default
-      call ReadPairPotential(PairPotential(type1,type1),line,error)
+      call ReadPairPotential(PairPotential(type1,type2),line,error)
       if(error)return
     end select
     PairPotential(type2,type1)=PairPotential(type1,type2)
@@ -555,7 +554,7 @@ contains
     character(len=lstrlen), intent(In)       :: line
     logical, intent(Out)                     :: error
 
-    real(Kind=PR), dimension(3)   :: c
+    real(Kind=PR), dimension(0:3)   :: c
     character(len=strlen) :: potname
 
     error=.false.
@@ -567,7 +566,7 @@ contains
       read(line,*)potname,c
       if(.not. REDUCED_UNITS)c=c*K_B
       PotentialModel%ptype=COSINE_SERIES_1
-      PotentialModel%arg(1:3)=c
+      PotentialModel%arg(0:3)=c
     case Default
       write(ErrorMessage,'(2a,i5,4x,10a)')__FILE__,':',__LINE__, &
         'Unknown Torsion Potential ',trim(potname),' between atoms ', &
@@ -851,7 +850,10 @@ contains
       theta0=Angle%arg(1)
       k=Angle%arg(2)
       sigma=1._PR/SQRT(k*beta)
-      BendAngle=theta0+sigma*GaussianRandomNumber()
+      do
+        BendAngle=theta0+sigma*GaussianRandomNumber()
+        if(RandomNumber() < sin(BendAngle))exit
+      end do
     case (HARMONIC_COSINE)
       costheta0=Angle%arg(1)
       k=Angle%arg(2)
@@ -873,7 +875,7 @@ contains
     case (RIGID_ANGLE)
       RosenbluthWeight=1._PR
     case (HARMONIC_ANGLE)
-      RosenbluthWeight=sin(BendAngle)
+      RosenbluthWeight=1._PR !sin(BendAngle)
     case (HARMONIC_COSINE)
       RosenbluthWeight=1._PR
     end select
@@ -895,7 +897,7 @@ contains
       cosphi=cos(phi)
       cos2phi=2._PR*cosphi**2-1._PR
       cos3phi=4._PR*cosphi**3-3._PR*cosphi
-      energy=Dihedral%arg(1)*(1._PR+cosphi)+Dihedral%arg(2)*(1._PR-cos2phi)+Dihedral%arg(3)*(1._PR+cos3phi)
+      energy=Dihedral%arg(0)+Dihedral%arg(1)*(1._PR+cosphi)+Dihedral%arg(2)*(1._PR-cos2phi)+Dihedral%arg(3)*(1._PR+cos3phi)
     end select
   end function TorsionInteraction
 

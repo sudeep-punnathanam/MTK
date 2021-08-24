@@ -3,7 +3,7 @@ module averages
     UNIT_DENSITY, UNIT_CONCENTRATION, AVOGADRO_NUMBER
   use utils, only: ReadString, GetFileUnit, NumberFormat
   use variables, only: REDUCED_UNITS, NumberOfSystems, CurrentCoordinates, CurrentSimulationCell, CurrentInteractions, & 
-    TotalNumberOfMolecules, TotalMass, beta
+    TotalNumberOfMolecules, TotalMass, beta, NumberOfProductionCycles
   use atoms_and_molecules, only: GetSpeciesNumber, NumberOfSpecies
   use storage, only: StorageInteractions, UpdateStorageInteractions
   use rosenbluth, only: CBMC_grow, CBMC_Move
@@ -65,7 +65,7 @@ contains
     character(len=lstrlen), dimension(:), intent(in) :: SimulationInput
     logical, intent(out) :: error
 
-    integer :: i,spc,spc1,spc2,sys
+    integer :: i,spc,spc1,spc2,sys,j
 
     character(len=strlen)  :: spcname,spc1name,spc2name
     character(len=lstrlen) :: line, string
@@ -79,63 +79,47 @@ contains
       if(ReadString(line,'calculate',string) == 1)then
         line=trim(adjustl(string))
         if(ReadString(line,'pressure',string) == 1)then
-          Pressure_c(1)%Calculate=.true.
-          Pressure_c(1)%Name='Pressure'
-          read(string,*)Pressure_c(1)%SamplingFrequency,Pressure_c(1)%Blocklength
-          Pressure_c(2:)=Pressure_c(1)
+          call ReadProperty(Pressure_c,'Pressure')
         else if(ReadString(line,'density',string) == 1)then
-          Density_c(1)%Calculate=.true.
-          Density_c(1)%Name='Density'
-          read(string,*)Density_c(1)%SamplingFrequency,Density_c(1)%Blocklength
-          Density_c(2:)=Density_c(1)
+          call ReadProperty(Density_c,'Density')
         else if(ReadString(line,'volume',string) == 1)then
-          Volume_c(1)%Calculate=.true.
-          Volume_c(1)%Name='Volume'
-          read(string,*)Volume_c(1)%SamplingFrequency,Volume_c(1)%Blocklength
-          Volume_c(2:)=Volume_c(1)
+          call ReadProperty(Volume_c,'Volume')
         else if(ReadString(line,'energy',string) == 1)then
-          Energy_c(1)%Calculate=.true.
-          Energy_c(1)%Name='Energy'
-          read(string,*)Energy_c(1)%SamplingFrequency,Energy_c(1)%Blocklength
-          Energy_c(2:)=Energy_c(1)
+          call ReadProperty(Energy_c,'Energy')
         else if(ReadString(line,'number',string) == 1)then
           read(string,*)spcname
           spc=GetSpeciesNumber(spcname,error)
           if(error)return
-          Number_c(spc,1)%Calculate=.true.
-          do sys=1,NumberOfSystems
-            write(Number_c(spc,sys)%Name,'(2a)')'Number_',trim(spcname)
-          end do
-          read(string,*)spcname,Number_c(spc,1)%SamplingFrequency,Number_c(spc,1)%Blocklength
-          Number_c(spc,2:)=Number_c(spc,1)
+          j=ReadString(string,trim(spcname),string)
+          call ReadProperty(Number_c(spc,:),'Number_'//trim(spcname))
         else if(ReadString(line,'concentration',string) == 1)then
           read(string,*)spcname
           spc=GetSpeciesNumber(spcname,error)
           if(error)return
-          Concentration_c(spc,1)%Calculate=.true.
-          do sys=1,NumberOfSystems
-            write(Concentration_c(spc,sys)%Name,'(3a)')'Concentration_',trim(spcname)
-          end do
-          read(string,*)spcname,Concentration_c(spc,1)%SamplingFrequency,Concentration_c(spc,1)%Blocklength
-          Concentration_c(spc,2:)=Concentration_c(spc,1)
+          j=ReadString(string,trim(spcname),string)
+          call ReadProperty(Concentration_c(spc,:),'Concentration_'//trim(spcname))
         else if(ReadString(line,'fugacity',string) == 1)then
           read(string,*)spcname
           spc=GetSpeciesNumber(spcname,error)
+          j=ReadString(string,trim(spcname),string)
           if(error)return
-          Fugacity_c(spc,1)%Calculate=.true.
-          do sys=1,NumberOfSystems
-            write(Fugacity_c(spc,sys)%Name,'(3a)')'Fugacity_',trim(spcname)
-          end do
-          read(string,*)spcname,Fugacity_c(spc,1)%SamplingFrequency,Fugacity_c(spc,1)%Blocklength
-          Fugacity_c(spc,2:)=Fugacity_c(spc,1)
+          call ReadProperty(Fugacity_c(spc,:),'Fugacity_'//trim(spcname))
         else if(ReadString(line,'dudkappa',string) == 1)then
-          dUdKappa_c(1)%Calculate=.true.
-          dUdKappa_c(1)%Name='dUdKappa'
-          read(string,*)dUdKappa_c(1)%SamplingFrequency,dUdKappa_c(1)%Blocklength
-          dUdKappa_c(2:)=dUdKappa_c(1)
+          call ReadProperty(dUdKappa_c,'dUdKappa')
          end if
       end if
     end do
+
+    contains
+      subroutine ReadProperty(obj,objname)
+        type(Property), dimension(:), intent(inout) :: obj
+        character(len=*), intent(in)                :: objname
+        obj(1)%Calculate=.true.
+        obj(1)%Name=trim(adjustl(objname))
+        read(string,*)obj(1)%SamplingFrequency
+        obj(1)%BlockLength=NumberOfProductionCycles/obj(1)%SamplingFrequency/5
+        obj(2:)=obj(1)
+      end subroutine ReadProperty
   end subroutine ReadPropertyCalculationInformation
 
   subroutine UpdateStatistics(obj)
@@ -222,7 +206,8 @@ contains
 
       obj%Error=(obj%BlockSquaredTotal-real(obj%NumberOfBlocks,PR)*(obj%Average)**2)/real(obj%NumberOfBlocks-1,PR)
       obj%Error=obj%Error/real(obj%NumberOfBlocks,PR)
-      obj%Error=3._PR*sqrt(obj%Error)
+      !** 90% Confidence interval
+      obj%Error=2.13184679_PR*sqrt(obj%Error)  
 
     end subroutine CalculateAverages
   end subroutine ComputeStatistics

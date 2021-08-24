@@ -6,7 +6,7 @@ Forcefield Directory               TRaPPE
 Potential cutoff distance          14.0
 
 #========= Essential Simulation Information ============
-Number Of Simulations              4
+Number Of Simulations              1
 Number of Equilibration Cycles     1
 Number of Production Cycles        50000
 Display Frequency                  1000
@@ -20,9 +20,6 @@ Species   Name                            Propane
 #=========== State Information =======================================
 #    Variable         Species    Simulation-No    System-No     Value 
 #---------------------------------------------------------------------
-   Temperature                         1              1         190.0
-   Temperature                         2              1         200.0
-   Temperature                         3              1         210.0
-   Temperature                         4              1         220.0
+   Temperature                         1              1         249.0
 
 

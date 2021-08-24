@@ -1,0 +1,23 @@
+#======= Simulation Type ===============================
+Simulation Type                    Ideal Gas Rosenbluth Factor
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Species   Name                            iso-Butane
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value 
+#---------------------------------------------------------------------
+   Temperature                         1              1         300.0
+

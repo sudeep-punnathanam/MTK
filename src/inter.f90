@@ -4,7 +4,7 @@ module inter
   use atoms_and_molecules, only: GetAtomType, Molecule, NumberOfSpecies
   use config, only: SpeciesCoordinates
   use simcell, only: SimcellInfo, GetMinimumImage
-  use storage, only: StorageInteractions, InteractionAccumulator, ResetInteractionAccumulator, Operator(+)
+  use storage, only: StorageInteractions, InteractionAccumulator, ResetStorageInteractions, ResetInteractionAccumulator, Operator(+)
   use cell_list, only: CellListInfo, GetCellNumber
   use forcefield, only: PairPotential, TwoBodyNonBondedInteraction, EwaldRealSpaceInteraction, TailCorrections, &
     BondInteraction, AngleInteraction, TorsionInteraction, Molecule_intra, IntraPairInteraction, IntraCoulInteraction
@@ -140,6 +140,7 @@ contains
     type(StorageInteractions)    :: Interactions1
 
     overlap=.false.
+    call ResetStorageInteractions(Interactions)
     do atm1=1,Molecule(spc1)%NumberOfAtoms
       AtomPosition=MoleculePosition(:,atm1)
       call AtomSystemShortRangePairwiseInteraction(AtomPosition,CenterOfMass,Coordinates,SimulationCell,CellList,spc1,mol1,atm1,Interactions1,overlap)
@@ -189,6 +190,7 @@ contains
         Interactions%Virial%CoulReal=Interactions%Virial%CoulReal+Accumulator%Virial
       end do
     end do
+
   end subroutine AtomSystemShortRangePairwiseInteraction
 
   !================================================================================
@@ -231,6 +233,22 @@ contains
 
   !================================================================================
   !** Intra-molecular interaction
+  !================================================================================
+  subroutine TotalIntraMolecularInteractions(Coordinates,Interactions,overlap)
+    type(SpeciesCoordinates), dimension(:), intent(in) :: Coordinates
+    type(StorageInteractions), intent(out)             :: Interactions
+    logical, intent(out)                               :: overlap
+
+    integer :: spc, mol
+
+    do spc=1,NumberOfSpecies
+      do mol=1,Coordinates(spc)%NumberOfMolecules
+        Interactions=Interactions+IntraMolecularInteraction(Coordinates(spc)%Positions(:,mol,:),spc,mol,overlap)
+      end do
+    end do
+
+  end subroutine TotalIntraMolecularInteractions
+
   !================================================================================
   function IntraMolecularInteraction(MoleculePosition,spc,mol,overlap) result(Interactions)
     real(PR), dimension(:,:), intent(in)               :: MoleculePosition
@@ -347,7 +365,7 @@ contains
         else
           low=1
         end if
-        do mol2=low,Coordinates(spc1)%NumberOfMolecules
+        do mol2=low,Coordinates(spc2)%NumberOfMolecules
           n=n+1
           SeparationVector(1,n)=Coordinates(spc1)%Positions(1,mol1,atm1)-Coordinates(spc2)%Positions(1,mol2,atm2)
           SeparationVector(2,n)=Coordinates(spc1)%Positions(2,mol1,atm1)-Coordinates(spc2)%Positions(2,mol2,atm2)
@@ -364,7 +382,7 @@ contains
         else
           low=1
         end if
-        do mol2=low,Coordinates(spc1)%NumberOfMolecules
+        do mol2=low,Coordinates(spc2)%NumberOfMolecules
           n=n+1
           SeparationVector(1,n)=Coordinates(spc1)%Positions(1,mol1,atm1)-Coordinates(spc2)%Positions(1,mol2,atm2)
           SeparationVector(2,n)=Coordinates(spc1)%Positions(2,mol1,atm1)-Coordinates(spc2)%Positions(2,mol2,atm2)

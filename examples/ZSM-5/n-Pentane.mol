@@ -1,0 +1,92 @@
+# Each molecule is a collection of groups. Each groups in turn is a collection of atoms.
+# Define eqch group in the following format
+#----------------------------------------------------------------------------------------
+
+# Group <number of atoms>
+# if <number of atoms> == 1
+# <atom name>
+# else
+# <rigid> or <flexible>
+# if <rigid>
+# <atom name> <x> <y> <z>
+# if <flexible>
+# <filename> that contains library of configurations
+#----------------------------------------------------------------------------------------
+
+Group 1
+1    CH3_sp3
+Group 1
+2    CH2_sp3
+Group 1
+3    CH2_sp3
+Group 1
+4    CH2_sp3
+Group 1
+5    CH3_sp3
+
+# Define intramolecular potentials. Use the following format
+#
+# Number of bonds <n>
+# <a1>  <a2>   <potential>  <parameters, ...>
+#
+# Number of angles <n>
+# <a1>  <a2>   <a3>  <potential>  <parameters, ...>
+#
+# Number of torsions <n>
+# <a1>  <a2>   <a3>  <a4>  <potential>  <parameters, ...>
+#
+# Number of intra pairs <n>
+# <a1>  <a2>   <potential>  <parameters, ...>
+
+Number of bonds   4
+  1        2       rigid-bond        1.54
+  2        3       rigid-bond        1.54
+  3        4       rigid-bond        1.54
+  4        5       rigid-bond        1.54
+
+Number of angles   3
+ 1        2        3       harmonic-angle     114     62500
+ 2        3        4       harmonic-angle     114     62500
+ 3        4        5       harmonic-angle     114     62500
+
+Number of torsions   2
+ 1        2        3       4    cosine-series-1   355.03   -68.19   791.32
+ 2        3       4        5    cosine-series-1   355.03   -68.19   791.32
+
+Number of intrapairs  1
+ 1        5       Truncated-Lennard-Jones   3.77   98.1   2.0  13.8
+
+# Define configuration bias move sequences for flexible molecules. Use the following format.
+# Each sequence consists of a series of step. Depending of the nature of the step, the requsite inputs are provided.
+# The default is "Rigid Group Sampling" and fully rigid molecule
+#
+# CBMC Sequence
+# Number of Steps <number>
+# rgs  <grp>                                  Rigid Group sampling.
+# fas  <atm>                                  First atom sampling
+# ss   <atm> <atm_p1> <bond>                  Sphere Sampling
+# bps  <no_of_atms> <atm_p1> <atm_p2>         Branch Point Sampling
+#      <atm> <bond> <angle_A> <angle_B> <no_of_tors> <tors> <no_of_ip> <ip> <no_of_ic> <ic>
+
+CBMC Sequence
+5
+fas    1
+ss     2    1    1
+bps    1    2    1
+       3    2    1    0    0    0    0    0    0    0
+bps    1    3    2
+       4    3    2    0    1    1    0    0    0    0
+bps    1    4    3
+       5    4    3    0    1    2    1    1    0    0
+
+CBMC Sequence
+5
+fas    3
+ss     4    3    3
+bps    1    4    3
+       5    4    3    0    0    0    0    0    0    0
+bps    1    3    4
+       2    2    2    0    1    2    0    0    0    0
+bps    1    2    3
+       1    1    1    0    1    1    1    1    0    0
+

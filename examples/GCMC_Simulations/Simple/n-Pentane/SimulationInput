@@ -6,9 +6,9 @@ Potential cutoff distance          14.0
 
 #========= Essential Simulation Information ============
 Number Of Simulations              1
-Number of Equilibration Cycles     1000
+Number of Equilibration Cycles     5000
 Number of Production Cycles        5000
-Display Frequency                  1000
+Display Frequency                  100
 Restart Frequency                  100 
 Configs Frequency                  10 
 Random Number Seed                 243
@@ -22,26 +22,25 @@ Simulation Cell   1
 
 Species   Name                            n-Pentane
           Initialization Method           Random
-          Initial number of molecules     100
+          Initial number of molecules     1
           Translation weight              1
           Maximum displacement            0.1
           Rotation weight                 1
+          Cut and Regrow weight           0
           Insertion weight                1
 
 #=========== State Information =====================================================
 #    Variable         Species    Simulation-No    System-No     Sequence-No   Value 
 #-----------------------------------------------------------------------------------
-   Temperature                         1              1                       197.0
-   Fugacity           n-Pentane        1              1                       269.0e3
-   IdealRFactor       n-Pentane        1              1              1
-   IdealRFactor       n-Pentane        1              1              2
+   Temperature                         1              1                       336.0
+   Fugacity           n-Pentane        1              1                       3.042e5
+   IdealRFactor       n-Pentane        1              1              1        2.44e-2
+   IdealRFactor       n-Pentane        1              1              2        2.44e-2
   
 
 
 #======= Property Calculation ===========================================
 #             Property   Species   Sampling-Frequency    Block-Averaging
 #------------------------------------------------------------------------
- Calculate     Pressure                  1                    2500
- Calculate     Energy                    1                    2500
- Calculate     Density                   1                    2500
+ Calculate     Density                   1                    1000
 

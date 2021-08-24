@@ -13,7 +13,7 @@ Potential cutoff distance          2.5
 #========= Essential Simulation Information ============
 Number Of Simulations              1
 Number of Equilibration Cycles     2000
-Number of Production Cycles        10000
+Number of Production Cycles        2000
 Display Frequency                  1000
 Restart Frequency                  100
 Configs Frequency                  10
@@ -43,7 +43,7 @@ Temperature                         1              1           2.0
 #------------------------------------------------------------------------
 Calculate     Pressure                  1                    1000
 Calculate     Energy                    1                    1000
-#Calculate     Fugacity   LJ             1                    1000
+Calculate     Fugacity   LJ             1                    1000
 
 #======= Radial Distribution Function ===================================
 # Property   Species1  Atom No.   Species2 Atom No.   Bin Size  Max. Distance Sampling-Frequency    Block-Averaging
@@ -59,3 +59,192 @@ LJ         1.0
 #                    Pairwise Interactions
 #============================================================================================
 LJ            LJ          Lennard-Jones             1.0    1.0    0.8
+
+-----------------------------------------------------------------
+                             INITIAL ENERGIES
+-----------------------------------------------------------------
+Total                        :       -0.115893E+00
+van der Waals                :       -0.115893E+00
+Real Coulombic               :        0.000000E+00
+Fourier Coulombic            :        0.000000E+00
+Einstein                     :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             INITIAL VIRIALS
+-----------------------------------------------------------------
+Total                        :       -0.228287E+00
+van der Waals                :       -0.228287E+00
+Real Coulombic               :        0.000000E+00
+Fourier Coulombic            :        0.000000E+00
+Einstein                     :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 2000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.9994 (5117 out of 5120)
+------------------------------------------------------------------------------
+Number of molecules of LJ                        :  256
+Box Length                    :       100.0000       100.0000       100.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :   1000000.0000
+Number Density                :         0.0003
+Total Energy                  :  -3.50901E-002  (   -3.50901E-002   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 2000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.9988 (5114 out of 5120)
+------------------------------------------------------------------------------
+Number of molecules of LJ                        :  256
+Box Length                    :       100.0000       100.0000       100.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :   1000000.0000
+Number Density                :         0.0003
+Total Energy                  :      -0.901462  (       -0.901462   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+REDUCED UNITS
+
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Forcefield Directory               LJ
+Potential cutoff distance          2.5
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     2000
+Number of Production Cycles        2000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Box
+Box Lengths            100.0  100.0  100.0
+Box Angles             90.0  90.0  90.0
+Boundary conditions    1  1  1
+
+Species   Name                            LJ
+Initialization Method           Random
+Initial number of molecules     256
+Translation weight              1
+Maximum displacement            0.1
+
+#=========== State Information =======================================
+#    Variable         Species    Simulation-No    System-No     Value
+#---------------------------------------------------------------------
+Temperature                         1              1           2.0
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Pressure                  1                    1000
+Calculate     Energy                    1                    1000
+Calculate     Fugacity   LJ             1                    1000
+
+#======= Radial Distribution Function ===================================
+# Property   Species1  Atom No.   Species2 Atom No.   Bin Size  Max. Distance Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+#Calculate  RDF    LJ 1   LJ  1  0.1  3.0    1   2500
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+LJ         1.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+LJ            LJ          Lennard-Jones             1.0    1.0    0.8
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 2000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.9976 (255393 out of 256000)
+------------------------------------------------------------------------------
+Number of molecules of LJ                        :  256
+Box Length                    :       100.0000       100.0000       100.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :   1000000.0000
+Number Density                :         0.0003
+Total Energy                  :      -0.126200  (       -0.126200   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 2000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for LJ
+Translation Move              Success Ratio : 0.9977 (510811 out of 512000)
+------------------------------------------------------------------------------
+Number of molecules of LJ                        :  256
+Box Length                    :       100.0000       100.0000       100.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+SimulationVolume              :   1000000.0000
+Number Density                :         0.0003
+Total Energy                  :       -1.00713  (        -1.00713   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+                             STORED ENERGIES               CALCULATED ENERGIES
+-----------------------------------------------------------------
+Total                        :       -0.100713E+01                -0.100713E+01
+van der Waals                :       -0.100713E+01                -0.100713E+01
+Real Coulombic               :        0.000000E+00                 0.000000E+00
+Fourier Coulombic            :        0.000000E+00                 0.000000E+00
+Einstein                     :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             STORED VIRIALS                CALCULATED VIRIALS
+-----------------------------------------------------------------
+Total                        :        0.240204E+01                 0.240204E+01
+van der Waals                :        0.240204E+01                 0.240204E+01
+Real Coulombic               :        0.000000E+00                 0.000000E+00
+Fourier Coulombic            :        0.000000E+00                 0.000000E+00
+Einstein                     :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+

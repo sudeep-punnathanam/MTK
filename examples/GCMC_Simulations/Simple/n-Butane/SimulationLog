@@ -1,0 +1,541 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     1000
+Number of Production Cycles        1000
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Box
+Box Lengths            30.0  30.0  30.0
+Box Angles             90.0  90.0  90.0
+Boundary conditions    1  1  1
+
+Species   Name                            n-Butane
+Initialization Method           File StartConfig
+Initial number of molecules     150
+Translation weight              1
+Maximum displacement            0.1
+Rotation weight                 1
+Insertion weight                1
+Cut and Regrow weight           1
+
+#=========== State Information =====================================================
+#    Variable         Species    Simulation-No    System-No     Sequence-No   Value
+#-----------------------------------------------------------------------------------
+#  Temperature                        1              1                       262.0
+#  Fugacity           n-Butane        1              1                       1.04e5
+#  IdealRFactor       n-Butane        1              1              1        1.13e-1
+
+#  Temperature                        1              1                       295.0
+#  Fugacity           n-Butane        1              1                       2.65e5
+#  IdealRFactor       n-Butane        1              1              1        1.28e-1
+
+#  Temperature                        1              1                       327.0
+#  Fugacity           n-Butane        1              1                       6.41e5
+#  IdealRFactor       n-Butane        1              1              1        1.43e-1
+
+Temperature                        1              1                       360.0
+Fugacity           n-Butane        1              1                       11.33e5
+IdealRFactor       n-Butane        1              1              1        1.58e-1
+
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Density                   1                    250
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones   3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones   3.95   46.0   2.0
+CH4           CH3_sp3           Lorentz-Berthelot
+CH4           CH2_sp3           Lorentz-Berthelot
+CH3_sp3       CH2_sp3           Lorentz-Berthelot
+
+-----------------------------------------------------------------
+                             INITIAL ENERGIES
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.444778E+09
+van der Waals(J/mol)         :       -0.237727E+07
+Real Coulombic(J/mol)        :        0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.445896E+09
+Torsion (J/mol)              :        0.125957E+07
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             INITIAL VIRIALS
+-----------------------------------------------------------------
+Total(J/mol)                 :       -0.526154E+06
+van der Waals(J/mol)         :       -0.526154E+06
+Real Coulombic(J/mol)        :        0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 100 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.8626 (477 out of 553)
+Rotation Move                 Success Ratio : 0.3092 (171 out of 553)
+Insertion Move                Success Ratio : 0.0292 (83 out of 2840)
+Deletion Move                 Success Ratio : 0.0329 (93 out of 2828)
+CutAndRegrow Move             Success Ratio : 0.4106 (1166 out of 2840)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  140
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        499.392
+Total Energy (J/mol)          :   4.17257E+008  (   -2.05665E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 200 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.8417 (452 out of 537)
+Rotation Move                 Success Ratio : 0.3452 (194 out of 562)
+Insertion Move                Success Ratio : 0.0336 (188 out of 5588)
+Deletion Move                 Success Ratio : 0.0366 (201 out of 5486)
+CutAndRegrow Move             Success Ratio : 0.4132 (2315 out of 5603)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  137
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        488.690
+Total Energy (J/mol)          :   4.08306E+008  (   -1.96943E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 300 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.7509 (434 out of 578)
+Rotation Move                 Success Ratio : 0.3635 (213 out of 586)
+Insertion Move                Success Ratio : 0.0327 (272 out of 8315)
+Deletion Move                 Success Ratio : 0.0344 (285 out of 8281)
+CutAndRegrow Move             Success Ratio : 0.4202 (3502 out of 8334)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  137
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        488.690
+Total Energy (J/mol)          :   4.04581E+008  (   -1.98800E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 400 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.7327 (403 out of 550)
+Rotation Move                 Success Ratio : 0.4563 (240 out of 526)
+Insertion Move                Success Ratio : 0.0355 (389 out of 10962)
+Deletion Move                 Success Ratio : 0.0369 (404 out of 10948)
+CutAndRegrow Move             Success Ratio : 0.4234 (4650 out of 10983)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  135
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        481.556
+Total Energy (J/mol)          :   4.00523E+008  (   -1.88564E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 500 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.6807 (371 out of 545)
+Rotation Move                 Success Ratio : 0.4773 (263 out of 551)
+Insertion Move                Success Ratio : 0.0350 (482 out of 13780)
+Deletion Move                 Success Ratio : 0.0361 (495 out of 13703)
+CutAndRegrow Move             Success Ratio : 0.4222 (5847 out of 13850)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  137
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        488.690
+Total Energy (J/mol)          :   4.06924E+008  (   -1.96558E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 600 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5818 (320 out of 550)
+Rotation Move                 Success Ratio : 0.5139 (277 out of 539)
+Insertion Move                Success Ratio : 0.0342 (569 out of 16648)
+Deletion Move                 Success Ratio : 0.0353 (581 out of 16481)
+CutAndRegrow Move             Success Ratio : 0.4223 (7039 out of 16667)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  138
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        492.257
+Total Energy (J/mol)          :   4.09503E+008  (   -1.91496E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 700 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5190 (287 out of 553)
+Rotation Move                 Success Ratio : 0.5083 (306 out of 602)
+Insertion Move                Success Ratio : 0.0341 (660 out of 19329)
+Deletion Move                 Success Ratio : 0.0349 (670 out of 19197)
+CutAndRegrow Move             Success Ratio : 0.4219 (8212 out of 19465)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  140
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        499.392
+Total Energy (J/mol)          :   4.13870E+008  (   -2.06155E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 800 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.4764 (273 out of 573)
+Rotation Move                 Success Ratio : 0.4530 (260 out of 574)
+Insertion Move                Success Ratio : 0.0336 (747 out of 22215)
+Deletion Move                 Success Ratio : 0.0342 (754 out of 22021)
+CutAndRegrow Move             Success Ratio : 0.4210 (9386 out of 22297)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  143
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        510.093
+Total Energy (J/mol)          :   4.22486E+008  (   -2.18891E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 900 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5467 (287 out of 525)
+Rotation Move                 Success Ratio : 0.5107 (263 out of 515)
+Insertion Move                Success Ratio : 0.0339 (845 out of 24919)
+Deletion Move                 Success Ratio : 0.0349 (861 out of 24668)
+CutAndRegrow Move             Success Ratio : 0.4232 (10574 out of 24987)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  134
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        477.989
+Total Energy (J/mol)          :   3.97262E+008  (   -1.88500E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.4679 (270 out of 577)
+Rotation Move                 Success Ratio : 0.5027 (279 out of 555)
+Insertion Move                Success Ratio : 0.0343 (947 out of 27617)
+Deletion Move                 Success Ratio : 0.0349 (958 out of 27435)
+CutAndRegrow Move             Success Ratio : 0.4235 (11765 out of 27781)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  139
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        495.825
+Total Energy (J/mol)          :   4.13872E+008  (   -2.02595E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 100 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.4914 (1374 out of 2796)
+Rotation Move                 Success Ratio : 0.4325 (1208 out of 2793)
+Insertion Move                Success Ratio : 0.0285 (80 out of 2804)
+Deletion Move                 Success Ratio : 0.0289 (80 out of 2771)
+CutAndRegrow Move             Success Ratio : 0.4160 (1171 out of 2815)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  139
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        495.825
+Total Energy (J/mol)          :   4.11969E+008  (   -2.02547E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 200 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.4985 (2763 out of 5543)
+Rotation Move                 Success Ratio : 0.4431 (2434 out of 5493)
+Insertion Move                Success Ratio : 0.0325 (177 out of 5439)
+Deletion Move                 Success Ratio : 0.0350 (192 out of 5491)
+CutAndRegrow Move             Success Ratio : 0.4245 (2355 out of 5548)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  124
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        442.318
+Total Energy (J/mol)          :   3.69532E+008  (   -1.61408E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 300 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5024 (4130 out of 8220)
+Rotation Move                 Success Ratio : 0.4517 (3729 out of 8256)
+Insertion Move                Success Ratio : 0.0346 (283 out of 8173)
+Deletion Move                 Success Ratio : 0.0347 (281 out of 8103)
+CutAndRegrow Move             Success Ratio : 0.4280 (3549 out of 8292)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  141
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        502.959
+Total Energy (J/mol)          :   4.20167E+008  (   -2.11204E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 400 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5008 (5520 out of 11022)
+Rotation Move                 Success Ratio : 0.4527 (5001 out of 11047)
+Insertion Move                Success Ratio : 0.0342 (375 out of 10951)
+Deletion Move                 Success Ratio : 0.0344 (374 out of 10860)
+CutAndRegrow Move             Success Ratio : 0.4284 (4775 out of 11145)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  140
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        499.392
+Total Energy (J/mol)          :   4.18881E+008  (   -2.05687E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 500 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5029 (6910 out of 13741)
+Rotation Move                 Success Ratio : 0.4565 (6234 out of 13656)
+Insertion Move                Success Ratio : 0.0364 (493 out of 13543)
+Deletion Move                 Success Ratio : 0.0380 (509 out of 13383)
+CutAndRegrow Move             Success Ratio : 0.4329 (5967 out of 13784)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  123
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        438.751
+Total Energy (J/mol)          :   3.64840E+008  (   -1.60703E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 600 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5049 (8320 out of 16480)
+Rotation Move                 Success Ratio : 0.4590 (7499 out of 16336)
+Insertion Move                Success Ratio : 0.0376 (610 out of 16231)
+Deletion Move                 Success Ratio : 0.0379 (607 out of 15998)
+CutAndRegrow Move             Success Ratio : 0.4335 (7118 out of 16421)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  142
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        506.526
+Total Energy (J/mol)          :   4.21817E+008  (   -2.05701E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 700 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5020 (9683 out of 19288)
+Rotation Move                 Success Ratio : 0.4533 (8714 out of 19225)
+Insertion Move                Success Ratio : 0.0363 (696 out of 19164)
+Deletion Move                 Success Ratio : 0.0367 (693 out of 18866)
+CutAndRegrow Move             Success Ratio : 0.4286 (8273 out of 19302)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  142
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        506.526
+Total Energy (J/mol)          :   4.20456E+008  (   -2.10024E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 800 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5034 (11050 out of 21952)
+Rotation Move                 Success Ratio : 0.4539 (9903 out of 21816)
+Insertion Move                Success Ratio : 0.0385 (837 out of 21733)
+Deletion Move                 Success Ratio : 0.0391 (843 out of 21566)
+CutAndRegrow Move             Success Ratio : 0.4300 (9416 out of 21896)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  133
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        474.422
+Total Energy (J/mol)          :   3.95966E+008  (   -1.83233E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 900 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5053 (12397 out of 24533)
+Rotation Move                 Success Ratio : 0.4545 (11108 out of 24442)
+Insertion Move                Success Ratio : 0.0406 (987 out of 24300)
+Deletion Move                 Success Ratio : 0.0412 (996 out of 24183)
+CutAndRegrow Move             Success Ratio : 0.4328 (10574 out of 24434)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  130
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        463.721
+Total Energy (J/mol)          :   3.86044E+008  (   -1.77351E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 1000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for n-Butane
+Translation Move              Success Ratio : 0.5096 (13805 out of 27091)
+Rotation Move                 Success Ratio : 0.4590 (12371 out of 26953)
+Insertion Move                Success Ratio : 0.0422 (1133 out of 26829)
+Deletion Move                 Success Ratio : 0.0428 (1140 out of 26648)
+CutAndRegrow Move             Success Ratio : 0.4342 (11698 out of 26942)
+------------------------------------------------------------------------------
+Number of molecules of n-Butane                  :  132
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        470.855
+Total Energy (J/mol)          :   3.93132E+008  (   -1.79673E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+                             STORED ENERGIES               CALCULATED ENERGIES
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.393132E+09                 0.393132E+09
+van der Waals(J/mol)         :       -0.179673E+07                -0.179673E+07
+Real Coulombic(J/mol)        :        0.000000E+00                 0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00                 0.000000E+00
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.393820E+09                 0.393820E+09
+Torsion (J/mol)              :        0.110842E+07                 0.110842E+07
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             STORED VIRIALS                CALCULATED VIRIALS
+-----------------------------------------------------------------
+Total(J/mol)                 :       -0.361383E+06                -0.361383E+06
+van der Waals(J/mol)         :       -0.361383E+06                -0.361383E+06
+Real Coulombic(J/mol)        :        0.000000E+00                 0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00                 0.000000E+00
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+

@@ -206,6 +206,7 @@ contains
           if(Molecule(spc)%Group(icount)%NumberOfAtoms == 1)then
             read(unitno,*)atomno,atomname
             Molecule(spc)%Group(icount)%AtomNumber(1)=atomno
+            Molecule(spc)%Group(icount)%ReferencePosition(:,1)=0._PR
             atype=GetAtomType(atomname,error)
             if(error)return
             Molecule(spc)%AtomType(atomno)=atype

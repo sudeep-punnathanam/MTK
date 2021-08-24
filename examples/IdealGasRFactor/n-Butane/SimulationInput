@@ -2,15 +2,14 @@
 Simulation Type                    Ideal Gas Rosenbluth Factor
 
 #========== Forcefield Information ====================
-Forcefield Directory               TRaPPE
 Potential cutoff distance          14.0
 
 #========= Essential Simulation Information ============
-Number Of Simulations              1
+Number Of Simulations              4
 Number of Equilibration Cycles     1
-Number of Production Cycles        5000
-Display Frequency                  1000
-Restart Frequency                  100 
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
 Configs Frequency                  10 
 Random Number Seed                 243
 
@@ -20,6 +19,8 @@ Species   Name                            n-Butane
 #=========== State Information =======================================
 #    Variable         Species    Simulation-No    System-No     Value 
 #---------------------------------------------------------------------
-   Temperature                         1              1         190.0
-
+   Temperature                         1              1         262.0
+   Temperature                         2              1         295.0
+   Temperature                         3              1         327.0
+   Temperature                         4              1         360.0
 

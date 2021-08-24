@@ -45,7 +45,7 @@ module storage
   public :: StorageInteractions
   public :: ResetStorageInteractions, ResetInteractionAccumulator, UpdateStorageInteractions
   public :: operator(+), operator(-)
-  public :: DisplayStorage
+  public :: DisplayStorage,CompareAndDisplayStorage
 
 contains
   !=============================================================================
@@ -157,32 +157,89 @@ contains
     if(REDUCED_UNITS)then
       write(unitno,*)
       write(unitno,'(a)')'-----------------------------------------------------------------'
-      write(unitno,'(a)')trim(strname)
+      write(unitno,'(t30,a)')trim(strname)
       write(unitno,'(a)')'-----------------------------------------------------------------'
-      write(unitno,101)'System','Total ',':',str%Total
+      write(unitno,100)'Total ',':',str%Total
       write(unitno,100)'van der Waals ',':',str%vdW
       write(unitno,100)'Real Coulombic ',':',str%CoulReal
       write(unitno,100)'Fourier Coulombic ',':',str%CoulFourier-str%IntraFourier
       write(unitno,100)'Einstein ',':',str%Einstein
+      write(unitno,100)'Bond (J/mol) ',':',str%Bond
+      write(unitno,100)'Angle (J/mol) ',':',str%Angle
+      write(unitno,100)'Torsion (J/mol) ',':',str%Torsion
+      write(unitno,100)'IntraPair (J/mol) ',':',str%IntraPair
+      write(unitno,100)'IntraCoul (J/mol) ',':',str%IntraCoul
       write(unitno,'(a)')'-----------------------------------------------------------------'
       write(unitno,*)
     else
       write(unitno,*)
       write(unitno,'(a)')'-----------------------------------------------------------------'
-      write(unitno,'(a)')trim(strname)
+      write(unitno,'(t30,a)')trim(strname)
       write(unitno,'(a)')'-----------------------------------------------------------------'
-      write(unitno,101)'System','Total(J/mol) ',':',str%Total*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,100)'Total(J/mol) ',':',str%Total*UNIT_ENERGY*AVOGADRO_NUMBER
       write(unitno,100)'van der Waals(J/mol) ',':',str%vdW*UNIT_ENERGY*AVOGADRO_NUMBER
       write(unitno,100)'Real Coulombic(J/mol) ',':',str%CoulReal*UNIT_ENERGY*AVOGADRO_NUMBER
       write(unitno,100)'Fourier Coulombic(J/mol) ',':',(str%CoulFourier-str%IntraFourier)*UNIT_ENERGY*AVOGADRO_NUMBER
       write(unitno,100)'Einstein(J/mol) ',':',str%Einstein*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,100)'Bond (J/mol) ',':',str%Bond*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,100)'Angle (J/mol) ',':',str%Angle*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,100)'Torsion (J/mol) ',':',str%Torsion*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,100)'IntraPair (J/mol) ',':',str%IntraPair*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,100)'IntraCoul (J/mol) ',':',str%IntraCoul*UNIT_ENERGY*AVOGADRO_NUMBER
       write(unitno,'(a)')'-----------------------------------------------------------------'
       write(unitno,*)
     end if
-
-100 format(t20,a,t50,a,e20.6)
-101 format(a,t20,a,t50,a,e20.6)
+ 
+100 format(a,t30,a,e20.6)
   end subroutine DisplayStorage
+
+  !=============================================================================================================================
+  subroutine CompareAndDisplayStorage(str1,strname1,str2,strname2,unitno,REDUCED_UNITS)
+    type(TopStorage), intent(In) :: str1,str2
+    character(*), intent(In) :: strname1,strname2
+    integer, intent(IN) :: unitno
+    logical, intent(in) :: REDUCED_UNITS
+
+    integer :: spc1,spc2
+
+    if(REDUCED_UNITS)then
+      write(unitno,*)
+      write(unitno,'(a)')'-----------------------------------------------------------------'
+      write(unitno,'(t30,a,t60,a)')trim(strname1),trim(strname2)
+      write(unitno,'(a)')'-----------------------------------------------------------------'
+      write(unitno,200)'Total ',':',str1%Total,str2%Total
+      write(unitno,200)'van der Waals ',':',str1%vdW,str2%vdW
+      write(unitno,200)'Real Coulombic ',':',str1%CoulReal,str2%CoulReal
+      write(unitno,200)'Fourier Coulombic ',':',str1%CoulFourier-str1%IntraFourier,str2%CoulFourier-str2%IntraFourier
+      write(unitno,200)'Einstein ',':',str1%Einstein,str2%Einstein
+      write(unitno,200)'Bond (J/mol) ',':',str1%Bond,str2%Bond
+      write(unitno,200)'Angle (J/mol) ',':',str1%Angle,str2%Angle
+      write(unitno,200)'Torsion (J/mol) ',':',str1%Torsion,str2%Torsion
+      write(unitno,200)'IntraPair (J/mol) ',':',str1%IntraPair,str2%IntraPair
+      write(unitno,200)'IntraCoul (J/mol) ',':',str1%IntraCoul,str2%IntraCoul
+      write(unitno,'(a)')'-----------------------------------------------------------------'
+      write(unitno,*)
+    else
+      write(unitno,*)
+      write(unitno,'(a)')'-----------------------------------------------------------------'
+      write(unitno,'(t30,a,t60,a)')trim(strname1),trim(strname2)
+      write(unitno,'(a)')'-----------------------------------------------------------------'
+      write(unitno,200)'Total(J/mol) ',':',str1%Total*UNIT_ENERGY*AVOGADRO_NUMBER,str2%Total*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'van der Waals(J/mol) ',':',str1%vdW*UNIT_ENERGY*AVOGADRO_NUMBER,str2%vdW*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'Real Coulombic(J/mol) ',':',str1%CoulReal*UNIT_ENERGY*AVOGADRO_NUMBER,str2%CoulReal*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'Fourier Coulombic(J/mol) ',':',(str1%CoulFourier-str1%IntraFourier)*UNIT_ENERGY*AVOGADRO_NUMBER,(str2%CoulFourier-str2%IntraFourier)*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'Einstein(J/mol) ',':',str1%Einstein*UNIT_ENERGY*AVOGADRO_NUMBER,str2%Einstein*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'Bond (J/mol) ',':',str1%Bond*UNIT_ENERGY*AVOGADRO_NUMBER,str2%Bond*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'Angle (J/mol) ',':',str1%Angle*UNIT_ENERGY*AVOGADRO_NUMBER,str2%Angle*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'Torsion (J/mol) ',':',str1%Torsion*UNIT_ENERGY*AVOGADRO_NUMBER,str2%Torsion*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'IntraPair (J/mol) ',':',str1%IntraPair*UNIT_ENERGY*AVOGADRO_NUMBER,str2%IntraPair*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,200)'IntraCoul (J/mol) ',':',str1%IntraCoul*UNIT_ENERGY*AVOGADRO_NUMBER,str2%IntraCoul*UNIT_ENERGY*AVOGADRO_NUMBER
+      write(unitno,'(a)')'-----------------------------------------------------------------'
+      write(unitno,*)
+    end if
+ 
+200 format(a,t30,a,e20.6,t60,e20.6)
+  end subroutine CompareAndDisplayStorage
 
   !=============================================================================
 end module storage

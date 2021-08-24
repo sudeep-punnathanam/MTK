@@ -1,0 +1,329 @@
+#============================================================================================
+#                         Simulation Input
+#============================================================================================
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Potential cutoff distance          14.0
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     5000
+Number of Production Cycles        5000
+Display Frequency                  1000
+Restart Frequency                  100
+Configs Frequency                  10
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+Shape                  Box
+Box Lengths            30.0  30.0  30.0
+Box Angles             90.0  90.0  90.0
+Boundary conditions    1  1  1
+
+Species   Name                            Propane
+Initialization Method           File StartConfig
+Initial number of molecules     200
+Translation weight              1
+Maximum displacement            0.1
+Rotation weight                 1
+Cut and Regrow weight           1
+Insertion weight                1
+
+#=========== State Information =====================================================
+#    Variable         Species    Simulation-No    System-No     Sequence-No   Value
+#-----------------------------------------------------------------------------------
+Temperature                         1              1                       249.0
+Fugacity           Propane          1              1                       2.548e5
+IdealRFactor       Propane          1              1              1        1.0
+
+
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+Calculate     Density                   1                    1000
+
+
+#============================================================================================
+#                    Atoms
+#============================================================================================
+  CH4        16.0
+  CH3_sp3    15.0
+  CH2_sp3    14.0
+
+#============================================================================================
+#                    Pairwise Interactions
+#============================================================================================
+CH4           CH4          Lennard-Jones   3.73  148.0   2.0
+CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0   2.0
+CH2_sp3       CH2_sp3      Lennard-Jones   3.95   46.0   2.0
+CH4           CH3_sp3           Lorentz-Berthelot
+CH4           CH2_sp3           Lorentz-Berthelot
+CH3_sp3       CH2_sp3           Lorentz-Berthelot
+
+-----------------------------------------------------------------
+                             INITIAL ENERGIES
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.292993E+09
+van der Waals(J/mol)         :       -0.281286E+07
+Real Coulombic(J/mol)        :        0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.295806E+09
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             INITIAL VIRIALS
+-----------------------------------------------------------------
+Total(J/mol)                 :       -0.517545E+06
+van der Waals(J/mol)         :       -0.517545E+06
+Real Coulombic(J/mol)        :        0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00
+Einstein(J/mol)              :        0.000000E+00
+Bond (J/mol)                 :        0.000000E+00
+Angle (J/mol)                :        0.000000E+00
+Torsion (J/mol)              :        0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00
+-----------------------------------------------------------------
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.4637 (351 out of 757)
+Rotation Move                 Success Ratio : 0.4931 (428 out of 868)
+Insertion Move                Success Ratio : 0.0054 (222 out of 40896)
+Deletion Move                 Success Ratio : 0.0054 (217 out of 40131)
+CutAndRegrow Move             Success Ratio : 0.3591 (14673 out of 40865)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  205
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        554.743
+Total Energy (J/mol)          :   3.01489E+008  (   -2.95279E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.4927 (404 out of 820)
+Rotation Move                 Success Ratio : 0.4656 (392 out of 842)
+Insertion Move                Success Ratio : 0.0049 (400 out of 82441)
+Deletion Move                 Success Ratio : 0.0048 (391 out of 81733)
+CutAndRegrow Move             Success Ratio : 0.3535 (29219 out of 82661)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  209
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        565.567
+Total Energy (J/mol)          :   3.06708E+008  (   -3.07299E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5285 (427 out of 808)
+Rotation Move                 Success Ratio : 0.5036 (418 out of 830)
+Insertion Move                Success Ratio : 0.0043 (539 out of 124342)
+Deletion Move                 Success Ratio : 0.0044 (539 out of 123538)
+CutAndRegrow Move             Success Ratio : 0.3499 (43601 out of 124594)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  200
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        541.213
+Total Energy (J/mol)          :   2.94549E+008  (   -2.84397E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5127 (425 out of 829)
+Rotation Move                 Success Ratio : 0.4937 (394 out of 798)
+Insertion Move                Success Ratio : 0.0046 (751 out of 164948)
+Deletion Move                 Success Ratio : 0.0046 (749 out of 164605)
+CutAndRegrow Move             Success Ratio : 0.3492 (57860 out of 165673)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  202
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        546.625
+Total Energy (J/mol)          :   2.97433E+008  (   -2.87818E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  EQUILIBRATION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.4825 (400 out of 829)
+Rotation Move                 Success Ratio : 0.5006 (421 out of 841)
+Insertion Move                Success Ratio : 0.0045 (928 out of 206407)
+Deletion Move                 Success Ratio : 0.0045 (924 out of 205922)
+CutAndRegrow Move             Success Ratio : 0.3488 (72241 out of 207114)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  204
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        552.037
+Total Energy (J/mol)          :   3.02206E+008  (   -2.95274E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 1000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5099 (21388 out of 41946)
+Rotation Move                 Success Ratio : 0.4816 (19964 out of 41453)
+Insertion Move                Success Ratio : 0.0035 (148 out of 41722)
+Deletion Move                 Success Ratio : 0.0033 (139 out of 42370)
+CutAndRegrow Move             Success Ratio : 0.3374 (14150 out of 41937)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  213
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        576.391
+Total Energy (J/mol)          :   3.14694E+008  (   -3.18003E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 2000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5142 (42673 out of 82996)
+Rotation Move                 Success Ratio : 0.4836 (40087 out of 82899)
+Insertion Move                Success Ratio : 0.0041 (342 out of 82878)
+Deletion Move                 Success Ratio : 0.0041 (344 out of 83430)
+CutAndRegrow Move             Success Ratio : 0.3434 (28521 out of 83049)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  202
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        546.625
+Total Energy (J/mol)          :   2.98176E+008  (   -2.89044E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 3000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5184 (64129 out of 123695)
+Rotation Move                 Success Ratio : 0.4860 (60232 out of 123942)
+Insertion Move                Success Ratio : 0.0042 (524 out of 123507)
+Deletion Move                 Success Ratio : 0.0042 (523 out of 124177)
+CutAndRegrow Move             Success Ratio : 0.3448 (42668 out of 123741)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  205
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        554.743
+Total Energy (J/mol)          :   2.99659E+008  (   -2.98578E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 4000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5194 (85697 out of 164987)
+Rotation Move                 Success Ratio : 0.4866 (80171 out of 164766)
+Insertion Move                Success Ratio : 0.0043 (716 out of 165012)
+Deletion Move                 Success Ratio : 0.0043 (714 out of 165537)
+CutAndRegrow Move             Success Ratio : 0.3450 (56868 out of 164835)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  206
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        557.449
+Total Energy (J/mol)          :   3.04516E+008  (   -2.97728E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+SIMULATION NUMBER 1 :  PRODUCTION STAGE
+Cycle Number 5000 out of 5000
+------------------------------------------------------------------------------
+                         SYSTEM :  1
+------------------------------------------------------------------------------
+Move Statitics for Propane
+Translation Move              Success Ratio : 0.5207 (107132 out of 205750)
+Rotation Move                 Success Ratio : 0.4881 (100618 out of 206159)
+Insertion Move                Success Ratio : 0.0044 (911 out of 206205)
+Deletion Move                 Success Ratio : 0.0044 (908 out of 206246)
+CutAndRegrow Move             Success Ratio : 0.3466 (71278 out of 205637)
+------------------------------------------------------------------------------
+Number of molecules of Propane                   :  207
+Box Length (Ang)              :        30.0000        30.0000        30.0000
+Box Angles                    :        90.0000        90.0000        90.0000
+Simulation Volume (Ang^3)     :        27000.0
+Density (kg/m^3)              :        560.155
+Total Energy (J/mol)          :   3.06058E+008  (   -3.01650E+006   0.00000E+000   0.00000E+000   0.00000E+000 )
+==============================================================================
+
+
+-----------------------------------------------------------------
+                             STORED ENERGIES               CALCULATED ENERGIES
+-----------------------------------------------------------------
+Total(J/mol)                 :        0.306058E+09                 0.306058E+09
+van der Waals(J/mol)         :       -0.301650E+07                -0.301650E+07
+Real Coulombic(J/mol)        :        0.000000E+00                 0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00                 0.000000E+00
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.309075E+09                 0.309075E+09
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+                             STORED VIRIALS                CALCULATED VIRIALS
+-----------------------------------------------------------------
+Total(J/mol)                 :       -0.373620E+06                -0.373620E+06
+van der Waals(J/mol)         :       -0.373620E+06                -0.373620E+06
+Real Coulombic(J/mol)        :        0.000000E+00                 0.000000E+00
+Fourier Coulombic(J/mol)     :        0.000000E+00                 0.000000E+00
+Einstein(J/mol)              :        0.000000E+00                 0.000000E+00
+Bond (J/mol)                 :        0.000000E+00                 0.000000E+00
+Angle (J/mol)                :        0.000000E+00                 0.000000E+00
+Torsion (J/mol)              :        0.000000E+00                 0.000000E+00
+IntraPair (J/mol)            :        0.000000E+00                 0.000000E+00
+IntraCoul (J/mol)            :        0.000000E+00                 0.000000E+00
+-----------------------------------------------------------------
+

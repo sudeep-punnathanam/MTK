@@ -8,8 +8,8 @@ Coulomb Evaluation ewald default
 
 #========= Essential Simulation Information ============
 Number Of Simulations              1
-Number of Equilibration Cycles     100
-Number of Production Cycles        500
+Number of Equilibration Cycles     1000
+Number of Production Cycles        5000
 Display Frequency                  100
 Restart Frequency                  100
 Configs Frequency                  10 
@@ -28,6 +28,7 @@ Species   Name                            Water
           Maximum displacement            0.1
           Rotation weight                 1
 
+Volume Change Weight   1
 
 #=========== State Information =======================================
 #    Variable         Species    Simulation-No    System-No     Value 
@@ -39,7 +40,7 @@ Species   Name                            Water
 #======= Property Calculation ===========================================
 #             Property   Species   Sampling-Frequency    Block-Averaging
 #------------------------------------------------------------------------
- Calculate     Density                   1                    250
- Calculate     Energy                    1                    250
- Calculate     Fugacity   Water          1                    250
+ Calculate     Density                   1                    2500
+ Calculate     Energy                    1                    2500
+#Calculate     Fugacity   Water          1                    2500
 

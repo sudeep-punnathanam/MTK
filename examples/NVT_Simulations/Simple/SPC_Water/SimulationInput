@@ -38,7 +38,7 @@ Species   Name                            Water
 #======= Property Calculation ===========================================
 #             Property   Species   Sampling-Frequency    Block-Averaging
 #------------------------------------------------------------------------
- Calculate     Pressure                  1                    250
- Calculate     Energy                    1                    250
-#Calculate     Fugacity   Water          1                    250
+ Calculate     Pressure                  2                   
+ Calculate     Energy                    2                   
+#Calculate     Fugacity   Water          1                    
 

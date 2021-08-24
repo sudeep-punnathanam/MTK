@@ -5,15 +5,14 @@
 Simulation Type                    Ideal Gas Rosenbluth Factor
 
 #========== Forcefield Information ====================
-Forcefield Directory               TRaPPE
 Potential cutoff distance          14.0
 
 #========= Essential Simulation Information ============
-Number Of Simulations              1
+Number Of Simulations              4
 Number of Equilibration Cycles     1
-Number of Production Cycles        5000
-Display Frequency                  1000
-Restart Frequency                  100
+Number of Production Cycles        50000
+Display Frequency                  10000
+Restart Frequency                  1000
 Configs Frequency                  10
 Random Number Seed                 243
 
@@ -23,37 +22,10 @@ Species   Name                            n-Butane
 #=========== State Information =======================================
 #    Variable         Species    Simulation-No    System-No     Value
 #---------------------------------------------------------------------
-Temperature                         1              1         190.0
-
-
-
-#============================================================================================
-#                         Simulation Input
-#============================================================================================
-#======= Simulation Type ===============================
-Simulation Type                    Ideal Gas Rosenbluth Factor
-
-#========== Forcefield Information ====================
-Forcefield Directory               TRaPPE
-Potential cutoff distance          14.0
-
-#========= Essential Simulation Information ============
-Number Of Simulations              1
-Number of Equilibration Cycles     1
-Number of Production Cycles        5000
-Display Frequency                  1000
-Restart Frequency                  100
-Configs Frequency                  10
-Random Number Seed                 243
-
-#======== Configuration and Species Information =======
-Species   Name                            n-Butane
-
-#=========== State Information =======================================
-#    Variable         Species    Simulation-No    System-No     Value
-#---------------------------------------------------------------------
-Temperature                         1              1         190.0
-
+Temperature                         1              1         262.0
+Temperature                         2              1         295.0
+Temperature                         3              1         327.0
+Temperature                         4              1         360.0
 
 
 #============================================================================================
@@ -69,11 +41,26 @@ Temperature                         1              1         190.0
 CH4           CH4          Lennard-Jones   3.73  148.0   2.0
 CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0   2.0
 CH2_sp3       CH2_sp3      Lennard-Jones   3.95   46.0   2.0
-CH4           CH3_sp3           Lorentz-Berthelot
-CH4           CH2_sp3           Lorentz-Berthelot
-CH3_sp3       CH2_sp3           Lorentz-Berthelot
-        1000   7.5490451957218888E-002
-        2000   6.4834238542332695E-002
-        3000   7.3373114157518890E-002
-        4000   6.4570993305593419E-002
-        5000   6.6590342987116982E-002
+CH4           CH3_sp3      Lorentz-Berthelot
+CH4           CH2_sp3      Lorentz-Berthelot
+CH3_sp3       CH2_sp3      Lorentz-Berthelot
+       10000  0.11223541625829554     
+       20000  0.11705631946079703     
+       30000  0.11926898098746533     
+       40000  0.12172111452263584     
+       50000  0.11839432332315508     
+       10000  0.12858956813083544     
+       20000  0.13587460182068922     
+       30000  0.14240410054546568     
+       40000  0.12426567085260141     
+       50000  0.12595723375686196     
+       10000  0.14680035273246814     
+       20000  0.13719374447414151     
+       30000  0.14239307018963107     
+       40000  0.13822251240508554     
+       50000  0.14647214829988522     
+       10000  0.17283080687072194     
+       20000  0.15415223868675626     
+       30000  0.16395108686404006     
+       40000  0.17102207142143605     
+       50000  0.15656594314510999     

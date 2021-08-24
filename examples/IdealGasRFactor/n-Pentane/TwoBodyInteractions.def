@@ -1,8 +1,14 @@
-  Atom 1     Atom 2        Rule/Potential            Parameters
-CH4           CH4          Lennard-Jones   3.73  148.0   2.0  
-CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0   2.0
-CH2_sp3       CH2_sp3      Lennard-Jones   3.95   46.0   2.0
-CH4           CH3_sp3           Lorentz-Berthelot
-CH4           CH2_sp3           Lorentz-Berthelot
-CH3_sp3       CH2_sp3           Lorentz-Berthelot
+# Atom 1        Atom 2     Rule/Potential         Parameters
+CH4           CH4          Lennard-Jones   3.73  148.0    2.0
+CH3_sp3       CH3_sp3      Lennard-Jones   3.75   98.0    2.0
+CH2_sp3       CH2_sp3      Lennard-Jones   3.95   46.0    2.0
+Si            Si           off
+O             O            off
+CH4           O            Lennard-Jones   3.60   80.0    2.0
+CH3_sp3       O            Lennard-Jones   3.60   80.0    2.0
+CH2_sp3       O            Lennard-Jones   3.60   58.0    2.0
+CH4           CH3_sp3      Lennard-Jones   3.74  120.43   2.0
+CH4           CH2_sp3      Lennard-Jones   3.84   82.51   2.0
+CH3_sp3       CH2_sp3      Lennard-Jones   3.85   67.14   2.0
+
 

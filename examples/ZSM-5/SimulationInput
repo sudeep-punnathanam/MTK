@@ -1,0 +1,48 @@
+#======= Simulation Type ===============================
+Simulation Type                    Standard Monte Carlo
+
+#========== Forcefield Information ====================
+Potential cutoff distance          13.8
+
+#========= Essential Simulation Information ============
+Number Of Simulations              1
+Number of Equilibration Cycles     100
+Number of Production Cycles        100
+Display Frequency                  100
+Restart Frequency                  100
+Configs Frequency                  10 
+Random Number Seed                 243
+
+#======== Configuration and Species Information =======
+Simulation Cell   1
+                  Shape                  Box
+                  Box Lengths            40.14  39.84  40.26
+                  Box Angles             90.0  90.0  90.0
+                  Boundary conditions    1  1  1
+
+
+Species   Name                            iso-Butane
+          Initialization Method           Random
+          Initial number of molecules     0
+          Translation weight              1
+          Maximum displacement            0.1
+          Rotation weight                 1
+          Insertion weight                1
+          Cut and Regrow weight           1
+
+Species   Name                            zsm5
+          Initialization Method           File zsm5.config
+
+#=========== State Information =====================================================
+#    Variable         Species    Simulation-No    System-No     Sequence-No   Value 
+#-----------------------------------------------------------------------------------
+   Temperature                         1              1                       300.0
+   Fugacity           iso-Butane       1              1                      100.0
+   IdealRFactor       iso-Butane       1              1              1       7.68e-2
+  
+
+#======= Property Calculation ===========================================
+#             Property   Species   Sampling-Frequency    Block-Averaging
+#------------------------------------------------------------------------
+ Calculate     Number    iso-Butane        1                    20
+

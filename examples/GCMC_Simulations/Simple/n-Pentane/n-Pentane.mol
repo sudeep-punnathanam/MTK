@@ -54,7 +54,7 @@ Number of torsions   2
  2        3       4        5    cosine-series-1   355.03   -68.19   791.32
 
 Number of intrapairs  1
- 1        5       Lennard-Jones   3.75   98.0   2.0
+ 1        5       Lennard-Jones   3.75   98   2.0
 
 # Define configuration bias move sequences for flexible molecules. Use the following format.
 # Each sequence consists of a series of step. Depending of the nature of the step, the requsite inputs are provided.
@@ -62,31 +62,31 @@ Number of intrapairs  1
 #
 # CBMC Sequence
 # Number of Steps <number>
-# rgs  <grp>                                  Rigid Group sampling.
-# fas  <atm>                                  First atom sampling
-# ss   <atm> <atm_p1> <bond>                  Sphere Sampling
-# bps  <no_of_atms> <atm_p1> <atm_p2>         Branch Point Sampling
-#      <atm> <bond> <angle_A> <angle_B> <no_of_tors> <tors> <no_of_ip> <ip> <no_of_ic> <ic>
+# rgs  <grp>                                                                  Rigid Group sampling.
+# fas  <atm>                                                                  First atom sampling
+# ss   <atm> <atm_p1> <bond>                                                  Sphere Sampling
+# bps  <no_of_atms> <atm_p1> <atm_p2>   <no_of_tors> <no_of_ip> <no_of_ic>    Branch Point Sampling
+#      <atm> <bond> <angle_A> <angle_B> <tors>       <ip>>      <ic>
 
 CBMC Sequence
 5
 fas    1
 ss     2    1    1
-bps    1    2    1
-       3    2    1    0    0    0    0    0    0    0
-bps    1    3    2
-       4    3    2    0    1    1    0    0    0    0
-bps    1    4    3
-       5    4    3    0    1    2    1    1    0    0
+bps    1    2    1         0    0    0
+       3    2    1    0    0    0    0
+bps    1    3    2         1    0    0
+       4    3    2    0    1    0    0
+bps    1    4    3         1    1    0
+       5    4    3    0    2    1    0
 
-# CBMC Sequence
+CBMC Sequence
 5
 fas    3
 ss     4    3    3
-bps    1    4    3
-       5    4    3    0    0    0    0    0    0    0
-bps    1    3    4
-       2    2    2    0    1    2    0    0    0    0
-bps    1    2    3
-       1    1    1    0    1    1    1    1    0    0
+bps    1    4    3         0    0    0
+       5    4    3    0    0    0    0
+bps    1    3    4         1    0    0
+       2    2    2    0    2    0    0
+bps    1    2    3         1    1    0
+       1    1    1    0    1    1    0
 

@@ -3,7 +3,7 @@ module restart
   use variables, only: NumberOfSystems, CurrentCoordinates, TrialCoordinates, OldCoordinates, CurrentSimulationCell, CurrentInteractions, &
     TotalNumberOfMolecules, TotalMass
   use random, only: mtprng_state, SetRandomNumberState, GetRandomNumberState, RandomNumber
-  use mcmoves, only: Translation, Rotation, Insertion, Deletion, VolumeChange
+  use mcmoves, only: Translation, Rotation, Insertion, Deletion, CutAndRegrow, VolumeChange
   use averages, only: Energy_c, Pressure_c, Volume_c, Density_c, Concentration_c, Number_c, Fugacity_c, dUdKappa_c
   use atoms_and_molecules, only: Molecule, NumberOfSpecies
   use config, only: ReAllocateMemoryForCoordinates
@@ -34,16 +34,19 @@ contains
       return
     end if
 
+    !** Save Simulation Stage Information
     write(unitno)EquilibrationStage
     write(unitno)simno,cycleno,iterno
+
+    !** Save state of the random number generator
     call GetRandomNumberState(rstate)
     write(unitno)rstate
 
     do sys=1,NumberOfSystems
+      !** Save Simulation Cell Information
       write(unitno)CurrentSimulationCell(sys)
-!!$      write(unitno)CurrentConfiguration(sys)%Ewald
-!!$      write(unitno)CurrentConfiguration(sys)%StructureFactor
-    
+
+      !** Save Coordinates
       do spc=1,NumberOfSpecies
         nmoles=CurrentCoordinates(spc,sys)%NumberOfMolecules
         write(unitno)nmoles
@@ -52,17 +55,17 @@ contains
         write(unitno)CurrentCoordinates(spc,sys)%BodyAxes(:,:,1:nmoles)
         write(unitno)CurrentCoordinates(spc,sys)%LatticePositions(:,1:nmoles)
       end do
-!!$      write(unitno)SystemCenterOfMass(:,sys)
     end do
 
-    write(unitno)CurrentInteractions
-
+    !** Save Move Information Statistics
     write(unitno)Translation
     write(unitno)Rotation
     write(unitno)Insertion
     write(unitno)Deletion
+    write(unitno)CutAndRegrow
     write(unitno)VolumeChange
 
+    !** Save Property Accumulators
     write(unitno)Energy_c
     write(unitno)Pressure_c
     write(unitno)Volume_c
@@ -102,21 +105,25 @@ contains
       return
     end if
    
+    !** Read Simulation Stage
     read(unitno)EquilibrationStage
     read(unitno)simno,cycleno,iterno
+
+    !** Read state of the random number generator
     read(unitno)rstate
     call SetRandomNumberState(rstate)
 
     do sys=1,NumberOfSystems
+      !** Read Simulation Cell Information
       read(unitno)CurrentSimulationCell(sys)
-!!$      read(unitno)CurrentConfiguration(sys)%Ewald
-!!$      read(unitno)CurrentConfiguration(sys)%StructureFactor
-    
+
+      !** Read Coordinates
       TotalNumberOfMolecules(sys)=0
       TotalMass(sys)=0._PR
       do spc=1,NumberOfSpecies
         natoms=Molecule(spc)%NumberOfAtoms
         read(unitno)nmoles
+        CurrentCoordinates(spc,sys)%NumberOfMolecules=nmoles
         !** Allocate memory to coordinates
         call ReAllocateMemoryForCoordinates(CurrentCoordinates(spc,sys),nmoles,natoms,error)
         if(error)return
@@ -131,17 +138,17 @@ contains
         read(unitno)CurrentCoordinates(spc,sys)%BodyAxes(:,:,1:nmoles)
         read(unitno)CurrentCoordinates(spc,sys)%LatticePositions(:,1:nmoles)
       end do
-!!$      read(unitno)SystemCenterOfMass(:,sys)
     end do
 
-    read(unitno)CurrentInteractions
-
+    !** Read Move Information Statistics
     read(unitno)Translation
     read(unitno)Rotation
     read(unitno)Insertion
     read(unitno)Deletion
+    read(unitno)CutAndRegrow
     read(unitno)VolumeChange
 
+    !** Read Property Accumulators
     read(unitno)Energy_c
     read(unitno)Pressure_c
     read(unitno)Volume_c

@@ -1,15 +1,12 @@
 module initial
-  use consts, only: PR, xlstrlen, strlen, INCR_SIZE
-  use utils, only: ErrorMessage, FindStringInFile, lowercase, RotateVectors, OpenFile, CloseFile
+  use consts, only: PR, xlstrlen, strlen
+  use utils, only: ErrorMessage, FindStringInFile, lowercase, OpenFile, CloseFile
   use atoms_and_molecules, only: NumberOfSpecies, Molecule, GetCenterOfMass
-  use variables, only: NumberOfSystems, CurrentCoordinates, TrialCoordinates, initmethod, &
-    CurrentSimulationCell, MainCellList, beta
+  use variables, only: NumberOfSystems, CurrentCoordinates, TrialCoordinates, initmethod, beta
   use config, only: SetCenterOfMass
   use storage, only: StorageInteractions
-  use inter, only: MoleculeSystemShortRangePairwiseInteraction
-  use simcell, only: RandomPointInCell
-  use random, only: UniformRandomRotationMatrix
   use rosenbluth, only: CBMC_grow
+
   implicit none
   private
   save

@@ -6,10 +6,10 @@ module montecarlo
     CurrentKfactor, CurrentStructureFactor, MainCellList, beta
   use mcmoves, only: ParticleMove, VolumeChangeMove, UpdateMoveParameters, ResetMoveStatistics, DisplayMoveStatistics, VolumeChange
   use averages, only: SampleStatistics, ComputeStatistics, ResetStatistics, PrintStatistics
-  use inter, only: TotalShortRangePairwiseInteraction, TotalLongRangePairwiseInteraction
+  use inter, only: TotalShortRangePairwiseInteraction, TotalLongRangePairwiseInteraction, TotalIntraMolecularInteractions
   use utils, only: ErrorMessage, RealToString, OpenFile, CloseFile
   use random, only: RandomNumber
-  use storage, only: StorageInteractions, UpdateStorageInteractions, DisplayStorage, operator(+)
+  use storage, only: StorageInteractions, UpdateStorageInteractions, DisplayStorage, CompareAndDisplayStorage, operator(+)
   use atoms_and_molecules, only: Molecule, NumberOfSpecies
   use restart, only: ReadRestartFile, WriteRestartFile
   use ewaldsum, only: CalculateKfactors, CalculateTotalStructureFactor, EwaldFourierInteraction, TotalIntraMolecularFourierInteraction, COULOMB_INTERACTION
@@ -27,62 +27,72 @@ contains
     integer :: spc
     integer :: MoveType, CycleLength, ParticleMoveWeight
     logical :: overlap, EquilibrationStage, RestartMode
-    character(len=strlen) :: filename, intstr
-    type(StorageInteractions) :: Interactions
+    type(StorageInteractions) :: Interactions,FreshInteractions
     real(PR) :: energy
 
     integer :: simno, cycleno, iterno, sys
 
     error=.false.
     sys=1
-
     simno=1
-    do while(simno <= NumberOfSimulations)
-      !** Read Restart File if any
-      call ReadRestartFile(simno,cycleno,iterno,EquilibrationStage,RestartMode,error)
+
+    !** Read Restart File if any
+    call ReadRestartFile(simno,cycleno,iterno,EquilibrationStage,RestartMode,error)
+    if(error)return
+
+    !** Calculate Energy
+    call TotalShortRangePairwiseInteraction(CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),CurrentInteractions(sys),overlap,error)
+    if(error)return
+    if(overlap)then
+      write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
+        'Failed to calculate energy of system initially. Possible overlap between atoms'
+      error=.true.
+      return
+    end if
+    call TotalLongRangePairwiseInteraction(CurrentCoordinates(:,sys)%NumberOfMolecules,CurrentSimulationCell(sys)%Volume, &
+      Interactions)
+    CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
+    call TotalIntraMolecularInteractions(CurrentCoordinates(:,sys),Interactions,overlap)
+    if(overlap)then
+      write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
+        'Failed to calculate energy of system initially. Possible overlap between atoms'
+      error=.true.
+      return
+    end if
+    CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
+    if(COULOMB_INTERACTION)then
+      call CalculateKfactors(sys,CurrentSimulationCell(sys),CurrentKfactor(sys))
+      call CalculateTotalStructureFactor(sys,CurrentCoordinates(:,sys),CurrentSimulationCell(sys),CurrentStructureFactor(sys),error)
       if(error)return
+      call EwaldFourierInteraction(sys,CurrentSimulationCell(sys)%Volume,CurrentKfactor(sys),CurrentStructureFactor(sys),Interactions)
+      CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
+      call TotalIntraMolecularFourierInteraction(sys,CurrentCoordinates(:,sys),energy)
+      CurrentInteractions(sys)%Energy%IntraFourier=energy
+    end if
+    call UpdateStorageInteractions(CurrentInteractions(sys))
+
+    !** Save Intial Configuration and Energy
+    if(.not. RestartMode)then
+      call WriteConfigsToFile('InitialConfig',error)
+      if(error)return
+
+      call DisplayStorage(CurrentInteractions(sys)%Energy,'INITIAL ENERGIES',LogUnitNo,REDUCED_UNITS)
+      call DisplayStorage(CurrentInteractions(sys)%Virial,'INITIAL VIRIALS',LogUnitNo,REDUCED_UNITS)
+      call flush(LogUnitNo)
+    end if
+
+    do while(simno <= NumberOfSimulations)
       if(RestartMode)then
         RestartMode=.false.
-        if(EquilibrationStage)go to 10
-        go to 20
+        if(EquilibrationStage)then
+          go to 10
+        else
+          go to 20
+        end if
       end if
 
       !** Reset Statistics
       call ResetStatistics
-
-      !** Save initial configuration to file
-      write(intstr,*)simno
-      filename='InitialConfig.' // trim(adjustl(intstr))
-      call WriteConfigsToFile(filename,error)
-      if(error)return
-
-      !** Calculate initial energy
-      call TotalShortRangePairwiseInteraction(CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),CurrentInteractions(sys),overlap,error)
-      if(error)return
-      if(overlap)then
-        write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
-          'Failed to calculate energy of system initially. Possible overlap between atoms'
-        error=.true.
-        return
-      end if
-
-      call TotalLongRangePairwiseInteraction(CurrentCoordinates(:,sys)%NumberOfMolecules,CurrentSimulationCell(sys)%Volume, &
-        Interactions)
-      CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
-      if(COULOMB_INTERACTION)then
-        call CalculateKfactors(sys,CurrentSimulationCell(sys),CurrentKfactor(sys))
-        call CalculateTotalStructureFactor(sys,CurrentCoordinates(:,sys),CurrentSimulationCell(sys),CurrentStructureFactor(sys),error)
-        if(error)return
-        call EwaldFourierInteraction(sys,CurrentSimulationCell(sys)%Volume,CurrentKfactor(sys),CurrentStructureFactor(sys),Interactions)
-        CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
-        call TotalIntraMolecularFourierInteraction(sys,CurrentCoordinates(:,sys),energy)
-        CurrentInteractions(sys)%Energy%IntraFourier=energy
-      end if
-      call UpdateStorageInteractions(CurrentInteractions(sys))
-      call DisplayStorage(CurrentInteractions(sys)%Energy,'INITIAL ENERGIES',LogUnitNo,REDUCED_UNITS)
-      call DisplayStorage(CurrentInteractions(sys)%Virial,'INITIAL VIRIALS',LogUnitNo,REDUCED_UNITS)
-      call flush(LogUnitNo)
-
       !** Equilibration Stage **
       EquilibrationStage=.true.
       cycleno=1
@@ -102,6 +112,7 @@ contains
             call VolumeChangeMove(simno,error)
             if(error)return
           end if
+
         end do
         if(mod(cycleno,DisplayFrequency)==0)then
           call DisplaySimulationStatistics
@@ -147,44 +158,47 @@ contains
       call PrintStatistics(simno,error)
       if(error)return
 
-      !** Display Current Interactions
-      call DisplayStorage(CurrentInteractions(sys)%Energy,'STORED ENERGIES',LogUnitNo,REDUCED_UNITS)
-      call DisplayStorage(CurrentInteractions(sys)%Virial,'STORED VIRIALS',LogUnitNo,REDUCED_UNITS)
-
-      !** Make a fresh estimation of Current Interactions for consistency check
-      call TotalShortRangePairwiseInteraction(CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),CurrentInteractions(sys),overlap,error)
-      if(error)return
-      if(overlap)then
-        write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
-          'Failed to calculate energy of system initially. Possible overlap between atoms'
-        error=.true.
-        return
-      end if
-      call TotalLongRangePairwiseInteraction(CurrentCoordinates(:,sys)%NumberOfMolecules,CurrentSimulationCell(sys)%Volume, &
-        Interactions)
-      CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
-      if(COULOMB_INTERACTION)then
-        call CalculateKfactors(sys,CurrentSimulationCell(sys),CurrentKfactor(sys))
-        call CalculateTotalStructureFactor(sys,CurrentCoordinates(:,sys),CurrentSimulationCell(sys),CurrentStructureFactor(sys),error)
-        if(error)return
-        call EwaldFourierInteraction(sys,CurrentSimulationCell(sys)%Volume,CurrentKfactor(sys),CurrentStructureFactor(sys),Interactions)
-        CurrentInteractions(sys)=CurrentInteractions(sys)+Interactions
-        call TotalIntraMolecularFourierInteraction(sys,CurrentCoordinates(:,sys),energy)
-        CurrentInteractions(sys)%Energy%IntraFourier=energy
-      end if
-      call UpdateStorageInteractions(CurrentInteractions(sys))
-      call DisplayStorage(CurrentInteractions(sys)%Energy,'CALCULATED ENERGIES',LogUnitNo,REDUCED_UNITS)
-      call DisplayStorage(CurrentInteractions(sys)%Virial,'CALCULATED VIRIALS',LogUnitNo,REDUCED_UNITS)
-      call flush(LogUnitNo)
-
-      !** Save final configuration to file
-      write(intstr,*)simno
-      filename='FinalConfig.' // trim(adjustl(intstr))
-      call WriteConfigsToFile(filename,error)
-      if(error)return
-
       simno=simno+1
     end do
+
+    !** Make a fresh estimation of Current Interactions for consistency check
+    call TotalShortRangePairwiseInteraction(CurrentCoordinates(:,sys),CurrentSimulationCell(sys),MainCellList(sys),FreshInteractions,overlap,error)
+    if(error)return
+    if(overlap)then
+      write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
+        'Failed to calculate energy of system initially. Possible overlap between atoms'
+      error=.true.
+      return
+    end if
+    call TotalLongRangePairwiseInteraction(CurrentCoordinates(:,sys)%NumberOfMolecules,CurrentSimulationCell(sys)%Volume, &
+      Interactions)
+    FreshInteractions=FreshInteractions+Interactions
+    call TotalIntraMolecularInteractions(CurrentCoordinates(:,sys),Interactions,overlap)
+    if(overlap)then
+      write(ErrorMessage,'(2a,i5,4x,a)')__FILE__,':',__LINE__, &
+        'Failed to calculate energy of system initially. Possible overlap between atoms'
+      error=.true.
+      return
+    end if
+    FreshInteractions=FreshInteractions+Interactions
+    if(COULOMB_INTERACTION)then
+      call CalculateKfactors(sys,CurrentSimulationCell(sys),CurrentKfactor(sys))
+      call CalculateTotalStructureFactor(sys,CurrentCoordinates(:,sys),CurrentSimulationCell(sys),CurrentStructureFactor(sys),error)
+      if(error)return
+      call EwaldFourierInteraction(sys,CurrentSimulationCell(sys)%Volume,CurrentKfactor(sys),CurrentStructureFactor(sys),Interactions)
+      FreshInteractions=FreshInteractions+Interactions
+      call TotalIntraMolecularFourierInteraction(sys,CurrentCoordinates(:,sys),energy)
+      FreshInteractions%Energy%IntraFourier=energy
+    end if
+    call UpdateStorageInteractions(FreshInteractions)
+    !** Compare and Display Interactions
+    call CompareAndDisplayStorage(CurrentInteractions(sys)%Energy,'STORED ENERGIES',FreshInteractions%Energy,'CALCULATED ENERGIES',LogUnitNo,REDUCED_UNITS)
+    call CompareAndDisplayStorage(CurrentInteractions(sys)%Virial,'STORED VIRIALS',FreshInteractions%Virial,'CALCULATED VIRIALS',LogUnitNo,REDUCED_UNITS)
+    call flush(LogUnitNo)
+
+    !** Save final configuration to file
+    call WriteConfigsToFile('FinalConfig',error)
+    if(error)return
 
   contains
     !=============================================================================================================================
@@ -222,7 +236,7 @@ contains
       character(len=strlen), dimension(10) :: value
 
       do spc=1,NumberOfSpecies
-        write(LogUnitNo,'(2a,t31,a,i5)')'Number of molecules of ',trim(Molecule(spc)%Name),':',CurrentCoordinates(spc,sys)%NumberOfMolecules
+        write(LogUnitNo,'(2a,t50,a,i5)')'Number of molecules of ',trim(Molecule(spc)%Name),':',CurrentCoordinates(spc,sys)%NumberOfMolecules
       end do
       if(REDUCED_UNITS)then
         write(LogUnitNo,'(a,t31,a,3f15.4)')'Box Length',':',CurrentSimulationCell(sys)%BoxLength(:)
